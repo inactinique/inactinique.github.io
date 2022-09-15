@@ -1,11 +1,13 @@
 ---
 title: "Tormented ways"
 author: "Frédéric Clavert"
-date: "9/7/2022"
-output: pdf_document
+date: "15/9/2022"
+output: html_document
 ---
 
-*Thanks for the invitation, etc*
+*This document should be read in parallel with the [corresponding slides](besocial_keynote.html).*
+
+First, a huge thank you to the BeSocial team for the invitation.
 
 ## Who am I
 
@@ -29,9 +31,9 @@ Concerning what we are discussing today, I am - like many developers and researc
 
 Archives is much more complex to define.
 
-I need to precise here that I am a historian and speaking as such -- y considerations on archives might be contested by archivists who are far more rigourous than us!
+I need to precise here that I am a historian and speaking as such -- my considerations on archives might be contested by archivists who are far more rigourous than us!
 
-"It’s"Archives" is a word and concept that is much more polysemic than API, all the more that the first digital humanities projects where often called ‘archives’ and, in a way, blured the definition. Furthermore, even if most european languages are using more or less the same word (the French "archive(s)", the English “Archives”, the German “Archiv” or “Archivalien” to give some examples), they don’t cover the same concepts, and even when they do, traditions to concretely collect and sort archives are not the same from one country to the other.
+Archives" is a word and concept that is much more polysemic than API, all the more that the first digital humanities projects where often called ‘archives’ and, in a way, blured the definition. Furthermore, even if most european languages are using more or less the same word (the French "archive(s)", the English “Archives”, the German “Archiv” or “Archivalien” to give some examples), they don’t cover the same concepts, and even when they do, traditions to concretely collect and sort archives are not the same from one country to the other. I should precise that, when I say 'archives' in English I am using it as a French who would use the French word and the concept that it covers.
 
 So as it is complex to define, I asked the system that simplifies everything to define it: Google (define:archive).
 
@@ -69,7 +71,7 @@ So, to access tweets, there is a mediation through the API -- not through the wo
 
 So Twitter has an API and it is relatively open -- that’s why we are all working on Twitter. Facebook API is much more restricted and some services (whatsapp) have no API or at least no API that allows to collect data, even for research (which is not a bad thing).
 
-Using Twitter API is a convenient way to get primary sources over events, phenomenon, information circulation since 2006. But it’s not archived in a proper sense -- there’s no archivist’s work of selection, preservation, sorting and indexing, but at the Library of Congress, but with no means to access it.
+Using Twitter API is a convenient way to get primary sources about events, phenomenon, information circulation since 2006. But it’s not archived in a proper sense -- there’s no archivist’s work of selection, preservation, sorting and indexing, but at the Library of Congress, but with no means to access it.
 
 So instead of having the archives and the archivists’ work as setting of the historians’ work, we have an API. The mediation between historians and their primary sources is here totally different than in archives centre.
 
@@ -101,7 +103,7 @@ The interest of those two projects for today is that the first one was entirely 
 
 I have started to collect tweets about the Centenary of the First World War in April 2014 -- before the commemorations started -- and stopped in December 2019 to have one 11th of November after the end of the Centenary.
 
-I collected a bit more than 9 millions tweets, published by a it more then 1.5 millions Twitter accounts. Around two third are retweets. I have used hashtags to collect those tweets, mostly French and English. 85 % or the tweets are in english, 10% are in French, the 5% remaining gather other languages.
+I collected a bit more than 9 million tweets, published by around 1.5 million Twitter accounts. Around two third are retweets. I have used hashtags or keywords to collect those tweets, mostly French and English. 85 % or the tweets are in english, 10% are in French, the 5% remaining gather other languages.
 
 I have tried to explore this corpus with distant reading tools. Distant reading is usually a reference to Franco Moretti's book, *graphs, maps and trees* published in 2007. It is a set of quantitative methods that allows a researcher to ask the computer to read for them, when there is too much data to be read humanly. Since 2007, most researchers are integrating distant reading in scalable reading, where distant reading and close reading are used at the same time (Fickers, Clavert).
 
@@ -109,11 +111,11 @@ Distant reading might be necessary as tweets are primary sources, but massively 
 
 ## api as a framework
 
-I have used the Twitter streaming API, such as available in the its 1.1 version. That implied constraints:
+I have used the Twitter streaming API, such as available in its 1.1 version. That implied constraints:
 
-- 1% of the firehose -- technically 5 to 6 millions, but the 1% is based on quarters of hour -- so I did, particularly on the 11th of November 2018, sometimes go over the 1%. 
+- 1% of the firehose (access to all tweets being published) -- technically 5 to 6 millions, but the 1% is based on quarters of hour -- so I did, particularly on the 11th of November 2018, sometimes go over the 1% -- which means that some tweets have not been collected on those occasions;
 - anticipation -- at the beginning of the research project, I could not guess that the 2016 commemoration of the battle of the Somme on the first of July 2016 would use the #somme100 hashtag.
-- no past tweets available: errors in anticipation could hardly be corrected. 
+- no past tweets available: errors in anticipation could hardly be corrected. One example in the #ww1 project case is the assassination of Jean Jaurès. We should also remember that, sometimes, there's no efficient ways to collect tweets for one event: in the case of the centenary of the first battle of the Marne for instance.
 
 ## some results (1, 2, 3)
 
@@ -121,15 +123,15 @@ to be done
 
 ## covid19 on twitter
 
-I will not detail to much the results of this research projects. I have started it while obvious that France, Belgium and Luxembourg and other european countries would be placed under lockdown, mid-March 2020. This research and harvesting is still going on, with now a bit more than 62 millions tweets collected and the ambition to let it go as long as possible.
+I will not detail too much the results of this research project. I have started it while obvious that France, Belgium and Luxembourg and other european countries would be placed under lockdown, mid-March 2020. This research and harvesting is still going on, with now a bit more than 62 millions tweets collected and the ambition to let it go as long as possible.
 
-My colleague Deborah Paci (today at the university of Modena) is now co-leading this research with me. We could access an italian corpus, for comparison: what happened on twitter during lockdowns in french-speaking countries (moslty France, let's be honest) and in Italy? We are currently writing about the results.
+My colleague Deborah Paci (today at the university of Modena) is co-leading this research with me. We could access an italian corpus, for comparison: what happened on twitter during lockdowns in french-speaking countries (moslty France, let's be honest) and in Italy? We are currently writing about the results.
 
 The interesting thing here is that, while still usig the API 1.1 for this project, Twitter released its APIv2. In the mid-term, this version of the API will replace the 1.1, but for the moment both versions can still be used.
 
 ## new api, new framework...
 
-There's a huge innovation with this new API for researchers: if recognized as researcher by Twitter, then we can collect up to 10 millions tweets a month in the full hsitory of Twitter. It's obviously addictive all the more that you can go back in time, up to 2006. That's long-term (well, from a social media point of view) brought (legally) to twitter research.
+There's a huge innovation with this new API for researchers: if recognized as researcher by Twitter, then we can collect up to 10 millions tweets a month in the full history of Twitter. It's obviously addictive all the more that you can go back in time, up to 2006. That's long-term (well, from a social media point of view) brought (legally) to twitter research.
 
 It's still not archives or archiving. But it starts to be a bit better than the APIv1.1 and its streaming set of commands, because you have a right to make a mistake with the API v2.
 
@@ -139,11 +141,11 @@ But there's a price to that. You can make a mistake, sure. But there are tweets,
 
 That makes the search archive feature a problem if you wish to study some kind of research questions: controversies, the spread of misinformation for instance.
 
-[à compléter]
+Another limitation is the process that allows you to get recognized by Twitter as a researcher. And if you get rejected? It happened to [Nick Ruest](https://ruebot.net/post/rejected/) who asked for a research access for the Archive Unleashed project. His 'use case' was not elligible, probably because he mentioned web archiving, but it's a guess. 
 
 # working on archived tweets
 
-Considering what I just developped, would proper archives of tweets be a better solution? For lots of research questions, it is. It would be also a strong gain of time. The problem is rather to define what would be a proper archiving of tweets -- that what besocial is about, to.
+Considering what I just developped, would proper archives of tweets be a better solution? For lots of research questions, it is. It would be also a strong gain of time. The problem is rather to define what would be a proper archiving of tweets -- that what besocial is about.
 
 ## What would be the point
 
@@ -153,19 +155,19 @@ I am working with CSVs, JSONs, SQL databases. Though in the metadata there are e
 
 ## an example: Obama's four more years
 
-Let's take as an example a tweet that has long been the most favorited / retweeted tweet of twitter's history: Obama's '4 more years' tweet. If you look at it today, Twitter's interface, Obama's picture, answers, retweets, are today's elements. If you collect it with the API, you will have some elements that historicize it (its publication date), and some that are today's (retweets, favourites, all the metadata about the account who published it). Tweets' metadata are not time consistent, in the sense that there is no concept of history in its metadata (and this would be hard to implement anyway).
+Let's take as an example a tweet that has long been the most favorited / retweeted tweet of twitter's history: Obama's '4 more years' tweet. If you look at it today, Twitter's interface, Obama's picture, answers, retweets, are today's elements. If you collect it with the API, you will have some elements that historicize it (its publication date), and some that are today's (retweets, favourites, most of the metadata about the account who published it). Tweets' metadata are not time consistent, in the sense that there is no concept of history in its metadata (and this would be hard to implement anyway).
 
 ## Obama's four more years tweet in 2012
 
-In the case of this very famous tweet, we can have a look at how it looked in 2012, thanks to the Wayback machine. But in most cases -- probably 99% of the tweets -- it's just not possible.
+In the case of this very famous tweet, we can have a look at how it looked in 2012, thanks to the Wayback machine. But in most cases -- probably 99% of the tweets -- it's just not possible. Furthermore, it's not that simple to collect archived tweets massively within the Wayback Machine, it's probably even impossible. Using tweets archived in web archives is hence probably limited to qualitative methods.
 
-We are here at the heart of what could bring to researcher a proper archiving of tweets: historicization.
+We are here at the heart of what could bring to researcher a proper archiving of tweets: historicization and the possibility to use several kinds of methods.
 
 ## how to really historicize twitter?
 
 I'll let the besocial team, in a way, answer this question. For me, the ideal situation is to have at the same time the API and archives, the best of two worlds. But archivists and librarians have choices to make, decisions to take, and it's not always possible to have the best of the two worlds.
 
-The Twitter archive at the Library of Congress is a good example of the choices archivists and librarians may have to do. An agreement between Twitter and the Library of Congress alloqs the later to archive Twitter, fully at the beginning. Up to the end of 2017, this archiving was integral. All tweets from 2006 until December 2016 are there. 
-But the Library of Congress lacks the technology to search its twitter archive. [So from the 1st of January 2018](https://blogs.loc.gov/loc/2017/12/update-on-the-twitter-archive-at-the-library-of-congress-2/), the LoC started to archive Twitter "on a selective basis". It's been depicted [as a failure](https://medium.com/dmrc-at-large/the-library-of-congress-twitter-archive-a-failure-of-historic-proportions-6dc1c3bc9e2c) -- but archivists know in the end that they must do choices (even if it bothers historians) -- clearly I would have prefered a full archiving of all tweets! But archiving everything bears also a risk in itself, which is, basically, losing everything.
+The Twitter archive at the Library of Congress is a good example of the choices archivists and librarians may have to do. An agreement between Twitter and the Library of Congress allows the later to archive Twitter. Up to the end of 2017, this archiving was integral. All tweets from 2006 until December 2017 are there. 
+But the Library of Congress lacks the technology to search its twitter archive. [So from the 1st of January 2018](https://blogs.loc.gov/loc/2017/12/update-on-the-twitter-archive-at-the-library-of-congress-2/), the LoC started to archive Twitter "on a selective basis". It's been depicted [as a failure](https://medium.com/dmrc-at-large/the-library-of-congress-twitter-archive-a-failure-of-historic-proportions-6dc1c3bc9e2c) -- but archivists know in the end that they must do choices (even if it bothers historians) -- clearly I would have prefered a full archiving of all tweets! But archiving everything bears also a risk in itself, which is, basically, losing everything. 
 
 It's, in the end, an old question asked to archivists, librarians and historians.
