@@ -1,0 +1,28 @@
+---
+title: "Goût de l'archive et pratiques discrètes"
+output: revealjs::revealjs_presentation
+---
+
+# qui suis-je?
+
+histoire des relations internationales / histoire des banques centrales au <small>XX</small><sup>e</sup> siècle
+sources primaires à l'ère numérique / memory studies
+
+# du goût de l'archive à l'ère numérique aux pratiques discrètes
+
+> 
+
+[livre en ligne](https://gout-numerique.net)
+
+## histoire numérique?
+
+
+
+- pas un projet d'histoire numérique
+- comment les usages historiens quotidiens se transforment et se numérisent
+- quels nouveaux sujets sont possibles par la numérisation?
+
+## 
+
+##
+
