@@ -4,7 +4,7 @@ I am an assistant professor in contemporary history at the [Centre for Contempor
 
 I am using this page as a repository for some of my [prez](#prez), my [non-academic](#non-academic-writings) and  [academic](#academic-writings) writings.
 
-Join me on [mastodon](https://mastodon.social/@inactinique).
+Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>.
 
 ## Prez
 (date format: dd.mm.yyyy)
