@@ -21,5 +21,5 @@ I am using this page as a repository for some of my [prez](#Prez), my [non-acade
 ## Academic writings
 This is an automatically generated list.
 
-<iframe src="https://orbilu.uni.lu/widget?query=%28%28uid%3A50029240%29%29&amp;chars=100&amp;etal=3&amp;list=3&amp;language=en&amp;data=pr&amp;format=apa&amp;css=%2Ffiles%2Fcss%2Fwl.css&amp;sort_by0=1&amp;order0=DESC&amp;sort_by1=3&amp;order1=ASC&amp;sort_by2=2&amp;order2=ASC" marginwidth="0" marginheight="0" scrolling="auto" width="450" height="450" frameborder="0"></iframe>
+<iframe src="https://orbilu.uni.lu/widget?query=%28%28uid%3A50029240%29%29&amp;chars=50&amp;etal=3&amp;language=en&amp;data=&amp;format=&amp;css=%2Ffiles%2Fcss%2Fwl.css&amp;sort_by0=1&amp;order0=DESC&amp;sort_by1=3&amp;order1=ASC&amp;sort_by2=2&amp;order2=ASC" marginwidth="0" marginheight="0" scrolling="yes" width="450" height="450" frameborder="0"></iframe>
 
