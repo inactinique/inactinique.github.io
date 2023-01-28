@@ -1,7 +1,7 @@
 # Frédéric Clavert
 I am an assistant professor in contemporary history at the [Centre for Contemporary and Digital History](https://c2dh.uni.lu). My research focuses on social media and some AI system do to the ways we are understanding our historical past. I am the managing editor of the [Journal of Digital History](https://www.journalofdigitalhistory.org) and co-edited the [*Goût de l'archive à l'ère numérique*](https://gout-numerique.net) with Caroline Muller (Rennes 2). 
 
-I am using this page as a repository for some of my [[README#Prez|prez]], my [[README#Non-academic writings|non-academic]] and [[README#Academic writings|academic]] writings.
+I am using this page as a repository for some of my [prez](#Prez), my [non-academic](#Non-academic writings) and  [writings](#Academic writings).
 
 ## Prez
 (date format: dd.mm.yyyy)
