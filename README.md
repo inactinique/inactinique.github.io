@@ -9,6 +9,7 @@ Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>.
 ## Prez
 (date format: dd.mm.yyyy)
 
+- 01.02.2023 [ChatGPT: a pedagogical use case (HCI ChatGPT event)](2023-02-01_chatGPT_HCI/2023-02-01_chatGPT_HCI.html)
 - 09.01.2023 [Présentation à l’EHESS (CHR): pratiques numériques discrètes et goût de l’archive à l’ère numérique](https://slides.com/inactinique/gout-de-l-archive-et-pratiques-discretes)
 - 08.12.2022 [Controversies and commemorations: the extreme right and the 2016 commemoration of the battle of Verdun](2022-12-08_Verdun/2022-12-08_Verdun.html) 
 - 15.09.2022 [Keynote for the *Wanted: social media data* conference, organised by the BeSocial project at KBR](https://inactinique.github.io/2022-09-15_BeSocial/besocial_keynote.html#/). My comment for this prez is available at [here](https://inactinique.github.io/2022-09-15_BeSocial/besocial_keynote_comments.html).
