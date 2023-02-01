@@ -9,9 +9,9 @@ output:
 
 ## An hypothesis
 
-The most striking thing with ChatGPT(-like systems) is not *cheating*.
+It is not about *cheating*.
 
-It is the fact that we may believe it is **reliable**.
+It is about the fact that we may believe it is **reliable**.
 
 Comparing ChatGPT (generated text + how it works) to historian's methods
 
