@@ -34,4 +34,4 @@ Comparing ChatGPT (generated text + how it works) to historian's methods
 
 ## Dealing with sources
 
-<img src="img/Jean_Monnet_04.jpg" width="600px" style="border:none">
+<img src="img/Jean_Monnet_02.jpg" width="600px" style="border:none">
