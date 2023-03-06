@@ -5,15 +5,19 @@ author: "Frédéric Clavert / C<sup><small>2</small></sup>DH, University of Luxe
 output: revealjs::revealjs_presentation
 ---
 
-# Who am I?
+# Who am I? {data-background=img/bg/clio_bg.png}
 
-international history / digital humanities / (digital) memory studies
+international history
 
-# Setting the scene: history in an era of networks, data and cognitive delegation
+digital humanities / digital history
+
+(digital) memory studies
+
+# Setting the scene: history in an era of networks, data and cognitive delegation {data-background=img/bg/clio_bg.png}
 
 History (and historians) within a precise social, political, technological context.
 
-## History, computing and datafication: an old challenge
+## History, computing and datafication: an old challenge {data-background=img/bg/clio_bg.png}
 
 The rise of computing, networks and data since 1945.
 
@@ -21,7 +25,7 @@ The rise of computing, networks and data since 1945.
 
 - 1961 (cross-referencing two datasets): Paul Garelli and Jean-Claude Gardin. ‘[Étude Par Ordinateurs Des Établissements Assyriens En Cappadoce](http://www.persee.fr/web/revues/home/prescript/article/ahess_0395-2649_1961_num_16_5_420758?luceneQuery=%28%28%2B%28cappadoce%29+%2B%28ordinateurs%29%29+AND+%28+%2Baccess_right%3A%28free%29+%29%29+AND+%28indexable_type%3Aarticlepag%3F%29&words=cappadoce&words=ordinateurs&words=free&words=articlepag)’. *Annales ESC*, 16(5).
 
-## Datafication?
+## Datafication? {data-background=img/bg/darpa_bg.png}
 
 - More than digitization
 - The transformation of digitized (and born digital) material into data that can be computed and hence analysed
@@ -29,26 +33,27 @@ The rise of computing, networks and data since 1945.
 
 <small>Mayer-Schönberger, Viktor, and Kenneth Cukier. *Big Data: A Revolution That Will Transform How We Live, Work, and Think*. Houghton Mifflin Harcourt, 2013.</small>
 
-## At the root of datafication: (personal) computer and networks
+## At the root of datafication: (personal) computer and networks  {data-background=img/bg/darpa_bg.png}
 
 - 1980s: rise of personal computing
 - 1990s: internet / web
 - 2000s: social media / platformization of the web (*i.e.* big data)
 - 2010s: AI (Machine/deep learning)
 
-## History and cognitive delegation
+## History and cognitive delegation  {data-background=img/bg/darpa_bg.png}
+
+<br />
 
 - Some historians seized those evolutions from the very beginning
 - Emergence of *Digital Humanities* and *Digital History* since the mid-2000s
 - Many projects that uses AI
 
 Ex:
+
 - [Trésor des Chartes](http://himanis.huma-num.fr/app//)
 - [Transkribus](https://readcoop.eu/transkribus/)
 
-## The difficult question of the historian's computing skills
-
-French case:
+## The difficult question of the historian's computing skills (French case)  {data-background=img/bg/darpa_bg.png}
 
 - End of the 1970s: French Medievists rise the question of teaching computing in History
 - 1986: Jean-Philippe Genet: Genet, Jean-Philippe. ‘[Histoire, Informatique, Mesure](https://doi.org/10.3406/hism.1986.904)’. Histoire & Mesure, 1(1), 1986.
@@ -56,35 +61,49 @@ French case:
 - 2011: Ruiz, Émilien, and Franziska Heimburger. ‘Faire de l’histoire à l’ère Numérique : Retours d’expériences’. Revue d’histoire Moderne et Contemporaine, n° 58-4bis.
 - 2019: dhiparis. ‘[Enseigner le numérique aux historien·ne·s – perspectives internationales #dhiha8](https://dhiha.hypotheses.org/2619)’. Digital Humanities à l’Institut historique allemand.
 
-##
+##  {data-background=img/bg/darpa_bg.png}
 
-(for non-French examples: Salmi, Hannu. What Is Digital History? 1st edition, Polity, 2020.)
+<br />
 
-# The rise of Digital History?
+for non-French examples:
 
-## The datafication of History
+- Salmi, Hannu. *What Is Digital History?*. Polity, 2020.
 
-### Mass digitization of primary (and secondary) sources + cheap computing + network:
+# The rise of Digital History?  {data-background=img/bg/friedrich_bg.png}
+
+<img src="img/friedrich.jpeg" width=400px style="border:none"></img>
+
+Historian looking at a see of data.
+
+## The datafication of History {data-background=img/bg/friedrich_bg.png}
+
+<br />
+
+### Mass digitization of primary (and secondary) sources + cheap computing + network
 
 - Transition from primary sources to dataset
 - The emergence of the big data of the past
 
-### Platformization of the web:
+<br />
 
-- The emergebce of new primary sources (ex: social media)
+### Platformization of the web
 
-## New challenges:
+- The emergence of new primary sources (ex: social media)
 
-### Preservation
+## New challenges: Preservation {data-background=img/bg/friedrich_bg.png}
+
+<br />
 
 - Rosenzweig, Roy. ‘[Scarcity or Abundance? Preserving the Past in a Digital Era](https://doi.org/10.1086/529596)’. The American Historical Review, 108(3), June 2003.)
 
-### [Democratization of history?](http://archive.boston.com/bostonglobe/ideas/articles/2008/05/25/everyones_a_historian_now/)
+## New challenges: the [Democratization of history?](http://archive.boston.com/bostonglobe/ideas/articles/2008/05/25/everyones_a_historian_now/) {data-background=img/bg/friedrich_bg.png}
 
-- Democratization through Accessibility
+<br />
+
+- Democratization through accessibility
 - No democratization of methodology
 
-## Revisiting old primary sources through digitization
+## Revisiting old primary sources through digitization {data-background=img/bg/friedrich_bg.png}
 
 ### The case of digitized Newspapers
 
@@ -93,50 +112,75 @@ French case:
 - Numerous projects based on digitised newspapers (= form of datafication)
   - Oceanic Exchanges, Numapress, Impresso...
   
-## The Impresso Project
-
-- Swiss project (EPFL, Université de Lausanne, University of Zürich) with Luxemburgish partnership (C<sup><small>2</sup></small>DH)
-
-- Bunout, Estelle, et al., eds. *Digitised Newspapers – A New Eldorado for Historians? Tools, Methodology, Epistemology, and the Changing Practices of Writing History in the Context of Historical Newspapers Mass Digitization*. De Gruyter Oldenbourg, 2022.
+## The Impresso Project {data-background=img/bg/impresso_bg.png}
 
 
-## Taking into account the datafication phenomenon
+Swiss project (EPFL, Université de Lausanne, University of Zürich) with Luxemburgish partnership (C<sup><small>2</sup></small>DH)
 
-![](img/impresso.jpg)
+<small>Bunout, Estelle, et al., eds. *Digitised Newspapers – A New Eldorado for Historians? Tools, Methodology, Epistemology, and the Changing Practices of Writing History in the Context of Historical Newspapers Mass Digitization*. De Gruyter Oldenbourg, 2022.</small>
 
-## Big data of the Past and the Big data flaws
 
-Boyd, Danah, and Kate Crawford. ‘[CRITICAL QUESTIONS FOR BIG DATA: Provocations for a Cultural, Technological, and Scholarly Phenomenon](https://doi.org/10.1080/1369118X.2012.678878)’. Information, Communication & Society, 15(5), 2012.
+## Taking into account the datafication phenomenon  {data-background=img/bg/impresso_bg.png}
 
-## Big data if the past and the lamp post effect
+<img src="img/impresso.jpg" width=750px style='border:none;'></img>
 
-<small>Claire Lemercier and Claire Zalc, *Quantitative Methods in the Humanities. An Introduction*, London: University of Virginia Press, 2019.</small>
+## Big data of the Past and the flaws of Big data {data-background=img/bg/friedrich_bg.png}
 
-- Milligan, Ian. ‘[Illusionary Order: Online Databases, Optical Character Recognition, and Canadian History, 1997-2010](https://doi.org/10.3138/chr.694)’. *Canadian Historical Review*, 94(4), 2013.
-- Putnam, Lara. ‘[The Transnational and the Text-Searchable: Digitized Sources and the Shadows They Cast](https://doi.org/10.1093/ahr/121.2.377)’. *The American Historical Review*, 121(2), 2016.
+<br />
+
+Big Data (of the past) is a social construct as all data.
+
+<br />
+
+<small>Boyd, Danah, and Kate Crawford. ‘[CRITICAL QUESTIONS FOR BIG DATA: Provocations for a Cultural, Technological, and Scholarly Phenomenon](https://doi.org/10.1080/1369118X.2012.678878)’. Information, Communication & Society, 15(5), 2012.</small>
+
+## Big data of the past and the lamp post effect
+
+<br />
+
+
+<small>- Claire Lemercier and Claire Zalc, *Quantitative Methods in the Humanities. An Introduction*, London: University of Virginia Press, 2019.</small>
+
+<small>- Milligan, Ian. ‘[Illusionary Order: Online Databases, Optical Character Recognition, and Canadian History, 1997-2010](https://doi.org/10.3138/chr.694)’. *Canadian Historical Review*, 94(4), 2013.</small>
+
+<small>- Putnam, Lara. ‘[The Transnational and the Text-Searchable: Digitized Sources and the Shadows They Cast](https://doi.org/10.1093/ahr/121.2.377)’. *The American Historical Review*, 121(2), 2016.</small>
+
+
+## Big data of the past and AI
+
+- AI today is mostly linked to machine learning / deep learning
+- learning => training
+- training => big data
+- if training datasets are biased, so is any AI-based system
 
 ## Exploring new sources: the example of social media
 
 - New Sources for future historians
 - Today's sources for historians (sociologists, linguists...) interested in the link between history and collective (cultural) memory
 
-Ex: #ww1: echoes of the Centenary of the Great War on Twitter
+## #ww1: echoes of the Centenary of the Great War on Twitter
+
+The question of distant reading.
 
 ## 
 
-![](img/ww1/figure01.png)
+<img src="img/ww1/figure01.png" width=750px style='border:none;'></img>
+
 
 ## 
 
-![](img/ww1/figure02.png)
+<img src="img/ww1/figure02.png" width=750px style='border:none;'></img>
+
 
 ##
 
-![](img/ww1/figure03a.png)
+<img src="img/ww1/figure03a.png" width=750px style='border:none;'></img>
+
 
 ## 
 
-![](img/ww1/figure03b.png)
+<img src="img/ww1/figure03b.png" width=750px style='border:none;'></img>
+
 
 ## Fragility
 
@@ -165,12 +209,25 @@ Most citizens are confronted to the (historical) past in a non-academic / second
 
 ## ...but to be updated
 
+- From close reading to distant reading to scalable reading
+- Critical assesment of primary sources
+
+<small>Haber, Peter. ‘[Digital Past: Geschichtswissenschaft im digitalen Zeitalter](https://doi.org/10.1515/9783486712339)’. Digital Past, Oldenbourg Wissenschaftsverlag, 2011</small>.
+
+<small>Clavert, Frédéric, and Andreas Fickers. ‘[On Pyramids, Prisms, and Scalable Reading](https://journalofdigitalhistory.org/en/article/jXupS3QAeNgb)’. Journal of Digital History, no. jdh001, 2021.</small>
+
+
 # Conclusion: we should be timelords
 
 ##
 
-![](img/Jean_Monnet_01.jpg)
+<img src="img/Jean_Monnet_01.jpg" width=700px style="border:none;"> </img>
 
 ## 
 
-![](img/Jean_Monnet_01_annotated.jpg)
+<img src="img/Jean_Monnet_01_annotated.jpg" width=700px style="border:none;"> </img>
+
+## Thank you!
+
+[Prez available online: https://inactinique.github.io/](https://inactinique.github.io/)
+
