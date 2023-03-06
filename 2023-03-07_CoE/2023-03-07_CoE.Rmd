@@ -19,7 +19,7 @@ The rise of computing, networks and data since 1945.
 
 - 1959 (dealing with too much data): François Furet and Adeline Daumard. ‘[Méthodes de l’Histoire sociale: les Archives notariales et la Mécanographie](http://www.persee.fr/web/revues/home/prescript/article/ahess_0395-2649_1959_num_14_4_2865)’. *Annales ESC*, 14(4).
 
-- 1961 (cross-referencing two datasets): Paul Garelli and Jean-Claude Gardin. ‘[Étude Par Ordinateurs Des Établissements Assyriens En Cappadoce]()http://www.persee.fr/web/revues/home/prescript/article/ahess_0395-2649_1961_num_16_5_420758?luceneQuery=%28%28%2B%28cappadoce%29+%2B%28ordinateurs%29%29+AND+%28+%2Baccess_right%3A%28free%29+%29%29+AND+%28indexable_type%3Aarticlepag%3F%29&words=cappadoce&words=ordinateurs&words=free&words=articlepag’. Annales ESC, 16(5).
+- 1961 (cross-referencing two datasets): Paul Garelli and Jean-Claude Gardin. ‘[Étude Par Ordinateurs Des Établissements Assyriens En Cappadoce](http://www.persee.fr/web/revues/home/prescript/article/ahess_0395-2649_1961_num_16_5_420758?luceneQuery=%28%28%2B%28cappadoce%29+%2B%28ordinateurs%29%29+AND+%28+%2Baccess_right%3A%28free%29+%29%29+AND+%28indexable_type%3Aarticlepag%3F%29&words=cappadoce&words=ordinateurs&words=free&words=articlepag)’. *Annales ESC*, 16(5).
 
 ## Datafication?
 
@@ -27,7 +27,7 @@ The rise of computing, networks and data since 1945.
 - The transformation of digitized (and born digital) material into data that can be computed and hence analysed
 - The ideology that those data can represent better the society (or the past) than analog (traditional) interpretations
 
-Mayer-Schönberger, Viktor, and Kenneth Cukier. *Big Data: A Revolution That Will Transform How We Live, Work, and Think*. Houghton Mifflin Harcourt, 2013.
+<small>Mayer-Schönberger, Viktor, and Kenneth Cukier. *Big Data: A Revolution That Will Transform How We Live, Work, and Think*. Houghton Mifflin Harcourt, 2013.</small>
 
 ## At the root of datafication: (personal) computer and networks
 
@@ -58,18 +58,119 @@ French case:
 
 ##
 
-(for non French examples: Salmi, Hannu. What Is Digital History? 1st edition, Polity, 2020.)
+(for non-French examples: Salmi, Hannu. What Is Digital History? 1st edition, Polity, 2020.)
 
 # The rise of Digital History?
 
 ## The datafication of History
 
-Mass digitization of primary (and secondary) sources + cheap computing + network:
+### Mass digitization of primary (and secondary) sources + cheap computing + network:
 
 - Transition from primary sources to dataset
 - The emergence of the big data of the past
 
-Platformization of the web: 
+### Platformization of the web:
 
+- The emergebce of new primary sources (ex: social media)
+
+## New challenges:
+
+### Preservation
+
+- Rosenzweig, Roy. ‘[Scarcity or Abundance? Preserving the Past in a Digital Era](https://doi.org/10.1086/529596)’. The American Historical Review, 108(3), June 2003.)
+
+### [Democratization of history?](http://archive.boston.com/bostonglobe/ideas/articles/2008/05/25/everyones_a_historian_now/)
+
+- Democratization through Accessibility
+- No democratization of methodology
 
 ## Revisiting old primary sources through digitization
+
+### The case of digitized Newspapers
+
+- Newspapers as the most digitized kind of primary sources
+- Renewal of media history
+- Numerous projects based on digitised newspapers (= form of datafication)
+  - Oceanic Exchanges, Numapress, Impresso...
+  
+## The Impresso Project
+
+- Swiss project (EPFL, Université de Lausanne, University of Zürich) with Luxemburgish partnership (C<sup><small>2</sup></small>DH)
+
+- Bunout, Estelle, et al., eds. *Digitised Newspapers – A New Eldorado for Historians? Tools, Methodology, Epistemology, and the Changing Practices of Writing History in the Context of Historical Newspapers Mass Digitization*. De Gruyter Oldenbourg, 2022.
+
+
+## Taking into account the datafication phenomenon
+
+![](img/impresso.jpg)
+
+## Big data of the Past and the Big data flaws
+
+Boyd, Danah, and Kate Crawford. ‘[CRITICAL QUESTIONS FOR BIG DATA: Provocations for a Cultural, Technological, and Scholarly Phenomenon](https://doi.org/10.1080/1369118X.2012.678878)’. Information, Communication & Society, 15(5), 2012.
+
+## Big data if the past and the lamp post effect
+
+<small>Claire Lemercier and Claire Zalc, *Quantitative Methods in the Humanities. An Introduction*, London: University of Virginia Press, 2019.</small>
+
+- Milligan, Ian. ‘[Illusionary Order: Online Databases, Optical Character Recognition, and Canadian History, 1997-2010](https://doi.org/10.3138/chr.694)’. *Canadian Historical Review*, 94(4), 2013.
+- Putnam, Lara. ‘[The Transnational and the Text-Searchable: Digitized Sources and the Shadows They Cast](https://doi.org/10.1093/ahr/121.2.377)’. *The American Historical Review*, 121(2), 2016.
+
+## Exploring new sources: the example of social media
+
+- New Sources for future historians
+- Today's sources for historians (sociologists, linguists...) interested in the link between history and collective (cultural) memory
+
+Ex: #ww1: echoes of the Centenary of the Great War on Twitter
+
+## 
+
+![](img/ww1/figure01.png)
+
+## 
+
+![](img/ww1/figure02.png)
+
+##
+
+![](img/ww1/figure03a.png)
+
+## 
+
+![](img/ww1/figure03b.png)
+
+## Fragility
+
+Well. Elon Musk.
+
+# How to teach history in the digital world?
+
+## The diversity of the echoes of the past
+
+Most citizens are confronted to the (historical) past in a non-academic / secondary education context.
+
+- The most striking example is video games
+
+## The non-existence of a digital native generation
+
+- There's no digital native generation
+- Maybe Facebook (or Snapchat, or Instagram, or Whatsapp, etc -- depending on places and time) native generation
+
+**We should not assume that our students are better fitted to the datafied world we are living in.**
+
+## basics are still valid...
+
+- The importance of primary sources
+- The importance of methodology
+- The importance of reading
+
+## ...but to be updated
+
+# Conclusion: we should be timelords
+
+##
+
+![](img/Jean_Monnet_01.jpg)
+
+## 
+
+![](img/Jean_Monnet_01_annotated.jpg)
