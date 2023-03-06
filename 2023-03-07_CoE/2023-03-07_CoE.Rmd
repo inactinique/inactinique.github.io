@@ -1,0 +1,43 @@
+---
+title: "History education in the digital age: a critical perspective"
+date: "7 March 2023"
+author: "Frédéric Clavert / C<sup><small>2</small></sup>DH, University of Luxembourg"
+output: revealjs::revealjs_presentation
+---
+
+# Who am I?
+
+international history / digital humanities / (digital) memory studies
+
+# Setting the scene: history in an era of networks, data and cognitive delegation
+
+History (and historians) within a precise social, political, technological context.
+
+## History, computing and datafication
+
+The rise of computing, networks and data since 1945.
+
+- 1959 (dealing with too much data): François Furet and Adeline Daumard. ‘[Méthodes de l’Histoire sociale: les Archives notariales et la Mécanographie](http://www.persee.fr/web/revues/home/prescript/article/ahess_0395-2649_1959_num_14_4_2865)’. *Annales ESC*, 14(4).
+
+- 1961 (cross-referencing two datasets): Paul Garelli and Jean-Claude Gardin. ‘[Étude Par Ordinateurs Des Établissements Assyriens En Cappadoce]()http://www.persee.fr/web/revues/home/prescript/article/ahess_0395-2649_1961_num_16_5_420758?luceneQuery=%28%28%2B%28cappadoce%29+%2B%28ordinateurs%29%29+AND+%28+%2Baccess_right%3A%28free%29+%29%29+AND+%28indexable_type%3Aarticlepag%3F%29&words=cappadoce&words=ordinateurs&words=free&words=articlepag’. Annales ESC, 16(5).
+
+## Datafication?
+
+- More than digitization
+- The transformation of digitized (and born digital) material into data that can be computed and hence analysed
+- The ideology that those data can represent better the society (or the past) than analog (traditional) interpretations
+
+Mayer-Schönberger, Viktor, and Kenneth Cukier. *Big Data: A Revolution That Will Transform How We Live, Work, and Think*. Houghton Mifflin Harcourt, 2013.
+
+## At the root of datafication: (personal) computer and networks
+
+- 1980s: rise of personal computing
+- 1990s: internet / web
+- 2000s: social media / platformization of the web (*i.e.* big data)
+- 2010s: AI (Machine/deep learning)
+
+## History and cognitive delegation
+
+- Some historians seized those evolutions from the very beginning
+
+# The difficult question of the historian's computing skills 

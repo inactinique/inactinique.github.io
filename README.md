@@ -9,6 +9,7 @@ Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>.
 ## Prez
 (date format: dd.mm.yyyy)
 
+- 07.03.2023 [History education in digital age: a critical perspective](2023-03-07_CoE/2023-03-07_CoE.html)
 - 01.02.2023 [ChatGPT: a pedagogical use case (HCI ChatGPT event)](2023-02-01_chatGPT_HCI/2023-02-01_chatGPT_HCI.html)
 - 09.01.2023 [Présentation à l’EHESS (CHR): pratiques numériques discrètes et goût de l’archive à l’ère numérique](https://slides.com/inactinique/gout-de-l-archive-et-pratiques-discretes)
 - 08.12.2022 [Controversies and commemorations: the extreme right and the 2016 commemoration of the battle of Verdun](2022-12-08_Verdun/2022-12-08_Verdun.html) 
