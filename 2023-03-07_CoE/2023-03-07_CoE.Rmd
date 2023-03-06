@@ -13,7 +13,7 @@ international history / digital humanities / (digital) memory studies
 
 History (and historians) within a precise social, political, technological context.
 
-## History, computing and datafication
+## History, computing and datafication: an old challenge
 
 The rise of computing, networks and data since 1945.
 
@@ -39,5 +39,37 @@ Mayer-Schönberger, Viktor, and Kenneth Cukier. *Big Data: A Revolution That Wil
 ## History and cognitive delegation
 
 - Some historians seized those evolutions from the very beginning
+- Emergence of *Digital Humanities* and *Digital History* since the mid-2000s
+- Many projects that uses AI
 
-# The difficult question of the historian's computing skills 
+Ex:
+- [Trésor des Chartes](http://himanis.huma-num.fr/app//)
+- [Transkribus](https://readcoop.eu/transkribus/)
+
+## The difficult question of the historian's computing skills
+
+French case:
+
+- End of the 1970s: French Medievists rise the question of teaching computing in History
+- 1986: Jean-Philippe Genet: Genet, Jean-Philippe. ‘[Histoire, Informatique, Mesure](https://doi.org/10.3406/hism.1986.904)’. Histoire & Mesure, 1(1), 1986.
+- 1993: Genet, Jean-Philippe. ‘La Formation Informatique Des Historiens En France: Une Urgence’. Mémoire Vive, no. 9.
+- 2011: Ruiz, Émilien, and Franziska Heimburger. ‘Faire de l’histoire à l’ère Numérique : Retours d’expériences’. Revue d’histoire Moderne et Contemporaine, n° 58-4bis.
+- 2019: dhiparis. ‘[Enseigner le numérique aux historien·ne·s – perspectives internationales #dhiha8](https://dhiha.hypotheses.org/2619)’. Digital Humanities à l’Institut historique allemand.
+
+##
+
+(for non French examples: Salmi, Hannu. What Is Digital History? 1st edition, Polity, 2020.)
+
+# The rise of Digital History?
+
+## The datafication of History
+
+Mass digitization of primary (and secondary) sources + cheap computing + network:
+
+- Transition from primary sources to dataset
+- The emergence of the big data of the past
+
+Platformization of the web: 
+
+
+## Revisiting old primary sources through digitization
