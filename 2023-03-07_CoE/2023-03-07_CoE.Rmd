@@ -1,7 +1,7 @@
 ---
 title: "History education in the digital age: a critical perspective"
 date: "7 March 2023"
-author: "Frédéric Clavert / C<sup><small>2</small></sup>DH, University of Luxembourg"
+author: "<br />Frédéric Clavert <br />C<small><sup>2</sup></small>DH, University of Luxembourg <br /> <small>frederic.clavert@uni.lu / @inactinique@mastodon.social</small>"
 output: revealjs::revealjs_presentation
 ---
 
