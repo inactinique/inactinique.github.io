@@ -13,11 +13,13 @@ digital humanities / digital history
 
 (digital) memory studies
 
-# Setting the scene: history in an era of networks, data and cognitive delegation {data-background=img/bg/clio_bg.png}
+# Setting the scene {data-background=img/bg/clio_bg.png}
 
-History (and historians) within a precise social, political, technological context.
+**history in an era of networks, data and cognitive delegation**
 
-## History, computing and datafication: an old challenge {data-background=img/bg/clio_bg.png}
+History as a discipline and historian evolve within a precise social, political, technological context.
+
+## History, computing and datafication:<br /> an old challenge {data-background=img/bg/clio_bg.png}
 
 The rise of computing, networks and data since 1945.
 
@@ -27,13 +29,17 @@ The rise of computing, networks and data since 1945.
 
 ## Datafication? {data-background=img/bg/darpa_bg.png}
 
+<br />
+
 - More than digitization
 - The transformation of digitized (and born digital) material into data that can be computed and hence analysed
 - The ideology that those data can represent better the society (or the past) than analog (traditional) interpretations
 
 <small>Mayer-Schönberger, Viktor, and Kenneth Cukier. *Big Data: A Revolution That Will Transform How We Live, Work, and Think*. Houghton Mifflin Harcourt, 2013.</small>
 
-## At the root of datafication: (personal) computer and networks  {data-background=img/bg/darpa_bg.png}
+## At the root of datafication: <br />(personal) computer and networks  {data-background=img/bg/darpa_bg.png}
+
+<br />
 
 - 1980s: rise of personal computing
 - 1990s: internet / web
@@ -67,7 +73,7 @@ Ex:
 
 for non-French examples:
 
-- Salmi, Hannu. *What Is Digital History?*. Polity, 2020.
+- Salmi, Hannu. *What Is Digital History?* Polity, 2020.
 
 # The rise of Digital History?  {data-background=img/bg/friedrich_bg.png}
 
@@ -79,7 +85,7 @@ Historian looking at a see of data.
 
 <br />
 
-### Mass digitization of primary (and secondary) sources + cheap computing + network
+### Mass digitization of primary (and secondary) sources + cheap computing + network 
 
 - Transition from primary sources to dataset
 - The emergence of the big data of the past
@@ -103,14 +109,23 @@ Historian looking at a see of data.
 - Democratization through accessibility
 - No democratization of methodology
 
-## Revisiting old primary sources through digitization {data-background=img/bg/friedrich_bg.png}
+## New challenges: reading {data-background=img/bg/friedrich_bg.png}
 
-### The case of digitized Newspapers
+<small>Moretti, Franco. Graphs, Maps, Trees: Abstract Models for Literary History. Verso, 2007.</small>
+
+Towards scalable reading.
+
+<small>Clavert, Frédéric, and Andreas Fickers. ‘[On Pyramids, Prisms, and Scalable Reading](https://journalofdigitalhistory.org/en/article/jXupS3QAeNgb)’. Journal of Digital History, no. jdh001, 2021.</small>
+
+
+# Revisiting old primary sources <br />through digitization {data-background=img/bg/friedrich_bg.png}
+
+**The case of digitized Newspapers**
 
 - Newspapers as the most digitized kind of primary sources
 - Renewal of media history
 - Numerous projects based on digitised newspapers (= form of datafication)
-  - Oceanic Exchanges, Numapress, Impresso...
+  - Oceanic Exchanges, Numapress, Impresso, NewsEye...
   
 ## The Impresso Project {data-background=img/bg/impresso_bg.png}
 
@@ -134,7 +149,7 @@ Big Data (of the past) is a social construct as all data.
 
 <small>Boyd, Danah, and Kate Crawford. ‘[CRITICAL QUESTIONS FOR BIG DATA: Provocations for a Cultural, Technological, and Scholarly Phenomenon](https://doi.org/10.1080/1369118X.2012.678878)’. Information, Communication & Society, 15(5), 2012.</small>
 
-## Big data of the past and the lamp post effect
+## Big data of the past and the lamp post effect {data-background=img/bg/friedrich_bg.png}
 
 <br />
 
@@ -146,21 +161,24 @@ Big Data (of the past) is a social construct as all data.
 <small>- Putnam, Lara. ‘[The Transnational and the Text-Searchable: Digitized Sources and the Shadows They Cast](https://doi.org/10.1093/ahr/121.2.377)’. *The American Historical Review*, 121(2), 2016.</small>
 
 
-## Big data of the past and AI
+## Big data of the past and AI {data-background=img/bg/friedrich_bg.png}
 
 - AI today is mostly linked to machine learning / deep learning
 - learning => training
 - training => big data
 - if training datasets are biased, so is any AI-based system
 
-## Exploring new sources: the example of social media
+# Exploring new sources: <br />the example of social media {data-background=img/bg/ww1_bg.png}
+
+<br />
 
 - New Sources for future historians
 - Today's sources for historians (sociologists, linguists...) interested in the link between history and collective (cultural) memory
 
-## #ww1: echoes of the Centenary of the Great War on Twitter
+## #ww1: echoes of the Centenary <br />of the Great War on Twitter {data-background=img/bg/ww1_bg.png}
 
-The question of distant reading.
+<br />
+
 
 ## 
 
@@ -182,42 +200,56 @@ The question of distant reading.
 <img src="img/ww1/figure03b.png" width=750px style='border:none;'></img>
 
 
-## Fragility
+## Fragility {data-background=img/bg/ww1_bg.png}
 
-Well. Elon Musk.
+<br />
 
-# How to teach history in the digital world?
+![](img/twitterdev.png)
 
-## The diversity of the echoes of the past
+# Discreet digital practices {data-background=img/bg/clio_bg.png}
 
-Most citizens are confronted to the (historical) past in a non-academic / secondary education context.
+<br />
+
+<small>Muller, Caroline, and Frédéric Clavert. ‘[De la poussière à la lumière bleue](https://doi.org/10.4000/signata.3136)’. *Signata. Annales des sémiotiques / Annals of Semiotics*, no. 12, 2021.</small>
+
+# How to teach history <br />in the digital world? {data-background=img/bg/clio_bg.png}
+
+**some non definitive remarks**
+
+## The diversity of the echoes of the past {data-background=img/bg/clio_bg.png}
+
+<br />
+
+Most citizens' encounters with the (historical) past happen in a non-academic / non-secondary-education context.
 
 - The most striking example is video games
 
-## The non-existence of a digital native generation
+## The myth of digital natives {data-background=img/bg/clio_bg.png}
 
-- There's no digital native generation
-- Maybe Facebook (or Snapchat, or Instagram, or Whatsapp, etc -- depending on places and time) native generation
+- There's no digital natives
+- Facebook (or Snapchat, or Instagram, or Whatsapp, etc -- depending on places and time) natives
 
 **We should not assume that our students are better fitted to the datafied world we are living in.**
 
-## basics are still valid...
+## basics are still valid... {data-background=img/bg/clio_bg.png}
 
-- The importance of primary sources
+- The importance of primary sources and their critical appraisal
 - The importance of methodology
 - The importance of reading
 
-## ...but to be updated
-
-- From close reading to distant reading to scalable reading
-- Critical assesment of primary sources
+...but are to be updated
 
 <small>Haber, Peter. ‘[Digital Past: Geschichtswissenschaft im digitalen Zeitalter](https://doi.org/10.1515/9783486712339)’. Digital Past, Oldenbourg Wissenschaftsverlag, 2011</small>.
 
-<small>Clavert, Frédéric, and Andreas Fickers. ‘[On Pyramids, Prisms, and Scalable Reading](https://journalofdigitalhistory.org/en/article/jXupS3QAeNgb)’. Journal of Digital History, no. jdh001, 2021.</small>
 
 
-# Conclusion: we should be timelords
+# Conclusion {data-background=img/bg/clio_bg.png}
+
+<br />
+
+**we should be timelords**
+
+but we are not.
 
 ##
 
@@ -227,7 +259,7 @@ Most citizens are confronted to the (historical) past in a non-academic / second
 
 <img src="img/Jean_Monnet_01_annotated.jpg" width=700px style="border:none;"> </img>
 
-## Thank you!
+## Thank you! {data-background=img/bg/clio_bg.png}
 
 [Prez available online: https://inactinique.github.io/](https://inactinique.github.io/)
 
