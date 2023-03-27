@@ -1,0 +1,20 @@
+---
+author: 'Frédéric Clavert'
+title: 'Une mémoire collective à haute fréquence ? Propositions méthodologiques et critiques pour l’étude des échos de mémoire collective sur les réseaux sociaux numériques'
+date: '3 avril 2023. Premier colloque des étudiants du CRIHN: "la mémoire en humanités numériques". <br />Frédéric Clavert, C<sup><small>2</small></sup>DH, Université du Luxembourg. frederic.clavert@uni.lu'
+output:
+  revealjs::revealjs_presentation:
+    center: true
+    reveal_options:
+      slideNumber: true
+      width: 1280
+      height: 720
+---
+
+# Abstract
+
+En mai 2016, un site web français d’extrême-droite conteste l’organisation d’un concert du rappeur BlackM dans le cadre de la commémoration du Centenaire de la bataille de Verdun. Début d’une controverse qui ne s’est achevée qu’au lendemain de cette commémoration qui fut l’un des points d’orgue du Centenaire de la Grande Guerre en France, cet événement est exemplaire de la manière dont les réseaux sociaux numériques ont modifié les modes de circulation de l’information et donc, également, les modes d’interaction les échos en ligne du passé historique.
+
+À partir de l'exemple du Centenaire de la Grande Guerre mais aussi de celui de la crise sanitaire et de ses commémorations confinées au printemps 2020, cette intervention propose d'évaluer les usages possibles des outils numériques pour l'étude des mémoires collectives à l'ère numérique. Comment (ne plus) constituer un corpus de tweets ? Quelles méthodes choisir ? Quels types d’analyse effectuer ?
+
+L’intervention développera en outre une double réflexion : la première portera sur un cadre théorique, celui de la mémétique mis en avant par Dominique Boullier, et que j’ai utilisé pour ces travaux d’une part ; la seconde autour d’un triptyque bricolage / braconnage / sabotage que j’utilise pour caractériser mes usages des outils numériques.
