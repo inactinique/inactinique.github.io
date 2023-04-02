@@ -2,18 +2,18 @@
 title: ‘Quels possibles européens? <br />Introduction au séminaire EHI’
 author: ‘Frédéric Clavert’
 date: ‘27 février 2018’
-output: reveal_js
+output: revealjs::revealjs_presentation
 ---
 
 # Sur le séminaire
 
 - Trouver ce qui nous rassemble
-	-  Préciser les points communs
-- Créer un espace d'émulation, de réflexion entre nous (mais ouvert)</p>
-- Pratiquer la <em>disputatio</em></p>
-		- Remettre en cause nos pratiques
-		- Tenter de sortir des chemins que nous suivons régulièrement
-		- S'accorder le droit à l'erreur
+- Préciser les points communs
+- Créer un espace d'émulation, de réflexion entre nous (mais ouvert) 
+- Pratiquer la <em>disputatio</em> 
+	- Remettre en cause nos pratiques
+	- Tenter de sortir des chemins que nous suivons régulièrement
+	- S'accorder le droit à l'erreur
 
 ## Contexte
 
@@ -26,17 +26,17 @@ output: reveal_js
 ## Forum Z d'octobre
 
 
-	- l'Europe n'est pas un objet comme les autres pour les historiens européens,
-	- l'Europe, sujet constant d'inquiétude,
-	- Question des marges, des autres Europes / des autres Européens
+- l'Europe n'est pas un objet comme les autres pour les historiens européens,
+- l'Europe, sujet constant d'inquiétude,
+- Question des marges, des autres Europes / des autres Européens
 
 # Introduction
 
 ## Expérimentation
 
-	- Tester les limites d'une démarche</p>
-	- Donner le ton plutôt qu'une introduction générale au séminaire</p>
-	- Correspond aussi à une réflexion pour un enseignement</p>
+- Tester les limites d'une démarche 
+- Donner le ton plutôt qu'une introduction générale au séminaire 
+- Correspond aussi à une réflexion pour un enseignement 
 
 ## Une histoire des possibles?
 
@@ -50,13 +50,13 @@ En pensant ce qui aurait pu advenir, repenser notre rapport aux causalités (don
 
 ## Histoire de l'intégration européenne
 
-	- Narration souvent assez déterministe	
-		- Chez les historiens pro-européens
-		- Chez les historiens sceptiques ou "anti"
-	- La causalité est peu pensée
-		- Europe = paix	
-	- Histoire contrefactuelle pour repenser un peu l'histoire de l'intégration européenne
-		- Peut être aussi intéressante pour l'histoire des résistances à l'Europe
+- Narration souvent assez déterministe	
+	- Chez les historiens pro-européens
+	- Chez les historiens sceptiques ou "anti"
+- La causalité est peu pensée
+	- Europe = paix	
+- Histoire contrefactuelle pour repenser un peu l'histoire de l'intégration européenne
+	- Peut être aussi intéressante pour l'histoire des résistances à l'Europe
 
 # Uchronies européennes
 
@@ -68,32 +68,32 @@ En pensant ce qui aurait pu advenir, repenser notre rapport aux causalités (don
 <small><em>Nouvelle: Conflit évitable.</em> Publié  en juin 1950, année du discours de l'Horloge.</small>
 
 ##
-	- <em>Conflit évitable </em>commence par un long passage sur l'Europe et la guerre, depuis l'époque moderne, l'arrivée de l'ère atomique puis de l'ère positronique (<em>ie </em>l'ère de l'IA)
-	- L'Europe est décrit comme une zone dépendant d'une autre (le "nord" <em>ie </em>ex-URSS et Amérique du Nord)
-	- Plus aucun dynamisme, démographie en perte de vitesse
+- <em>Conflit évitable </em>commence par un long passage sur l'Europe et la guerre, depuis l'époque moderne, l'arrivée de l'ère atomique puis de l'ère positronique (<em>ie </em>l'ère de l'IA)
+- L'Europe est décrit comme une zone dépendant d'une autre (le "nord" <em>ie </em>ex-URSS et Amérique du Nord)
+- Plus aucun dynamisme, démographie en perte de vitesse
 
-	- Asimov évacue la Guerre froide par la technologie, mais en garde une conséquence: une sorte d'Europe annexée, affaiblie, épuisée qu'est effectivement l'Europe au sortir de la Seconde Guerre mondiale
-	- Ne prend pas en compte les tous débuts de l'unité européenne (Conseil de l'Europe)
+- Asimov évacue la Guerre froide par la technologie, mais en garde une conséquence: une sorte d'Europe annexée, affaiblie, épuisée qu'est effectivement l'Europe au sortir de la Seconde Guerre mondiale
+- Ne prend pas en compte les tous débuts de l'unité européenne (Conseil de l'Europe)
 
 
 ## La guerre et l'Europe
 
-	- Vision classique de l'Europe
+- Vision classique de l'Europe
 	
-		- Norbert Elias (ère médiévale et moderne) et <em>La dynamique de l'Occident</em>
+	- Norbert Elias (ère médiévale et moderne) et <em>La dynamique de l'Occident</em>
 
-		- Philip T. Hoffman, <em>Why Did Europe Conquer the World?</em>, Princeton, Princeton University Press, 2015.
+	- Philip T. Hoffman, <em>Why Did Europe Conquer the World?</em>, Princeton, Princeton University Press, 2015.
 	
 	
-	- Vision aussi des "Pères fondateurs"
+- Vision aussi des "Pères fondateurs"
 	
-		- Paix et unité de l'Europe (dès Kant)
+	- Paix et unité de l'Europe (dès Kant)
 	
 	
-	- Asimov développe cependant une vision pessimiste (pour l'Europe)
+- Asimov développe cependant une vision pessimiste (pour l'Europe)
 	
-		- Vision pessimiste originale: déclin de l'Europe pour son bien et le bien de l'Humanité
-		- Diffère du pessimisme d'un Paul Valéry dans <em>La crise de l'Esprit</em>
+	- Vision pessimiste originale: déclin de l'Europe pour son bien et le bien de l'Humanité
+	- Diffère du pessimisme d'un Paul Valéry dans <em>La crise de l'Esprit</em>
 
 	
 
@@ -101,100 +101,100 @@ En pensant ce qui aurait pu advenir, repenser notre rapport aux causalités (don
 
 (Paul Valéry, phrase introductive de <em>La crise de l'esprit</em>)
 
-<p>Pourquoi ni Valéry, ni Asimov n'ont eu raison? (Ont-ils eu tort?)</p>
+<p>Pourquoi ni Valéry, ni Asimov n'ont eu raison? (Ont-ils eu tort?) 
 
 ##
 
-	- Questionner les moments d'incertitude du passé européen
-	- Moments d'incertitude: plusieurs possibles européens se croisent
+- Questionner les moments d'incertitude du passé européen
+- Moments d'incertitude: plusieurs possibles européens se croisent
 
 # Les possibles de l'entre-deux-guerres
 
 ## Entre-deux-guerres
 
-	- Déterminisme ressenti dès 1918-1919
+- Déterminisme ressenti dès 1918-1919
 	
-		- Paul Valéry, John Maynard Keynes, Jacques Bainville dans les années 1920, Jean Giraudoux (<em>La guerre de Troie n'aura pas lieu</em>) en 1935
-		- Perception de l'inévitabilité d'une nouvelle guerre
-		- Auto-réalisation des croyances?
+	- Paul Valéry, John Maynard Keynes, Jacques Bainville dans les années 1920, Jean Giraudoux (<em>La guerre de Troie n'aura pas lieu</em>) en 1935
+	- Perception de l'inévitabilité d'une nouvelle guerre
+	- Auto-réalisation des croyances?
 	
 	
-	- Ressenti des populations de l'époque est-il justifié?
+- Ressenti des populations de l'époque est-il justifié?
 	
-		- Traité de Versailles (et autres traités d'Île-de-France) négocié dans cette perspective
-		- Pourtant, Traité de Sèvres (1920) et son remplacement par le traité de Lausanne (1923), dès le départ, montre qu'il n'y avait pas de déterminisme
+	- Traité de Versailles (et autres traités d'Île-de-France) négocié dans cette perspective
+	- Pourtant, Traité de Sèvres (1920) et son remplacement par le traité de Lausanne (1923), dès le départ, montre qu'il n'y avait pas de déterminisme
 	
 	
 ## L'exemple de la politique extérieure française
 
-	- La politique extérieure française des années 1920 peut être décrite
+- La politique extérieure française des années 1920 peut être décrite
 	
-		- comme une mise en concurrence de plusieurs possibles européens,
-		- portés par des groupes politiques différents,
-		- Évolutions par le croisement
+	- comme une mise en concurrence de plusieurs possibles européens,
+	- portés par des groupes politiques différents,
+	- Évolutions par le croisement
 		
-			- de la politique intérieure française (majorités parlementaires),
-			- des évolutions économiques et monétaires ("Je fais la politique de notre natalité"),
-			- des relations extérieures
+		- de la politique intérieure française (majorités parlementaires),
+		- des évolutions économiques et monétaires ("Je fais la politique de notre natalité"),
+		- des relations extérieures
 		
 		
 	
 	
-	- L'exemple le plus criant: Aristide Briand
+- L'exemple le plus criant: Aristide Briand
 	
-		- Pour une application ferme des traités
-		- Évolution dans les mois qui précèdent la conférence de Cannes (janvier 1922) puis Coup de Cannes
-		- Retour en 1925
+	- Pour une application ferme des traités
+	- Évolution dans les mois qui précèdent la conférence de Cannes (janvier 1922) puis Coup de Cannes
+	- Retour en 1925
 	
 	
 
 ## L'exemple des relations franco-allemandes
 
 
-	- 1930: changement de génération
+- 1930: changement de génération
 	
-		- Tardieu / Brünning / Curtius vs Stresemann (décédé en 1929) ou Briand
-		- Pas d'abandon immédiat du rapprochement franco-allemand
-		- Un lent renoncement au rapprochement franco-allemand
-		- Plusieurs possibles s'expriment alors, en Allemagne, en France
-	
-	
-	- Allemagne et France bloquent aussi d'autres Europes, plus marginales au sens non issues des Grandes Puissances
-	
-		- La Belgique et les négociations autour de la trêve douanière (où l'on retrouve des idées évoquées auparavant, y compris au Luxembourg chez Emile Mayrisch)
-		- La Pologne et les projets d'Union agricole à l'Est
+	- Tardieu / Brünning / Curtius vs Stresemann (décédé en 1929) ou Briand
+	- Pas d'abandon immédiat du rapprochement franco-allemand
+	- Un lent renoncement au rapprochement franco-allemand
+	- Plusieurs possibles s'expriment alors, en Allemagne, en France
 	
 	
-	- Les possibles Européens exprimés dans une littérature foisonnante (au-delà de Coudenhove-Kalergi) sont nombreux
+- Allemagne et France bloquent aussi d'autres Europes, plus marginales au sens non issues des Grandes Puissances
+	
+	- La Belgique et les négociations autour de la trêve douanière (où l'on retrouve des idées évoquées auparavant, y compris au Luxembourg chez Emile Mayrisch)
+	- La Pologne et les projets d'Union agricole à l'Est
+	
+	
+- Les possibles Européens exprimés dans une littérature foisonnante (au-delà de Coudenhove-Kalergi) sont nombreux
 
 
 1930-1933
 
 ## La mission van Zeeland
 
-	- 1936: Allemagne nazie / France du Front populaire
+- 1936: Allemagne nazie / France du Front populaire
 	
-		- Allemagne conservatrice éliminée du pouvoir par étape
-		- France du Front populaire comme voie de déviation pour tenter de se maintenir au pouvoir chez certains conservateurs (Schacht)
-	
-	
-	- Difficulté d'un dialogue européen
-	
-		- Nécessaire: les États-Unis renvoient tout le monde dos-à-dos
-		- Tentatives de faire intervenir Roosevelt échouent
+	- Allemagne conservatrice éliminée du pouvoir par étape
+	- France du Front populaire comme voie de déviation pour tenter de se maintenir au pouvoir chez certains conservateurs (Schacht)
 	
 	
-	- D'où tentative de discussions économiques et monétaires
+- Difficulté d'un dialogue européen
 	
-		- Peuvent être interprétées comme une investigation des possibles Européens
-	
-	
-	- L'exemple le plus parlant est la mission van Zeeland (1937-1938)
-	
-		- Peut-être que le plus net résultat de cette mission est de montrer qu'il n'y plus alors de possible européen, mais uniquement un affrontement de possibles nationaux
+	- Nécessaire: les États-Unis renvoient tout le monde dos-à-dos
+	- Tentatives de faire intervenir Roosevelt échouent
 	
 	
-<p>1937-1938</p>
+- D'où tentative de discussions économiques et monétaires
+	
+	- Peuvent être interprétées comme une investigation des possibles Européens
+	
+	
+- L'exemple le plus parlant est la mission van Zeeland (1937-1938)
+	
+	- Peut-être que le plus net résultat de cette mission est de montrer qu'il n'y plus alors de possible européen, mais uniquement un affrontement de possibles nationaux
+	
+	
+<p>1937-1938 
 
 ## La guerre éluctable?
 
@@ -202,69 +202,69 @@ En pensant ce qui aurait pu advenir, repenser notre rapport aux causalités (don
 
 ## Deux après-guerres différents
 
-	- Pourquoi ce qui n'a pas été possible dans l'entre-deux-guerres l'a été après 1945?
+- Pourquoi ce qui n'a pas été possible dans l'entre-deux-guerres l'a été après 1945?
 
 
 ## Le plan Schuman, une solution parmi d'autres?
 
-	- Discours de l'Horloge vient finalement contrecarrer des visions négatives de l'Europe (9 mai 1950)
+- Discours de l'Horloge vient finalement contrecarrer des visions négatives de l'Europe (9 mai 1950)
 	
-		- Il est empli de possibles non réalisés (Eurafrique)
-		- Est le résultat d'un échec français (cf. Martial Libera) et d'un hasard
-		- Trajectoire de Schuman similaire à celle de Briand au début des années 1920
-	
-	
-	- D'autres voies auraient été possibles
-	
-		- Isolement diplomatique de la France
-		- L'abandon de Berlin-Est, etc.
+	- Il est empli de possibles non réalisés (Eurafrique)
+	- Est le résultat d'un échec français (cf. Martial Libera) et d'un hasard
+	- Trajectoire de Schuman similaire à celle de Briand au début des années 1920
 	
 	
-	- Pourquoi une telle réussite du plan Schuman?
+- D'autres voies auraient été possibles
+	
+	- Isolement diplomatique de la France
+	- L'abandon de Berlin-Est, etc.
+	
+	
+- Pourquoi une telle réussite du plan Schuman?
 	
 
 ## Le plan Pleven et l'échec de la CED
 
-	- Raisons de l'échec de la CED sont bien connues
+- Raisons de l'échec de la CED sont bien connues
 	
-		- Sujet plus sensible que le charbon et l'acier
-		- Pression fluctuante des États-Unis et du Royaume-Uni
-		- Contexte international changeant (fin de la guerre de Corée, Mort de Staline)
+	- Sujet plus sensible que le charbon et l'acier
+	- Pression fluctuante des États-Unis et du Royaume-Uni
+	- Contexte international changeant (fin de la guerre de Corée, Mort de Staline)
 	
 	
-	- Ces raisons rendent l'échec de la CED d'autant plus intéressant au regard de la réussite du plan Schuman et plus tard de la CEE
+- Ces raisons rendent l'échec de la CED d'autant plus intéressant au regard de la réussite du plan Schuman et plus tard de la CEE
 	
-		- Le rôle de la contingence dans le choix entre plusieurs possibles européens
+	- Le rôle de la contingence dans le choix entre plusieurs possibles européens
 	
 ## Sauvegarde de l'État Nation?
 
-<p>Intégration européenne comme moyen pour les États-Nations de survivre après deux guerres mondiales</p>
+<p>Intégration européenne comme moyen pour les États-Nations de survivre après deux guerres mondiales 
 
-<p>Intégration européenne comme moyen de se prémunir contre un retour allemand</p>
+<p>Intégration européenne comme moyen de se prémunir contre un retour allemand 
 
-<p>Explique attitude ambivalente du Royaume-Uni.</p>
+<p>Explique attitude ambivalente du Royaume-Uni. 
 
 
 
 ## Des explications concurrentes
 
 
-	- Elles correspondent à des interprétations des possibles européens
-	- Alan Milward: pas de fédéralisme, confédération à la rigueur, les Etats restent souverains
-	- Historiographie alors plus classique: réponse aux guerres, l'Europe de la paix (aussi celle des "Pères fondateurs")
+- Elles correspondent à des interprétations des possibles européens
+- Alan Milward: pas de fédéralisme, confédération à la rigueur, les Etats restent souverains
+- Historiographie alors plus classique: réponse aux guerres, l'Europe de la paix (aussi celle des "Pères fondateurs")
 
 # Conclusion
 
 ## Réflexion en termes de "possibles"
 
-	- Rôle de la contingence, de l'accident
+- Rôle de la contingence, de l'accident
 	
-		- Rôle des phénomènes de long terme
-		- Équilibre entre les deux	
+	- Rôle des phénomènes de long terme
+	- Équilibre entre les deux	
 	
-	- Nous souhaitons "partir du présent": réflexion en termes de possibles permet aussi d'éviter le présentisme au sens du présent comme finalité, résultat d'un déterminisme.
+- Nous souhaitons "partir du présent": réflexion en termes de possibles permet aussi d'éviter le présentisme au sens du présent comme finalité, résultat d'un déterminisme.
 
 ## Prochaine séance
-	- Valérie, 13 mars (14h)
+- Valérie, 13 mars (14h)
 
 

@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Frédéric Clavert,  C2DH, Université du Luxembourg. frederic.clavert@uni.lu" />
+  <title>Une mémoire collective à haute fréquence ? Propositions méthodologiques et critiques pour l’étude des échos de mémoire collective sur les réseaux sociaux numériques</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="2023-04-03_CEHNUM_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="2023-04-03_CEHNUM_files/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <script src="2023-04-03_CEHNUM_files/header-attrs-2.20/header-attrs.js"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Une mémoire collective à haute fréquence
+?<br /><small>Propositions méthodologiques et critiques pour l’étude des
+échos de mémoire collective sur les réseaux sociaux
+numériques</small></h1>
+    <h2 class="author"><small>Frédéric Clavert,
+<br />C<sup><small>2</small></sup>DH, Université du Luxembourg. <a
+href="mailto:frederic.clavert@uni.lu">frederic.clavert@uni.lu</a></small></h2>
+    <h3 class="date"><small>3/4/2023. Colloque des étudiants du CRIHN:
+« la mémoire en humanités numériques »</small></h3>
+</section>
+
+<section id="section" class="title-slide slide level1"
+data-background="../img/background01.jpg">
+<h1 data-background="../img/background01.jpg"></h1>
+<p>histoire des relations internationales / histoire numérique /
+<em>memory studies</em></p>
+<p>#ww1 / #covid19fr / awac2</p>
+<aside class="notes">
+À partir de l’exemple du Centenaire de la Grande Guerre mais aussi de
+celui de la crise sanitaire et de ses commémorations confinées au
+printemps 2020, cette intervention propose d’évaluer les usages
+possibles des outils numériques pour l’étude des mémoires collectives à
+l’ère numérique. Comment (ne plus) constituer un corpus de tweets ?
+Quelles méthodes choisir ? Quels types d’analyse effectuer ?
+</aside>
+</section>
+
+<section>
+<section id="introduction-verdun100" class="title-slide slide level1"
+data-background="../img/CentenaireVerdun_bg.png">
+<h1 data-background="../img/CentenaireVerdun_bg.png">Introduction:
+#Verdun100</h1>
+<p><img src="../img/CentenaireVerdun.jpg" style="border:none;"></p>
+<aside class="notes">
+<p>En mai 2016, un site web français d’extrême-droite conteste
+l’organisation d’un concert du rappeur BlackM dans le cadre de la
+commémoration du Centenaire de la bataille de Verdun. L’extrême droite
+estimait que BlackM était trop critique de la France. Le jour même de la
+commémoration, sa mise en scène a choqué – non les personnes sur place à
+l’ossuaire de Douaumont, mais celles qui sur Twitter commente ce qu’ils
+voient à la télévsiion (ou se contentent de retweeter). Cette mise en
+scène impliquait que de jeunes français et allemands – celles et ceux
+pous qui le concert de BlackM, en remerciement, aurait dû être organisé
+– courent au travers des tombes du cimetière militaire devant
+l’ossuaire. Vêtus d’habits vifs, ils devaient symboliser ce qu’ont perdu
+France et Allemagne à Verdun: une grande partie de leur jeunesse. Cette
+mise en scène a été vue par beaucoup comme une forme de profanation. Une
+double controverse, donc: un concert de rap et une mise en scène.</p>
+Mais ces deux controverses ont largement été amplifiées par le système
+médiatique tel qu’on le connaît aujourd’hui, où réseaux sociaux
+numériques peuent ‘donner le ton’ mais en interaction avec la presse,
+papier ou en ligne si cette distinction a encore du sens, la radio ou
+évidemment la télévision. Il y a cependant, dans cette interaction, une
+spécificité des réseaux sociaux numériques et, particulièrement dans
+notre cas, Twitter: la circulation de l’information à haute fréquence.
+</aside>
+</section>
+<section id="mémoire-et-commémoration-à-haute-fréquence"
+class="slide level2" data-background="../img/CentenaireVerdun_bg.png">
+<h2 data-background="../img/CentenaireVerdun_bg.png">Mémoire et
+commémoration à haute fréquence</h2>
+<p><br /></p>
+<ul>
+<li>Twitter comme espace de circulation de l’information à haute
+fréquence (retweet, mention, quote, etc)</li>
+<li>Soubresauts de cette haute fréquence: ‘vibrations’;</li>
+</ul>
+<p><br /></p>
+<p>→ mémoire collective comme interaction (résultant de liens sociaux)
+entre stock et circulation d’informations : la haute fréquence ne peut
+qu’avoir des conséquences sur la mémoire collective et sur les modes de
+commémoration.</p>
+<p><small> <span class="citation"
+data-cites="halbwachsCadresSociauxMemoire1994">Halbwachs ([1925]
+1994)</span> / <span class="citation"
+data-cites="boullierBigDataChallenges2016">Boullier (2016)</span> (EN) /
+<span class="citation"
+data-cites="boullierSciencesSocialesFace2015">Boullier (2015)</span>
+(FR). </small></p>
+<aside class="notes">
+<p>Dans ses travaux comme dans l’entretien qu’il avait donné au
+<em>Temps des Médias</em>, Domminique Boullier décrit les réseaux
+sociaux numériques comme des espaces de circulation de l’information à
+haute fréquence (il parle de rhyzome, suivant en cela des trvaux de
+Gabriel Tarde). Le terme ‘haute fréquence’ marque ici un parallèle
+implicite avec la finance à haute fréquence, c’est-à-dire des
+transactions automatisées au niveau de la milli si ce n’est de la
+microseconde. Dans le cas de Twitter et plus généralement des réseaux
+sociaux numériques, c’est la question de la propagation – parfois
+mémétique – de l’information qui est à haute fréquence. L’information se
+diffuse nettement plus vite. Cela a des avantages en termes de
+recherche: on peut se situer, avec Twitter par exemple, au niveau de la
+seconde comme, avec certains types d’analyse, l’on peut aussi se situer
+sur des échelles temporelles plus globales.</p>
+<p>Cette cirulation de l’information a haute fréquence a – d’une
+certaine manière comme la finance à haute fréquence et ses krachs
+instantanés – des soubresauts, que Dominique Boullier a appelé – je
+crois que c’est le terme anglais d’ailleurs – des vibrations. Des
+moments courts, très brefs, très intenses, de circulation de
+l’information.</p>
+<p>Les deux controverses de Verdun sont de telles vibrations, sur un
+modèle différent (le web =&gt; Twitter =&gt; les médias plus
+traditionnels en ligne =&gt; retour à Twitter pur la première ;
+interaction TV / Twitter pour la seconde, puis reprise dans des médias
+plus traditionnels). La circulation de l’information à haute fréquence a
+ici eu une claire conséquence, deux controverses, donc.</p>
+</aside>
+</section>
+<section id="comment-étudier-la-mémoire-collective-à-haute-fréquence"
+class="slide level2" data-background="../img/CentenaireVerdun_bg.png">
+<h2 data-background="../img/CentenaireVerdun_bg.png">Comment étudier la
+mémoire collective <br /> « à haute fréquence »?</h2>
+<ul>
+<li>proposition méthodologique au croisement de plusieurs éléments:
+<ul>
+<li>les propagations,</li>
+<li><em>big data</em> (données massives + induction),</li>
+<li><em>scalable reading</em></li>
+</ul></li>
+<li>et de quelques garde-fous:
+<ul>
+<li>le lien avec la source primaire</li>
+<li>le lien « avec le réel » c’est-à-dire ne pas perdre de vue les liens
+« in real life » / « on line » (<em>onlife</em>)</li>
+</ul></li>
+</ul>
+<p><small> <span class="citation"
+data-cites="boullierPropagationsNouveauParadigme2023">Boullier
+(2023)</span> / <span class="citation"
+data-cites="clavertPyramidsPrismsScalable2021">Clavert and Fickers
+(2021)</span> / <span class="citation"
+data-cites="floridiFourthRevolutionHow2014">Floridi (2014)</span>
+</small></p>
+<aside class="notes">
+<p>Cette longue introduction me sert surtout à poser la question
+méthodologique, aujourd’hui. Je vais exposer mes méthodes et insister
+sur plusieurs points:</p>
+<ul>
+<li>Le départ de ma démarche est clairement liée à ce que l’on a appelé,
+il y a 5 ou 6 vagues de hype, le <em>big data</em>. Big data, du moins,
+du point de vue de l’historien:
+<ul>
+<li>données massives,</li>
+<li>mais aussi une démarche plus inductive qu’habituellement – la
+démarche de l’historien.ne est souvent inductive, mais ici ce trait est
+amplifié.</li>
+<li>Cette tendance à l’induction est assez fortement liée à la manière
+dont j’ai mené ce projet de recherche sur les échos du Centenaire de la
+Grande Guerre.</li>
+</ul></li>
+<li>Qui dit données massives dit lecture distante (<span
+class="citation" data-cites="morettiDistantReading2013">Moretti
+(2013)</span>) et ses limites d’ailleurs</li>
+<li>Mais l’une des conclusions de mes deux projets de recherche (#ww1 et
+#covid19fr) c’est que l’on ne peut se passer d’une part d’une lecture
+proche – toute dimension numérique doit permettre de garder contact avec
+nos sources primaires – d’une part, mais également du lien entre mémoire
+collective telle qu’elle s’exprime sur les réseaux sociaux numériques et
+mémoire collective en dehors du numérique.</li>
+</ul>
+</aside>
+</section></section>
+<section>
+<section id="de-ww1-à-covid19fr" class="title-slide slide level1"
+data-background="../img/background03.jpg">
+<h1 data-background="../img/background03.jpg">De #ww1 à #covid19fr</h1>
+<aside class="notes">
+<p>Je vais ici employer deux exemples: - les échos du Centenaire de la
+Grande Guerre sur Twitter - commémorer la fin de la Seconde Guerre
+mondiale en période de confinement</p>
+<p>La seconde recherche a été menée avec notre collègue Deborah
+Paci.</p>
+</aside>
+</section>
+<section id="un-usage-classique-des-méthodologies-numériques"
+class="slide level2" data-background="../img/friedrich_bg.png">
+<h2 data-background="../img/friedrich_bg.png">Un usage classique des
+méthodologies numériques</h2>
+<p><img src="../img/friedrich.jpeg" style="border:none; width:500px"></p>
+<aside class="notes">
+<p>Je ne revendique pas un usage complexe des méthodologies des
+humanités numériques – je peux en faire un usage complexe, mais ce n’est
+pas toujours nécessaires. Dans les deux cas évoqués ici, le label
+<em>histoire numérique</em> ou <em>humanités numériques</em> s’impose
+notamment pas un simple fait: l’usage de sources dites nativement
+numériques et qui font sens individuellement mais surtout lorsqu’elles
+sont conservées en masse.</p>
+<p>Mon problème ici est plutôt – et j’y reviendrai – d’adapter au mieux
+les méthodes les plus appropriées à mes recherche, c’est-à-dire de
+bricoler. Je suis dans la position de cet historien (ou historienne)
+face à une mer de données.</p>
+</aside>
+</section>
+<section id="collecter-9-millions-de-tweets" class="slide level2"
+data-background="../img/friedrich_bg.png">
+<h2 data-background="../img/friedrich_bg.png">Collecter 9 millions de
+tweets</h2>
+<p>#ww1:</p>
+<ul>
+<li>9 millions de tweets (2014-2019)
+<ul>
+<li>deux tiers de retweets</li>
+<li>1.5 million de comptes Twitter</li>
+</ul></li>
+<li>collecte: Twittter API v1.1
+<ul>
+<li>streaming</li>
+<li>mots-clés / hashtags</li>
+</ul></li>
+<li>modification des hashtags au fur et à mesure de la collecte
+<ul>
+<li>émergence de hastags (été 2014 : #1j1p)</li>
+<li>hashtags non prévisibles à lavance (#somme100)</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>Pour analyser, il faut collecter. Vous voyez ici la description de la
+base de données finale du projet #ww1.</p>
+</aside>
+</section>
+<section id="surveiller-et-anticiper" class="slide level2"
+data-background="../img/friedrich_bg.png">
+<h2 data-background="../img/friedrich_bg.png">Surveiller et
+anticiper</h2>
+<ul>
+<li>Surveiller sa base de données
+<ul>
+<li>Apparition de hashtags</li>
+<li>Absence de hashtags: Marne, Jaurès, Clémenceau…</li>
+</ul></li>
+<li>Surveiller son terrain</li>
+</ul>
+<p>→ anticiper</p>
+<aside class="notes">
+<p>Mener une recherche de ce type, pour collecter des données pas trop
+biaisées, nécessite de surveiller et d’anticiper. Surveiller sa base de
+données (c’est-à-dire l’analyser régulièrement avec des outiles de
+lecture distante notamment, mais aussi de la lecture proche) permet de
+voir des hashtags émerger; J’ai cité #1j1p car c’est comme ça qu’il
+m’est apparu évident qu’il fallait l’inclure dans la collecte: il était
+très présent dans mas base de données alors qu’il n’était pas collecté.
+Mais cela permet aussi de constater des absences: sans hashtags
+clairement identifié pour la première bataille de la Marne – la fin de
+la progresison allemande et le début du passage d’une guerre de
+mouvement à une guerre de position –, cette dernière n’apparaît
+quasiment pas. Les hashtags liés à Jean Jaurès – assassiné le 31
+juillet, assassinat qui permet le ralliement de la gauche française à
+l’Union sacrée – n’a pas pu être inclus dans la base de données, car il
+portait sur l’ensemble des commémorations organisées pour le centenaire
+Jaurès. Il en est allé de même avec Georges Clémenceau (2017 a été
+l’année Clémenceau).</p>
+<p>Mais il y a Vimy.</p>
+<p>Il s’agit aussi de surveiller son terrain, ici Twitter. Être sur
+Twitter les grands jours de commémoration – le 1er juillet 2016, par
+exemple, pour le Centenaire de la Somme – permet d’inclure des hashtags
+que l’on n’aurait pu prévoir au début du projet: parce que l’on voit le
+hashtag apparaître, mais aussi parce que, parfois, des comptes Twitter –
+j’ai parlé de mes recherches sur twitter – m’ont signalé des hashtags à
+inclure, parfois parce qu’ils étaient <strong>physiquement</strong>
+présent sur le lieu de commémoration.</p>
+<p>C’est cette surveillance de la base de données, du terrain, qui
+permet d’anticiper, ce qui était nécessaire avec les commandes de l’API
+de Twitter que j’utilisais (API V1.1 streaming).</p>
+</aside>
+</section>
+<section id="quelques-analyses" class="slide level2"
+data-background="../img/figure01_bg.png">
+<h2 data-background="../img/figure01_bg.png">Quelques analyses</h2>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure01.png" width="700px" style="border:none;" /></p>
+<aside class="notes">
+Surveiller sa base de données peut se faire de manière diverse. Ici, on
+peut voir les hashtags les plus présents. Ce sont pour l’essentiel les
+hashtags collectés, mais pas uniquement. On pourra y apercevoir #blackm
+par exemple.
+</aside>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure02.png" width="1100px" style="border:none;" /></p>
+<aside class="notes">
+<p>Les statistiques trop simples sont parfois problématiques, mais ici
+elles restent efficaces: on peut voir le rythme comméoratif du
+Centenaire tel qu’il s’est inscrit dans ma base de données. Avec des
+régularités, particulièrement le 11 novembre.</p>
+</aside>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure03.png" width="1100px" style="border:none;" /></p>
+<aside class="notes">
+<p>Ces régularités s’observent aussi sur la répartition linguistiques.
+Les exemples que je vais donner son francophones, mais 80% de mon corpus
+est anglophone. Les seules dates où les tweets francophones sont
+majoritaires sont soit le 11 novembre (sauf 2018), soit reliés à des
+commémorations spécifiquement françaises (Verdun).</p>
+<p>Toutefois, cette répartition linguistique peut être questionnée:
+reflète-t-elle les choix que j’ai fait ou les échos des commémorations
+du Centenaire sur Twitter? Probablement les deux.</p>
+</aside>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure04.png" width="700px" style="border:none;" /></p>
+<aside class="notes">
+<p>Bien sûr, nous utilisons l’inévitable <em>topic modelling</em>. En
+fait, quelque chose de similaire au topic modelling, appelé
+<em>classification hiérarchique descendante</em>, issue de la théorie
+des mondes lexicaux (<span class="citation"
+data-cites="reinertMethodeClassificationDescendante1983">Reinert
+(1983)</span> et <span class="citation"
+data-cites="reinertMondesLexicauxLeur1993">Reinert (1993)</span>). La
+fonction est la même, bien que le raisonnement statistique ne soit pas
+le même (mais globalement fondé sur sur les cooccurrences de mots).</p>
+<p>On peut déduire beaucoup de choses de ce graphique. La présence de la
+figure du poilu mort pour la France, des éléments commémoratifs
+descriptifs, mais aussi politiques. On y voit la controverse BlackM /
+Verdun, mais aussi une classe (profil, ou cluster) plus généralement lié
+à la contestation.</p>
+</aside>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure04b.png" width="1100px" style="border:none;" /></p>
+<aside class="notes">
+<p>Et l’on peut projeter ces classes dans le temps. Parmi les choses que
+l’on peut ici déduire:</p>
+<ul>
+<li>la manière dont le Poilu est évoqué en fonction du programme de la
+commémoration;</li>
+<li>mais également le fait que presque toute commémoration apporte sa
+contestation, ce qui va contre l’idée, professée par certains (Pierre
+Nora) que la commémoration rassemble.</li>
+</ul>
+<p>Cela nous renvoit aussi à la question des temporalités. J’ai insisté
+sur la propagation au début de mon exposé. Ici, on en voit les effets
+mais également ses limites: il y a aussi – et c’est le cas de la
+contestation de la commémoration qui se fait plutôt à bas bruit – des
+temporalités de plus long terme.</p>
+<p>Au-delà, ainsi, de la propagation, il y a surtout la question de
+l’entrelacs des temporalités.</p>
+</aside>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure06.png" width="500px" style="border:none;" /></p>
+<aside class="notes">
+<p>Enfin, le grand classique de l’analyse réseau. Il est intéressant
+d’en faire une dynamique, d’autant plus que la période de collecte est
+large. Car ici, l’on voit trois groupes: le grand groupe anglophone, le
+groupe francophone. Et ce dernier est divisé en deux: le sous groupe que
+vous voyz ici le plus à gauche s’est constitué progressivement. C’est un
+groupe contestataire.</p>
+</aside>
+</section>
+<section id="quels-types-danalyse-effectuer" class="slide level2"
+data-background="../img/figure01_bg.png">
+<h2 data-background="../img/figure01_bg.png">Quels types d’analyse
+effectuer?</h2>
+<ul>
+<li>iramuteq / gephi</li>
+<li>topic modelling / analyse réseaux</li>
+<li>avoir un oeil sur les méthodes émergentes (qui deviennent bien
+rôdées)
+<ul>
+<li>word embeddings</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="bricolage-braconnage" class="title-slide slide level1"
+data-background="../img/bg_Sillons.png">
+<h1 data-background="../img/bg_Sillons.png">bricolage, braconnage</h1>
+
+</section>
+<section id="bricolage-le-cas-du-projet-covid19fr" class="slide level2"
+data-background="../img/bg_Sillons.png">
+<h2 data-background="../img/bg_Sillons.png">bricolage? Le cas du projet
+#covid19fr</h2>
+<ul>
+<li>15 mars 2020: reprise du serveur #ww1 pour collecter des données sur
+la crise sanitaire en cours</li>
+<li>Base de données de 65 millions de tweets (la moitié sur mars-juin
+2020)
+<ul>
+<li>collecte stoppée depuis le 15 mars 2023 (Elon Musk, fin de
+l’APIv1.1)</li>
+</ul></li>
+<li>Objectif: collecte de très long terme
+<ul>
+<li>quels aspects de la crise deviendront mémoire collective?</li>
+</ul></li>
+</ul>
+<p>→ réutilisation d’un savoir-faire antérieur.</p>
+<aside class="notes">
+Pour illustrer cette notion de bricolage, je vais cette fois me pencher
+sur le projet « #covid19fr – un pays confiné sur Twitter »
+</aside>
+</section>
+<section id="bricolage-la-fluidité-des-outils-numériques"
+class="slide level2" data-background="../img/bg_Sillons.png">
+<h2 data-background="../img/bg_Sillons.png">bricolage: la fluidité des
+outils numériques</h2>
+<ul>
+<li>la base de données n’a pas (ou peu) servi</li>
+<li>sortie de l’APIv2 et de l’<em>academic product track</em></li>
+</ul>
+<p>→ Utilisation de twarc,<br /> collecte de corpus ad hoc (fonction de
+l’article et de sa question de recherche)</p>
+</section>
+<section id="commémorer-en-confinement-8-mai-et-25-aprile"
+class="slide level2" data-background="../img/bg_Sillons.png">
+<h2 data-background="../img/bg_Sillons.png">Commémorer en confinement: 8
+mai et 25 aprile</h2>
+<ul>
+<li>corpus italophone (25 aprile) et francophone (8 mai) sur les
+commemorations de la fin de la Seconde Guerre mondiale</li>
+<li>bases techniques de collecte très différentes
+<ul>
+<li>donc des biais différents: lissage des controverses</li>
+</ul></li>
+<li>lien IRL / online très fort
+<ul>
+<li>la comparaison entre les deux corpus montre deux manières de
+commémorer très différentes</li>
+<li>traditions différentes</li>
+<li>traditions différemment adaptées au confinement</li>
+</ul></li>
+</ul>
+<p><small> <span class="citation"
+data-cites="clavertGoutJourFetetobepublished">Clavert and Paci (to be
+published)</span> </small></p>
+</section>
+<section id="section-7" class="slide level2"
+data-background="../img/bg_Sillons.png">
+<h2 data-background="../img/bg_Sillons.png"></h2>
+<p>bricolage + fluidité des dispositifs socio-techniques</p>
+<p>↓</p>
+<p>deux manières de collecter des tweets / deux recherches
+différentes</p>
+</section>
+<section id="du-bricolage-au-braconnage" class="slide level2"
+data-background="../img/bg_Sillons.png">
+<h2 data-background="../img/bg_Sillons.png">du bricolage au
+braconnage</h2>
+<ul>
+<li>Bricolage → s’adapter pour survivre</li>
+<li>Braconnage → contourner pour s’adapter pour survivre</li>
+</ul>
+<p>Que faire quand l’accès aux données est coupé, quand un outil que
+l’on maîtrise n’est plus développé,<br /> quand une institution bloque
+l’aspect à des données, des outils, des coopérations? <br /> Comment
+équilibrer les impératifs (légitimes) de la protection des données et
+ceux de la recherche?</p>
+</section>
+<section id="braconnage" class="slide level2"
+data-background="../img/bg_Sillons.png">
+<h2 data-background="../img/bg_Sillons.png">braconnage</h2>
+<p>Le braconnage est une configuration où la recherche est un étroit
+chemin de crête entre deux océans d’illégalité (et d’illégitimité):</p>
+<ul>
+<li>éthique et données personnelles;</li>
+<li>respect des conditions d’accès aux données.</li>
+</ul>
+</section></section>
+<section>
+<section id="conclusion" class="title-slide slide level1"
+data-background="#ededed">
+<h1 data-background="#ededed">Conclusion</h1>
+<ul>
+<li>proposition méthodologique hybride / adaptée au corpus, à la
+recherche menée
+<ul>
+<li>hybride car pluridisciplinaire</li>
+<li>hybride car <em>scalable reading</em> – impliquant de garder un lien
+aux sources primaires</li>
+</ul></li>
+<li>proposition qui s’accompagne de la notion de bricolage: s’adapter à
+l’évolution des outils que nous utilisons
+<ul>
+<li>peut aller jusqu’au braconnage</li>
+</ul></li>
+</ul>
+</section>
+<section id="bricolage-braconnage-sabotage" class="slide level2"
+data-background="#ededed">
+<h2 data-background="#ededed">bricolage, braconnage, sabotage?</h2>
+<p>Quand est-ce que bricoler, braconner ne devient plus possible?<br />
+Quand est-ce qu’il faut saboter ses propres recherches?</p>
+</section>
+<section id="bibliographie" class="slide level2"
+data-background="#ededed">
+<h2 data-background="#ededed">Bibliographie</h2>
+<p><small></p>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="doc-bibliography">
+<div id="ref-boullierSciencesSocialesFace2015" class="csl-entry"
+role="doc-biblioentry">
+Boullier, Dominique. 2015. <span>“Les Sciences Sociales Face Aux Traces
+Du Big Data.”</span> <em>Revue Française de Science Politique</em> 65
+(5): 805–28.
+</div>
+<div id="ref-boullierBigDataChallenges2016" class="csl-entry"
+role="doc-biblioentry">
+———. 2016. <span>“Big Data Challenges for the Social Sciences: From
+Society and Opinion to Replications.”</span> <em>arXiv:1607.05034
+[Cs]</em>, July. <a
+href="https://arxiv.org/abs/1607.05034">https://arxiv.org/abs/1607.05034</a>.
+</div>
+<div id="ref-boullierPropagationsNouveauParadigme2023" class="csl-entry"
+role="doc-biblioentry">
+———. 2023. <em>Propagations. <span>Un</span> Nouveau Paradigme Pour Les
+Sciences Sociales.</em> Colletion <span>U</span>. <span>Paris</span>:
+<span>Armand Collin</span>.
+</div>
+<div id="ref-clavertPyramidsPrismsScalable2021" class="csl-entry"
+role="doc-biblioentry">
+Clavert, Frédéric, and Andreas Fickers. 2021. <span>“On Pyramids,
+Prisms, and Scalable Reading.”</span> <em>Journal of Digital
+History</em>, no. jdh001.
+</div>
+<div id="ref-clavertGoutJourFetetobepublished" class="csl-entry"
+role="doc-biblioentry">
+Clavert, Frédéric, and Déborah Paci. to be published.
+<span>“<span>‘<span>Le</span> Goût d’un Jour de Fête’</span>?
+<span>Commemorating</span> the End of the <span>Second World War</span>
+on <span>Twitter</span> During the Lockdown: A Comparison Between
+<span>France</span> and <span>Italy</span>.”</span> In <em>The
+<span>Covid-19 Pandemic Memory</span>. <span>Remembrance</span>,
+<span>Commemoration</span>, and <span>Archiving</span> in
+<span>Crisis</span></em>, edited by Orli Fridman and Sarah Gensburger.
+<span>Palgrave Macmillan</span>.
+</div>
+<div id="ref-floridiFourthRevolutionHow2014" class="csl-entry"
+role="doc-biblioentry">
+Floridi, Luciano. 2014. <em>The <span>Fourth Revolution</span> -
+<span>How</span> the <span>Infosphere</span> Is <span>Reshaping Human
+Reality</span></em>. <span>Oxford</span>: <span>Oxford University
+Press</span>.
+</div>
+<div id="ref-halbwachsCadresSociauxMemoire1994" class="csl-entry"
+role="doc-biblioentry">
+Halbwachs, Maurice. [1925] 1994. <em><span>Les cadres sociaux de la
+mémoire / Maurice Halbwachs ; postf. de Gérard Namer</span></em>.
+<span>Bibliothèque de l’évolution de l’humanité 8</span>.
+<span>Paris</span>: <span>Albin Michel</span>.
+</div>
+<div id="ref-morettiDistantReading2013" class="csl-entry"
+role="doc-biblioentry">
+Moretti, Franco. 2013. <em>Distant <span>Reading</span></em>.
+<span>Verso Books</span>.
+</div>
+<div id="ref-reinertMethodeClassificationDescendante1983"
+class="csl-entry" role="doc-biblioentry">
+Reinert, Max. 1983. <span>“Une Méthode de Classification Descendante
+Hiérarchique: Application à l’analyse Lexicale Par Contexte.”</span>
+<em>Les Cahiers de l’analyse Des Données</em> 8 (2): 187–98.
+</div>
+<div id="ref-reinertMondesLexicauxLeur1993" class="csl-entry"
+role="doc-biblioentry">
+———. 1993. <span>“<span>Les ’mondes lexicaux’ et leur ’logique’ à
+travers l’analyse statistique d’un corpus de récits de
+cauchemars</span>.”</span> <em>Langage et société</em> 66 (1): 5–39. <a
+href="https://doi.org/10.3406/lsoc.1993.2632">https://doi.org/10.3406/lsoc.1993.2632</a>.
+</div>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script src="2023-04-03_CEHNUM_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="2023-04-03_CEHNUM_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+        height: 720,
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '2023-04-03_CEHNUM_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

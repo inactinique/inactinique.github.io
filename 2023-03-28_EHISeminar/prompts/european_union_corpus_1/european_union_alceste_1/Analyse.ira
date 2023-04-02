@@ -1,0 +1,24 @@
+[alceste]
+type = alceste
+lem = 1
+mincl = 0
+nbforme_uce = 0
+max_actives = 3000
+tailleuc1 = 12
+nbcl = 4
+tailleuc2 = 14
+classif_mode = 2
+minforme = 2
+expressions = 1
+nbcl_p1 = 40
+svdmethod = irlba
+mode.patate = 0
+corpus = 8dc81ec8-3234-420a-9be3-7b22d8d0582c
+pathout = /Users/frederic.clavert/Desktop/prompts/european_union_corpus_1/european_union_alceste_1
+uuid = 9a128ac3-4f92-481e-b7c6-3e2828c95fb9
+name = european_union_alceste_1
+eff_min_forme = 3
+nbactives = 1281
+clnb = 14
+time = 0h 0m 36s
+ira = /Users/frederic.clavert/Desktop/prompts/european_union_corpus_1/european_union_alceste_1/Analyse.ira
