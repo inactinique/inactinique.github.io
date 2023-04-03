@@ -9,6 +9,7 @@ Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>.
 ## Prez
 (date format: dd.mm.yyyy)
 
+- 03.04.2023 [Une mémoire collective à haute fréquence ? Propositions méthodologiques et critiques pour l’étude des échos de mémoire collective sur les réseaux sociaux numériques](https://inactinique.github.io/2023-04-03_CEHNUM/2023-04-03_CEHNUM.html) - Colloque [*La mémoire en humanités numériques*](https://www.crihn.org/nouvelles/2023/02/22/1er-colloque-etudiants-du-crihn/)
 - 07.03.2023 [History education in digital age: a critical perspective](2023-03-07_CoE/2023-03-07_CoE.html)
 - 01.02.2023 [ChatGPT: a pedagogical use case (HCI ChatGPT event)](2023-02-01_chatGPT_HCI/2023-02-01_chatGPT_HCI.html)
 - 09.01.2023 [Présentation à l’EHESS (CHR): pratiques numériques discrètes et goût de l’archive à l’ère numérique](https://slides.com/inactinique/gout-de-l-archive-et-pratiques-discretes)
