@@ -124,7 +124,7 @@ Mon problème ici est plutôt -- et j'y reviendrai -- d'adapter au mieux les mé
   - streaming
   - mots-clés / hashtags
 - modification des hashtags au fur et à mesure de la collecte
-  - émergence de hastags (été 2014 : #1j1p)
+  - émergence de hashtags (été 2014 : #1j1p)
   - hashtags non prévisibles à lavance (#somme100)
 
 <aside class="notes">
@@ -290,7 +290,7 @@ deux manières de collecter des tweets / deux recherches différentes
 - Bricolage &rarr; s'adapter pour survivre
 - Braconnage &rarr; contourner pour s'adapter pour survivre
 
-Que faire quand l'accès aux données est coupé, quand un outil que l'on maîtrise n'est plus développé,<br /> quand une institution bloque l'aspect à des données, des outils, des coopérations? <br /> Comment équilibrer les impératifs (légitimes) de la protection des données et ceux de la recherche?
+Que faire quand l'accès aux données est coupé, quand un outil que l'on maîtrise n'est plus développé,<br /> quand une institution bloque l'accès à des données, des outils, des coopérations? <br /> Comment équilibrer les impératifs (légitimes) de la protection des données et ceux de la recherche?
 
 ## braconnage {data-background=../img/bg_Sillons.png}
 
