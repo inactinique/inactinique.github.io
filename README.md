@@ -26,11 +26,11 @@ Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>.
 (date format: dd.mm.yyyy)
 
 
-- I have organized an event on ChatGPT (French). The video's is on the [C<sup><small>2</small></sup>DH's website](https://www.c2dh.uni.lu/thinkering/usages-pedagogiques-de-chatgpt-enregistrement-de-la-table-ronde). 
+- 09.02.2023 - I have organized an event on ChatGPT (French). The video's is on the [C<sup><small>2</small></sup>DH's website](https://www.c2dh.uni.lu/thinkering/usages-pedagogiques-de-chatgpt-enregistrement-de-la-table-ronde). 
 
-- I participated to the History communication ChatGPT, AI & history event (English). My prez is [here](- 01.02.2023 [ChatGPT: a pedagogical use case (HCI ChatGPT event)](2023-02-01_chatGPT_HCI/2023-02-01_chatGPT_HCI.html))
+- 01.02.2023 - I participated to the History communication ChatGPT, AI & history event (English). My prez is [here](2023-02-01_chatGPT_HCI/2023-02-01_chatGPT_HCI.html))
 
-- I participated to a round-table in French at the Université de Montréal on the 5th of April 2023. I'll put here the link to the recording as soon as possible.
+- 05.04.2023 - I participated to a round-table in French at the Université de Montréal. I'll put here the link to the recording as soon as possible.
 
 
 ## Non-academic writings
