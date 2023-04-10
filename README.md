@@ -21,6 +21,22 @@ Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>.
 - 08.04.2021 [Apprendre le numérique et renouveler la critique des sources (Printemps des Humanités numériques)](2021-04-08_printempsHN/2021-04-08_printempsHN.html)
 - 07.01.2020 [Commemorating the Great War on Twitter](2020-01-07_IHR/2020-01-07_IHR.html). You can watch this [seminar's video](https://www.youtube.com/watch?v=KDPONgG5H88) on YouTube.
 
+## ChatGPT roundtables
+
+(date format: dd.mm.yyyy)
+
+
+- I have organized an event on ChatGPT (French)
+
+<iframe src="https://player.vimeo.com/video/797616150?h=0c818ab657" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" name="fitvid0" frameborder="0"></iframe>
+
+[Source](https://www.c2dh.uni.lu/thinkering/usages-pedagogiques-de-chatgpt-enregistrement-de-la-table-ronde). 
+
+- I participated to the History communication ChatGPT, AI & history event (English). My prez is [here](- 01.02.2023 [ChatGPT: a pedagogical use case (HCI ChatGPT event)](2023-02-01_chatGPT_HCI/2023-02-01_chatGPT_HCI.html))
+
+- I participated to a round-table in French at the Université de Montréal on the 5th of April 2023. I'll put here the link to the recording as soon as possible.
+
+
 ## Non-academic writings
 
 (date format: dd.mm.yyyy)
