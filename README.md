@@ -2,7 +2,7 @@
 
 I am an assistant professor in contemporary history at the [Centre for Contemporary and Digital History](https://c2dh.uni.lu). My research focuses on social media and some AI system do to the ways we are understanding our historical past. I am the managing editor of the [Journal of Digital History](https://www.journalofdigitalhistory.org) and co-edited the [*Goût de l'archive à l'ère numérique*](https://gout-numerique.net) with Caroline Muller (Rennes 2). 
 
-I am using this page as a repository for some of my [prez](#prez), my [non-academic](#non-academic-writings) and  [academic](#academic-writings) writings.
+I am using this page as a repository for some of my [prez](#prez), the recent [ChatGPT roundtables](#chatgpt-roundtables) I was part of, my [non-academic](#non-academic-writings) and  [academic](#academic-writings) writings.
 
 Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>.
 
@@ -44,7 +44,7 @@ Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>.
 
 This is an automatically generated list by the University of Luxembourg repository.
 
-<iframe src="https://orbilu.uni.lu/widget?query=%28%28uid%3A50029240%29%29&chars=50&etal=3&language=en&data=&format=&css=%2Ffiles%2Fcss%2Fwl.css&sort_by0=1&order0=DESC&sort_by1=3&order1=ASC&sort_by2=2&order2=ASC" marginwidth="0" marginheight="0" scrolling="yes" width="450" height="450" frameborder="0"></iframe>
+<iframe src="https://orbilu.uni.lu/widget?query=%28%28uid%3A50029240%29%29&chars=50&etal=3&language=en&data=&format=&css=%2Ffiles%2Fcss%2Fwl.css&sort_by0=1&order0=DESC&sort_by1=3&order1=ASC&sort_by2=2&order2=ASC" marginwidth="0" marginheight="0" scrolling="yes" width="100%" height="450" frameborder="0"></iframe>
 
 
 
