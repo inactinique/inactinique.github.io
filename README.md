@@ -7,6 +7,7 @@ I am using this page as a repository for some of my [prez](#prez), my [non-acade
 Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>.
 
 ## Prez
+
 (date format: dd.mm.yyyy)
 
 - 03.04.2023 [Une mémoire collective à haute fréquence ? Propositions méthodologiques et critiques pour l’étude des échos de mémoire collective sur les réseaux sociaux numériques](https://inactinique.github.io/2023-04-03_CEHNUM/2023-04-03_CEHNUM.html) - Colloque [*La mémoire en humanités numériques*](https://www.crihn.org/nouvelles/2023/02/22/1er-colloque-etudiants-du-crihn/)
@@ -20,13 +21,19 @@ Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>.
 - 08.04.2021 [Apprendre le numérique et renouveler la critique des sources (Printemps des Humanités numériques)](2021-04-08_printempsHN/2021-04-08_printempsHN.html)
 - 07.01.2020 [Commemorating the Great War on Twitter](2020-01-07_IHR/2020-01-07_IHR.html). You can watch this [seminar's video](https://www.youtube.com/watch?v=KDPONgG5H88) on YouTube.
 
-## Non-academic writings 
+## Non-academic writings
+
 (date format: dd.mm.yyyy)
+
 - 17.12.2022 [« Préservons notre patrimoine numérique grâce au contre-archivage décentralisé et collaboratif »](https://www.lemonde.fr/idees/article/2022/12/17/preservons-notre-patrimoine-numerique-grace-au-contre-archivage-decentralise-et-collaboratif_6154820_3232.html)
 - 12.05.2021 [« Un autre numérique reste possible »](https://phiantique.medium.com/un-autre-num%C3%A9rique-reste-possible-1bee2e3b273) (with Chloé-Agathe Azencott, Anne Baillot, Alix Deleporte, Julie Giovacchini, Anne Grand d’Esnon and Catherine Psilakis)
 
-## Academic writings
-This is an automatically generated list.
+## All my writings
 
-<iframe src="https://orbilu.uni.lu/widget?query=%28%28uid%3A50029240%29%29&amp;chars=50&amp;etal=3&amp;language=en&amp;data=&amp;format=&amp;css=%2Ffiles%2Fcss%2Fwl.css&amp;sort_by0=1&amp;order0=DESC&amp;sort_by1=3&amp;order1=ASC&amp;sort_by2=2&amp;order2=ASC" marginwidth="0" marginheight="0" scrolling="yes" width="450" height="450" frameborder="0"></iframe>
+This is an automatically generated list by the University of Luxembourg repository.
+
+<iframe src="https://orbilu.uni.lu/widget?query=%28%28uid%3A50029240%29%29&chars=50&etal=3&language=en&data=&format=&css=%2Ffiles%2Fcss%2Fwl.css&sort_by0=1&order0=DESC&sort_by1=3&order1=ASC&sort_by2=2&order2=ASC" marginwidth="0" marginheight="0" scrolling="yes" width="450" height="450" frameborder="0"></iframe>
+
+
+
 

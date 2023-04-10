@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="frédéric clavert  c2dh, uni.lu  frederic.clavert@uni.lu" />
+  <title>prompting the past</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="2023-04-13_PromptingThePast_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="2023-04-13_PromptingThePast_files/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <script src="2023-04-13_PromptingThePast_files/header-attrs-2.20/header-attrs.js"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">prompting the past</h1>
+    <h2 class="author"><small>frédéric clavert <br />c2dh, uni.lu
+<br /><a
+href="mailto:frederic.clavert@uni.lu">frederic.clavert@uni.lu</a></small></h2>
+    <h3 class="date"><small>13/4/2023</small></h3>
+</section>
+
+<section id="section" class="title-slide slide level1">
+<h1></h1>
+<p>digital memory studies</p>
+<aside class="notes">
+<p>Just a few words about me: - I’m coming from international history
+but turned to digital humanities (depending on the definition you have
+of DH) and digital history; - then started to study online commemoration
+and hence turned to digital memory studies.</p>
+<p>Here, i’m trying to wonder what we can do with new artefacts of the
+big data / AI era. It’s a starting project, even only an idea yet.</p>
+<p>To be honest, I’m not even sure it’s DH.</p>
+</aside>
+</section>
+
+<section>
+<section id="section-1" class="title-slide slide level1">
+<h1></h1>
+<p><img src='img/01_FrenchLegionary.jpg' width='300px' /></p>
+<blockquote>
+<p><a
+href="https://lexica.art/prompt/df06475d-3862-4fac-936e-86657566f524">a
+french legionary, walking in a field, with black smoke of a fire in
+background</a></p>
+</blockquote>
+<aside class="notes">
+<p>You probably all have seen that kind of images, generated by AI
+systems, here available on a search engine called <a
+href="https://lexica.art">lexica.art</a>.</p>
+<p>There’s many thing to say here: - the helmet looks absolutely wrong,
+and really not French – the spiked helmet evokes more something German,
+the form is somewhere between the Wermacht and Darth Vader. - it doesn’t
+look at all like a French legionary - I found it with ‘Napoléon’ as a
+keyword, and there’s something about that, though we are far from the
+Grognard.</p>
+<p>Historically it’s just nonsense.</p>
+</aside>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<p><img src='img/02_ChartistRevolutionaries.jpg' width='300px' /></p>
+<blockquote>
+<p><a
+href="https://lexica.art/prompt/c6d9d058-adf2-4a39-8652-6c5d2d0bf2a5">Chartist
+revolutionaries storming Westminster</a></p>
+</blockquote>
+<aside class="notes">
+<p>Well british history’s not my specialty, but here again, there are
+some elements to say – in fact, the impression of an infinite repetition
+of only one man is a strange way to represent a working class
+movement.</p>
+</aside>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<p><img src='img/03_Nalanda.jpg' width='300px' /></p>
+<blockquote>
+<p><a href="Nalanda%20University%20in%201300%20AD">Nalanda University in
+1300 AD</a></p>
+</blockquote>
+<aside class="notes">
+<p>Here again, the image is puzzling. This one of a series of four, and
+this series mix different civilisations, including Mayas, China, Japan.
+But barely India.</p>
+</aside>
+</section></section>
+<section id="section-4" class="title-slide slide level1">
+<h1></h1>
+<p>questionning the past</p>
+<aside class="notes">
+<p>If those images are that terrible, why having an interest in
+them?</p>
+<ul>
+<li>Questionning the past is one of the core activity of historians /
+and other humanists / social scientists working on the past;</li>
+<li>It’s our basic epistemologic operation in the sense that we ask
+questions to start the process of elaborating new knowledge about the
+past.</li>
+</ul>
+<p>The fact that tools (image or text generative systems), easy to use,
+are based on prompts – which are often explicit or implicit
+questions.</p>
+<p>Those systems are huge incentives to question the world around us,
+and the world that was. That should not let us indifferent.</p>
+<p>At least does it not leave me indifferent, all the more that some of
+those prompts contain references to the past.</p>
+<p>It’s all the more interesting that those system could be defined as
+a-epistemological: when you use ChatGPT, for instance, there’s no notion
+of truth, lie, knowledge in the way those systems are working.</p>
+</aside>
+</section>
+
+<section>
+<section id="section-5" class="title-slide slide level1">
+<h1></h1>
+<p>prompts as open doors to users’ imagination about the past?</p>
+<aside class="notes">
+<p>So, as an historian, what interest me the most in LLMs or similar
+system, whether they generate images or texts, are not those systems,
+are not what they produce, but what is necessary to produce them:
+prompts – of course when they evoke the post. The text that we need to
+enter to get images or texts – images can also be entered, but let’s
+stick for now to text –, that’s a new kind of primary sources
+potentially linked to the past.</p>
+<ul>
+<li>prompts can be seen as open doors to users’ imagination about the
+past – of course, it’s much more complex than that, but nevertheless,
+we’ll use this as a sort of hypothesis;</li>
+<li>So LLM or text-to-image system, if we follow this hypothesis, can be
+seen as not only text-to-image or text-to-text but also as system that,
+as an aside, are generating primary sources on collective memory.</li>
+</ul>
+</aside>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<p>distant reading of prompts</p>
+<aside class="notes">
+<p>Of course there are some things that we can already do. There are
+some prompts search engine already existing. A colleague of mine
+developped a small scrapping script and we could harvest some prompts.
+I’ve used my usual tools <a
+href="https://iramuteq.org">IRaMuTeQ</a>.</p>
+</aside>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<p><img src='img/06_dendro.png' width='1000px' /></p>
+<aside class="notes">
+<ul>
+<li>that’s a basic distant reading of a corpus of prompts</li>
+<li>the keyword ‘europen union’ was used to get this corpus of around
+1900 prompts
+<ul>
+<li>it’s not only about the past, but quite a lot about</li>
+<li>there are clusters about styles – note that a lot are ‘historical’
+(soviet propaganda)</li>
+<li>there are elements of recent politics (nigel farage / marine)</li>
+<li>europe as something linked to a period of time: Middel Age
+(heraldic) / 17th Century (Rembrandt)</li>
+<li>notions quite linked to european history: ‘empire’</li>
+<li>the question of the link with news is quite important.</li>
+</ul></li>
+</ul>
+</aside>
+</section>
+<section id="section-8" class="slide level2">
+<h2></h2>
+<p>limitations / corpus</p>
+<aside class="notes">
+<ul>
+<li>no timestamp / temporal data</li>
+<li>strong reflexion to have about the making of the corpus of prompts.
+<ul>
+<li>several search engine</li>
+<li>few metadata (which is good for privacy, but not for us)</li>
+</ul></li>
+</ul>
+<p>There’s a huge work to get data, and it might be impossible to get
+them in good conditions – good being here ethics and privacy minimal
+requirements.</p>
+</aside>
+</section></section>
+<section>
+<section id="section-9" class="title-slide slide level1">
+<h1></h1>
+<p>who’s prompting, users or machines?</p>
+<aside class="notes">
+<p>the data is not the only thing important here. With prompts only, we
+do not have the whole picture, we’re missing what’s happening between
+the users and the interface.</p>
+</aside>
+</section>
+<section id="section-10" class="slide level2">
+<h2></h2>
+<p><img src='img/05_Biden.jpg' width='300px' /></p>
+<blockquote>
+<p><a
+href="https://lexica.art/?q=history&amp;prompt=486249a4-4f50-46c8-9163-d7430c2b46db">joe
+biden doing a nazi salute, in front of brandenburger tor. huge nazi
+crowd in front of him. face of joe biden is clearly visible. canon eos r
+3, f / 1. 4, iso 1 6 0 0, 1 / 8 0 s, 8 k, raw, grainy</a></p>
+</blockquote>
+<aside class="notes">
+<ul>
+<li>the aim here of the user was to get a nazi salute – and it’s not
+working</li>
+<li>It’s not working for different reasons:
+<ul>
+<li>well, this system does not know what a nazi salute is – images here
+are just pixels which succession is statistically pertinent</li>
+<li>there might be limitations implemented in the text-to-image system
+(not likely with stable diffusion)</li>
+</ul></li>
+</ul>
+<p>What ill do a user who did not get the results it wanted?</p>
+<ul>
+<li>as it fails, users might have strategies to get what they want
+<ul>
+<li>strategy based on changing prompts,</li>
+<li>means that prompts, not only images (or generated text), are the
+result of the settings of the machine, or at least partly, and of a
+man-machine interaction.</li>
+</ul></li>
+</ul>
+</aside>
+</section>
+<section id="how-to-study-prompts" class="slide level2">
+<h2>how to study prompts?</h2>
+<aside class="notes">
+<ul>
+<li>we need prompts with proper metadata and that relate to the past
+<ul>
+<li>one of the way to get that is to set up our own image / text
+generation system. With open source systems, it could be posisble.</li>
+<li>we could train thoss system on ‘historical data’.</li>
+<li>many problems to solve – including, of course ethics.</li>
+</ul></li>
+<li>we need to do scalable reading
+<ul>
+<li>but also to mix methods, not only DH but also (digital) sociology:
+interviews and surveys.</li>
+</ul></li>
+</ul>
+<p>Here again, might cause ethical problems.</p>
+</aside>
+</section></section>
+<section id="section-11" class="title-slide slide level1">
+<h1></h1>
+<p><img src='img/04_DeGaulle.jpg' width='300px' /></p>
+<blockquote>
+<p>Charles De Gaulle bronze sur une plage de Normandie</p>
+</blockquote>
+<aside class="notes">
+<p>And as a conclusion:</p>
+<p>This prompt means “Charles De Gaulle sunbathes on a beach in
+Normandy”. But ‘bronze’ means also ‘bronze’ - a metal used to build
+statues. Of course many details are wrong, starting with the hat, but
+it’s not the point here.</p>
+<p>Here, the memory context (ie embedded into the training dataset) was
+stronger than the meaning the user – say, me – put in the prompt.</p>
+</aside>
+</section>
+    </div>
+  </div>
+
+  <script src="2023-04-13_PromptingThePast_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="2023-04-13_PromptingThePast_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+        height: 720,
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '2023-04-13_PromptingThePast_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
