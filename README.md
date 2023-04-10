@@ -26,11 +26,7 @@ Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>.
 (date format: dd.mm.yyyy)
 
 
-- I have organized an event on ChatGPT (French)
-
-<iframe src="https://player.vimeo.com/video/797616150?h=0c818ab657" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" name="fitvid0" frameborder="0"></iframe>
-
-[Source](https://www.c2dh.uni.lu/thinkering/usages-pedagogiques-de-chatgpt-enregistrement-de-la-table-ronde). 
+- I have organized an event on ChatGPT (French). The video's is on the [C<sup><small>2</small></sup>DH's website](https://www.c2dh.uni.lu/thinkering/usages-pedagogiques-de-chatgpt-enregistrement-de-la-table-ronde). 
 
 - I participated to the History communication ChatGPT, AI & history event (English). My prez is [here](- 01.02.2023 [ChatGPT: a pedagogical use case (HCI ChatGPT event)](2023-02-01_chatGPT_HCI/2023-02-01_chatGPT_HCI.html))
 
