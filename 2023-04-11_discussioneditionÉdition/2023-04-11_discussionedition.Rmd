@@ -1,0 +1,138 @@
+---
+title: 'discussion écritures numériques'
+date: '<small>11/4/2023</small>'
+output:
+  revealjs::revealjs_presentation:
+    theme: simple
+    center: true
+    reveal_options:
+      slideNumber: true
+      width: 1280
+      height: 720
+    background_transition: fade
+---
+
+# contexte
+
+jdh / livre
+
+## acteurs
+
+1. auteurs et autrices <br />environnement d'écriture
+2. évaluateurs
+3. correcteurs
+    - texte « en langage naturel »
+    - code (*technical review*)
+4. maison d'édition
+    - « marketing » dans un sens large<br /> (insertion du journal dans les grandes bases de données)
+    - standards &rarr; XML/PDF
+5. lecteurs et lectrices
+
+## contexte socio-technique
+
+<br />
+
+informatique bureau et palmaire / mise en données / mise en réseaux
+
+matérialité / mobilité (matérielle) / fluidité (logicielle, usages)
+
+
+## quelles écritures en shs?
+
+hypertexte / traces
+
+
+# contexte d'ouverture des possibles
+
+mais...
+
+## [goût de l'archive à l'ère numérique](https://www.gout-numerique.net)
+
+- écriture en public: certains chapitres « clé en main »
+- écriture **commentée** en public: moitié des commentaires par nous
+
+## expérimenter les humanités numériques
+
+aucun auteur / autrice n'est revenu pour enrichir son chapitre.
+
+## possibles ≠ usages
+
+enchevêtrement et héritage des contextes et pratiques
+
+# environnement d'écriture
+
+question centrale 
+
+## correspondre aux besoins des différents acteurs
+
+## insertion en contexte socio-technique
+
+- écriture hypertexte: possibles et usages
+
+- recherche comme productrice de « traces »
+    - texte (langage naturel) &rarr; résultat classique
+    - code, données, expositions en ligne, etc.
+
+- environnement de lecture
+    - problème de la lecture à l'écran
+
+## réponse logicielle
+
+## open
+
+access / data / science
+
+- réponse logicielle et éditoriale
+- limites légitimes mais sources d'abus
+
+## open source
+- forte communauté
+- pérennisation
+
+&rarr; **modularité**
+
+## modularité
+
+<br />
+
+- répondre à tous les besoins des acteurs
+    - éviter oppression d'une modellisation trop contraignante
+- prix potentiellement élevé
+    - fluidité environnement logiciel
+    - cite2c <br />module dépassé
+    
+
+## traces
+
+- se pose de manière insistante avec les articles
+- centrale si l'on passe au livre
+
+<br />
+
+| article &rarr; méthode |
+|---|
+| **livre &rarr; argument**  |
+
+# quel livre numérique ?
+
+monographie
+
+## enchevêtrement et héritage
+
+<br />
+
+- argument-driven
+- statut du livre en histoire / shs
+- poids des maisons d'édition
+
+## cercles concentriques
+
+<br />
+
+1. livre (papier / PDF / ePub)
+2. livre étendu  (texte, code, données)
+3. produits dérivés §expositions)
+
+## maintenance et préservation
+
+[Managing the Digital Backlist: Sustaining, Preserving, and Deleting Old Projects](https://jessicaotis.com/digital-humanities/managing-the-digital-backlist/)
