@@ -1,6 +1,6 @@
 ---
 author: 'frédéric clavert'
-title: 'Les usages scientifiques du web : <br />intérêt, méthodes et limites ?'
+title: 'usages scientifiques du web : intérêt, méthodes et limites ?'
 output:
   revealjs::revealjs_presentation:
     theme: simple
@@ -15,7 +15,7 @@ output:
 ---
 
 
-# 
+# qui suis-je?
 
 histoire des relations internationales
 
@@ -32,7 +32,8 @@ trois projets de recherche:
 - awac2 / analysing web archives of the covid crisis through the iipc novel coronavirus dataset <br />(avec susan aasman, niels brügger, sophie gébeil, valérie schafer, joshgun sirajzade, karin de wild)
 
 <aside class='notes'>
-Je vais parler des archives du web mais également des cas où, comme chercheurs et chercheuses, nous créons nos propres corpus à partir des traces des grandes plateformes du web, plus particulièrement twitter.
+
+Je vais parler des archives du web mais également des cas où, comme chercheurs et chercheuses, nous créons nos propres corpus à partir des traces des grandes plateformes du web, plus particulièrement twitter dans mon cas.
 
 Sur le base de ces trois projets de recherche et, donc, de ma propre expérience, je vais essayer de passer en revue ce qu'il est possible de faire avec des sources primaires issues du web.
 
@@ -42,13 +43,17 @@ Mon expérience est plutôt quantitative et cette présentation va le refléter,
 
 # explorer l'archive infinie
 
-<img src="img/www.png" style="border:none;" height="400px"/>
+<!-- <img src="img/www.png" style="border:none;" height="400px"/> -->
 
 <small>Milligan, Ian. [‘Lost in the Infinite Archive: The Promise and Pitfalls of Web Archives’](https://doi.org/10.3366/ijhac.2016.0161).<br />International Journal of Humanities and Arts Computing, vol. 10, no. 1, Mar. 2016, pp. 78–94.</small>
 
 <aside class='notes'>
 
-Je ne sais pas exactement d'où vient l'expression "infinite archive" -- mais je l'ai vue pour la première fois utilisée par William J. Turkel (University of Western Ontario) en 2008. Autre canadien, Ian Milligan l'utilise 
+Je ne sais pas exactement d'où vient l'expression "infinite archive" -- mais je l'ai vue pour la première fois utilisée par William J. Turkel (University of Western Ontario) en 2008. Autre canadien, Ian Milligan l'a aussi utilisée.
+
+Bien sûr, il ne s'agit pas d'une archive infinie à proprement parler mais le web est en soi tellement vaste qu'il est infini pour l'entendement humain. 
+
+Internet archive, c'est plus de 800 milliards de pages web. *Common Crawl*, c'est plus de 80 To compressés (et c'est un version très épurée d'une archive du web) en 2023 (102 Tb non compressés en 2013).
 
 </aside>
 
@@ -56,21 +61,25 @@ Je ne sais pas exactement d'où vient l'expression "infinite archive" -- mais je
 
 - newsgroups (usenet / google groups)
 - le web et ses 30+ ans d'histoire et de sites (parfois perdus)
-- réseaux sociaux numériques
+- réseaux sociaux numériques et grandes plateformes du web
 
 etc.
+
+## de nouvelles sources
+
+ia génératives: les prompts (requêtes), les textes et images engendrées, etc. 
 
 ## des sujets de recherche variées
 
 - [migrations / diasporas](http://www.e-diasporas.fr/index.html#top) - dana diminescu
 - [sociabilités et troubles alimentaires](https://www.pressesdesmines.com/produit/le-phenomene-pro-ana/) - antonio casilli / paola tubaro
 - [histoire parlementaire](https://research.utu.fi/converis/portal/detail/Publication/175659577?lang=fi_FI) - kimmo elo
-- [(digital) memory studies](https://www.routledge.com/Digital-Memory-Studies-Media-Pasts-in-Transition/Hoskins/p/book/9781138639386) - andrew Hoskins
+- [(digital) memory studies](https://www.routledge.com/Digital-Memory-Studies-Media-Pasts-in-Transition/Hoskins/p/book/9781138639386) - andrew hoskins
 - [genre](https://journals.openedition.org/ctd/6049?lang=fr) - thibault grison / virginie julliard
 - [espaces publics](https://journals.openedition.org/ctd/6049?lang=fr) - fred pailler / maxime cervulle
-- histoire du temps présent: [projets ASAP (Valérie Schafer)]((https://asap.hypotheses.org/)) / [multitude de projets autour du covid-19](https://covidmemory.lu/)
-- le web lui-même:
-  - reconstitution d'un [domaine national disparu (.yu)](https://doi.org/10.1177/1461444816643790)
+- histoire du temps présent: [projets asap (valérie schafer)]((https://asap.hypotheses.org/)) / [multitude de projets autour du covid-19](https://covidmemory.lu/)
+- le web lui-même: reconstitution d'un [domaine national disparu (.yu)](https://doi.org/10.1177/1461444816643790)
+- [histoire sociale et web](https://journalofdigitalhistory.org/en/cfp/history-of-the-web) (nadezhda povroznik)
 
 etc...
 
@@ -78,7 +87,7 @@ etc...
 
 ## sources archivées...
 
-**Archives du web**
+**archives du web**
 
 - bien connaître les conditions d'archivage
 - les relier au sujet de recherche
@@ -95,15 +104,35 @@ Même en France, l'archivage du web vernaculaire est parfois débattu: l'archiva
 
 Il est toujours intéressant de regarde ce qu'Internet Archive a archivé. Comme l'ont constaté ces collègues évoqués ci-dessus, il peut y avoir des archivages complémentaires à votre recherche.
 
+Alors, dans quelle archive aller? tout dépend un peu de votre sujet et, parfois, combiner est la meilleure solution, d'autant plus qu'avec ces différentes archives, il y a aussi souvent des outils différents.
+
 </aside>
 
 ## ...sources sauvées...
 
-- GeoCities
+- geocities
 
 <small>Milligan, Ian. ‘Welcome to the Web: The Online Community of GeoCities during the Early Years of the World Wide Web’. in: *The Web as History: Using Web Archives to Understand the Past and the Present*, edited by Niels Brügger and Ralph Schroeder, UCL Press, 2017. DOI.org (Crossref), https://doi.org/10.2307/j.ctt1mtz55k.</small>
 
-- mais aussi des sources perdues: mygale.org 
+- [sucho](https://sucho.org)
+
+- [docnow](https://www.docnow.io/) - twitter et l'activisme politique
+
+- mais aussi perdues: mygale.org, myspace avant 2013, etc. 
+
+<aside class="notes">
+
+Par les services d'archives du web ou en dehors, il y a eu des opérations pour sauver des sources en ligne. J'ai cité les SkyBlogs, mais en dehors de l'archivage du web par les institutions nationales, il y a aussi des organismes qui essayent de sauver des archives du web:
+
+- geocities par le groupe ArchiveTeam
+- SUCHO 
+- docnow pour l'activisme tel qu'il s'exprime sur twitter, à la suite des manifestations de Ferguson puis #blacklivesmatter
+
+Mais, si l'on prend l'équivalent français de geocities, mygale, devenu ensuite multimania, ce n'est pas archivé. myspace a aussi effacé énormément de données en 2013, etc.
+
+Il y a donc des trous dans l'archivage du web et des médias sociaux, comme dans toute archive d'ailleurs, mais il faut les en être conscient.
+
+</aside>
 
 ## ...sources à collecter
 
@@ -129,19 +158,17 @@ Les motifs ne sont pas le respect de la vie privée, mais sont bien commerciaux 
 
 Enfin, collecter ses données, outre la rigueur dans la collecte qu'il faut s'imposer, pose des enjeux éthique et de protection des données qui ne sont pas négligeables.
 
-# si loin, si proche:<br /> lire les sources de l'archive infinie
+# lire les sources de l'archive infinie
 
 ## lecture proche, lecture distante...
 
-![](../img/friedrich.jpeg)
-
-
+<img src="../img/friedrich.jpeg" width="25%" style="border:none;" />
 
 <aside class="notes">
 
-VOus voyez ici un tableau de Friedrich, mais peut-être aussi, un checheur ou une chercheuse face à une mer de données. Avec les archives du web ou des données issues du web d'une manière ou d'une autre, le risque -- ou l'avantage -- d'avoir un corpus pour ses recherches qui soit massif est grand.
+Vous voyez ici un tableau de Friedrich, mais peut-être aussi, un checheur ou une chercheuse face à une mer de données. Avec les archives du web ou des données issues du web d'une manière ou d'une autre, le risque -- ou l'avantage -- d'avoir un corpus pour ses recherches qui soit massif est grand.
 
-Donnons ici au terme big data une définition simple: lorsque l'on a trop de données pour pouvoir les analyses (algorithmiques) avec son propre ordinateur.
+Donnons ici au terme big data une définition simple: lorsque l'on ne peux plus lire soi-même ses sources.
 
 Alors, on doit demander à l'ordinateur de lire pour nous: c'est la lecture distante proposée par Franco Moretti en 2007. Pour Moretti, il s'agissait de pouvoir faire une histoire de la littérature européenne qui soit plus complète, inègrant les oeuvres des auteurs et autrices oubliées mais aussi les œuvres oubliées des auteurs et autrices connues.
 
@@ -151,7 +178,7 @@ L'opposition lecture proche / lecture distante est d'ailleurs une opposition iss
 
 </aside>
 
-## ..lecture multiscalaire
+## ...lecture multiscalaire
 
 
 <small>Clavert, Frédéric, and Andreas Fickers. ‘On Pyramids, Prisms, and Scalable Reading’. Journal of Digital History, no. jdh001, 2021, https://journalofdigitalhistory.org/en/article/jXupS3QAeNgb.</small>
@@ -168,12 +195,11 @@ Nous penchons plutôt pour pour une articulation entre:
 
 ## la lecture distante pour comprendre un corpus
 
-![](../img/bigdata.png)
+<div style="float:left">
+<img src="../img/bigdata.png" width='70%' style="border:none;" /></div>
 
-<centre>Projet 'Analysing Web Archive of the Covid Crisis (AWAC2)'</centre>
-
-- Archives Unleased (Waterloo) / Archive-It (Internet Archive) 
-- avec S. Aasman, Niels Brügger, Sophie Gébeil, Valérie Schafer, Joshgun Sirajzade, Karin de Wild
+<centre><br /><br />*analysing web archive of the covid crisis (awac2)*<br />
+<small>archives unleashed (waterloo) / archive-it (internet archive)</small></centre>
 
 <aside class="notes">
 
@@ -181,6 +207,7 @@ Nous penchons plutôt pour pour une articulation entre:
 - au démarrage du projet: 5Tb
 - coopération internationale, énormément d'institutions y cont contribué.
 - comprendrele corpus nous a pris plus d'un an, car chaque institution, malgré les instructions de l'IIPC, a appliqué aussi ses critères.
+- avec S. Aasman, Niels Brügger, Sophie Gébeil, Valérie Schafer, Joshgun Sirajzade, Karin de Wild
 - un ensemble d'entretiens menés par le réseau WARCnet (Danemark) nous a aidé,
 - mais aussi et surtout la lecture distante du corpus. 
 
@@ -197,7 +224,7 @@ Ici, la lecture distante, avant de nous permettre de faire des analyses, nous pe
 
 ## la lecture distante à des fins d'analyse
 
-<img src="../img/figure01.png" width=800px />
+<img src="../img/figure01.png" width=600px style="border:none;" />
 
 <aside class='notes'>
 
@@ -207,23 +234,23 @@ Toutes les visualisations que vous allez voir ici sont faites avec des logiciels
 
 ##
 
-<img src="../img/figure02.png" width=800px />
+<img src="../img/figure02.png" width=900px style="border:none;" />
 
 ##
 
-<img src="../img/figure03.png" width=800px />
+<img src="../img/figure03.png" width=900px style="border:none;" />
 
 ## 
 
-<img src="../img/figure04.png" width=800px />
+<img src="../img/figure04.png" width=600px style="border:none;" />
 
 ##
 
-<img src="../img/figure04b.png" width=800px />
+<img src="../img/figure04b.png" width=900px style="border:none;" />
 
 ##
 
-<img src="../img/figure06.png" width=500px />
+<img src="../img/figure06.png" width=500px style="border:none;" />
 
 ## la lecture proche des archives du web
 
@@ -248,12 +275,13 @@ etc.
 
 ## archives reconstituées et inconsistences temporelles
 
-![](img/internet_archive.png)
+<div style="float:left;" />
+<img src="img/internet_archive.png" width="50%" style="border:none;" />
+</div>
 
 <small>Brügger, Niels. The Archived Web: Doing History in the Digital Age. MIT Press, 2018.</small>
 
-<small>Clavert, Frédéric, et al. ‘Préservation et distorsion : l’espace-temps des réseaux socio-numériques et du web archivé’. Revue d’histoire culturelle, vol. 2022, no. 5, Oct. 2022, https://doi.org/10.56698/rhc.2791.</small>
-
+<small>Clavert, Frédéric, Mahroug, Sophia, Schafer, Valérie. ‘Préservation et distorsion : l’espace-temps des réseaux socio-numériques et du web archivé’. Revue d’histoire culturelle, vol. 2022, no. 5, Oct. 2022, https://doi.org/10.56698/rhc.2791.</small>
 
 <aside class='notes'>
 
@@ -266,8 +294,6 @@ Les archives du web stockent des pages web qui, pour le web dynamique notamment 
 
 ## choix des outils et choix historiographiques
 
-un outil peut correspondre à un choix historiographique
-
 <aside class='notes'>
 
 C'est une évidence de dire que les outils ne sont ni bons, ni mauvais, ni neutres. Un logiciel, c'est un choix.
@@ -279,7 +305,7 @@ Importance de documenter ses choix.
 
 </aside>
 
-## instabilité des modes de collecte et dépendance aux grandes plateformes
+## dépendance aux grandes plateformes
 
 <img src="img/ranke2.png" height="500px" style="border:none;" />
 
@@ -304,3 +330,51 @@ Twitter n'est pas la seule plateforme à avoir fermé un accès gratuit à ses d
 </aside>
 
 
+# en guise de conclusion
+
+## pour commencer
+
+- Gebeil, Sophie. *Website story: histoire, mémoires et archives du web*. INA, 2021.
+- Schafer, Valérie. *En construction: La fabrique française d’Internet et du Web dans les années 1990*. INA, 2018.
+- Brügger, Niels. *The Archived Web: Doing History in the Digital Age*. MIT Press, 2018.
+- Milligan, Ian. [*The Transformation of Historical Research in the Digital Age*](https://doi.org/10.1017/9781009026055).Cambridge University Press, 2022.
+- Brügger, Niels, and Ralph Schroeder, editors. [*Web as History: Using Web Archives to Understand the Past and the Present*](https://press.uchicago.edu/ucp/books/book/distributed/W/bo35506603.html). UCL Press, 2017.
+
+## sociologie et memory studies
+
+- Casilli, Antonio. *Les liaisons numériques vers une nouvelle sociabilité?* Le Seuil, 2010.
+- Lupton, Deborah. *Digital Sociology*. Routledge, Taylor & Francis Group, 2015.
+- Boullier, Dominique. *Sociologie du numérique*. Armand Colin, 2016.
+- Casilli, Antonio, and Paola Tubaro. *Le phénomène ‘pro-ana’: Troubles alimentaires et réseaux sociaux*. École des mines, 2016.
+
+- Hoskins, Andrew, editor. *Digital Memory Studies: Media Pasts in Transition*. Routledge, 2018.
+
+## et pour aller plus loin
+
+<small>
+
+[publications de Dana Diminescu](https://www.telecom-paris.fr/dana-diminescu)
+
+Grison, Thibault, and Virginie Julliard. [‘Les enjeux de la modération automatisée sur les réseaux sociaux numériques : les mobilisations LGBT contre la loi Avia’](https://doi.org/10.4000/ctd.6049). Communication, technologies et développement, no. 10, 10, May 2021.
+
+Milligan, Ian. [‘Lost in the Infinite Archive: The Promise and Pitfalls of Web Archives’](https://doi.org/10.3366/ijhac.2016.0161). International Journal of Humanities and Arts Computing, vol. 10, no. 1, Mar. 2016, pp. 78–94.
+
+Milligan, Ian. [‘Welcome to the Web: The Online Community of GeoCities during the Early Years of the World Wide Web’.](https://doi.org/10.2307/j.ctt1mtz55k) in: *The Web as History: Using Web Archives to Understand the Past and the Present*, edited by Niels Brügger and Ralph Schroeder, UCL Press, 2017.
+
+Clavert, Frédéric, and Andreas Fickers. [‘On Pyramids, Prisms, and Scalable Reading’](https://journalofdigitalhistory.org/en/article/jXupS3QAeNgb). Journal of Digital History, no. jdh001, 2021.
+
+Clavert, Frédéric, Mahroug, Sophia, Schafer, Valérie. [‘Préservation et distorsion : l’espace-temps des réseaux socio-numériques et du web archivé’](https://doi.org/10.56698/rhc.2791). Revue d’histoire culturelle, vol. 2022, no. 5, Oct. 2022.
+
+</small>
+
+## pour aller plus loin (suite)
+
+<small> 
+
+[« Les conversations sur les médias sociaux sont des expressions démocratiques qui ne sauraient être cachées à la recherche »’](https://www.lemonde.fr/idees/article/2023/06/16/les-conversations-sur-les-medias-sociaux-sont-des-expressions-democratiques-qui-ne-sauraient-etre-cachees-a-la-recherche_6177952_3232.html). Le Monde.fr, 16 Juin 2023.
+
+Cervulle, Maxime, and Fred Pailler. [*‘#mariagepourtous : Twitter et la politique affective des hashtags’*](http://rfsic.revues.org/717). Revue française des sciences de l’information et de la communication, no. 4, Jan. 2014.
+
+Ben-David, Anat. [‘What Does the Web Remember of Its Deleted Past? An Archival Reconstruction of the Former Yugoslav Top-Level Domain’](https://doi.org/10.1177/1461444816643790). New Media & Society, vol. 18, no. 7, Aug. 2016, pp. 1103–19.
+
+</small>
