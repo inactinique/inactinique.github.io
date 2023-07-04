@@ -10,7 +10,7 @@ Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>.
 
 (date format: dd.mm.yyyy)
 
-- 04.07.2021 [usages scientifiques du web : intérêt, méthodes et limites ?](https://inactinique.github.io/2023-07-04_ITI-MAKErs/2023-07-04_ITI-MAKErs.html#/)
+- 04.07.2021 [usages scientifiques du web : intérêt, méthodes et limites ?](https://inactinique.github.io/2023-07-04_ITI-MAKErs/2023-07-04_ITI-MAKErs.html#/) -- école d'été ITI-MAKErs
 - 24.05.2023 [history and social media](https://inactinique.github.io/2023-05-23_HistorySocialMedia/2023-05-23_HistorySocialMedia.html#/)
 - 13.04.2023 [prompting the past](https://inactinique.github.io/2023-04-13_PromptingThePast/2023-04-13_PromptingThePast.html), Colloque [« History and/in Digital Humanities »](https://www.crihn.org/nouvelles/2023/04/04/colloque-history-and-in-digital-humanities/)
 - 03.04.2023 [Une mémoire collective à haute fréquence ? Propositions méthodologiques et critiques pour l’étude des échos de mémoire collective sur les réseaux sociaux numériques](https://inactinique.github.io/2023-04-03_CEHNUM/2023-04-03_CEHNUM.html) - Colloque [*La mémoire en humanités numériques*](https://www.crihn.org/nouvelles/2023/02/22/1er-colloque-etudiants-du-crihn/)

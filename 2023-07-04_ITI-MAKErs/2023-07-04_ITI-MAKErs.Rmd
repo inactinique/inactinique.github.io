@@ -90,8 +90,7 @@ etc...
 
 **archives du web**
 
-- bien connaître les conditions d'archivage
-- les relier au sujet de recherche
+<a src="https://op.europa.eu/en/web/euwebarchive"><img src="img/eu_webarchive.png" width='50%' style="border:none;"></a>
 
 <aside class="notes">
 
