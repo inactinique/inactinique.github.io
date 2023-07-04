@@ -1,5 +1,6 @@
 ---
-author: 'frédéric clavert'
+author: "frédéric clavert<br /><small>@inactinique@mastodon.social / frederic.clavert@uni.lu / inactinique.github.io<br />école d'été interdisciplinaire, ITI MAKErs</small>"
+date: '4 juillet 2023'
 title: 'usages scientifiques du web : intérêt, méthodes et limites ?'
 output:
   revealjs::revealjs_presentation:
@@ -41,7 +42,7 @@ Mon expérience est plutôt quantitative et cette présentation va le refléter,
 
 </aside>
 
-# explorer l'archive infinie
+# l'archive infinie
 
 <!-- <img src="img/www.png" style="border:none;" height="400px"/> -->
 
