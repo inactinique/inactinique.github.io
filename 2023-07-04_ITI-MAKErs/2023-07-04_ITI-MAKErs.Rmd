@@ -66,6 +66,12 @@ Internet archive, c'est plus de 800 milliards de pages web. *Common Crawl*, c'es
 
 etc.
 
+<aside class="notes">
+
+Les newsgroups ont été importants par exemple dans la campagne de 2005 pour le référendum sur le traité constitutionnel européen.
+
+</aside>
+
 ## de nouvelles sources
 
 ia génératives: les prompts (requêtes), les textes et images engendrées, etc. 
@@ -378,3 +384,10 @@ Cervulle, Maxime, and Fred Pailler. [*‘#mariagepourtous : Twitter et la poli
 Ben-David, Anat. [‘What Does the Web Remember of Its Deleted Past? An Archival Reconstruction of the Former Yugoslav Top-Level Domain’](https://doi.org/10.1177/1461444816643790). New Media & Society, vol. 18, no. 7, Aug. 2016, pp. 1103–19.
 
 </small>
+
+# ressources
+
+- [WARCnet](https://cc.au.dk/en/warcnet/)
+- [RESAW](https://resaw2023.sciencesconf.org/)
+- [IIPC](https://netpreserve.org/)
+- [The Programming Historian](https://programminghistorian.org/)
