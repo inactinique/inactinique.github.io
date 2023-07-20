@@ -4,12 +4,14 @@ I am an assistant professor in contemporary history at the [Centre for Contempor
 
 I am using this page as a repository for some of my [prez](#prez), the recent [ChatGPT roundtables](#chatgpt-roundtables) I was part of, my [non-academic](#non-academic-writings) and  [academic](#academic-writings) writings.
 
-- Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>.
-- My <a href="https://www.c2dh.uni.lu/people/frederic-clavert">profile</a> on the C<sup><small>2</sup></small>DH website.
+<center>Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>
+| My <a href="https://www.c2dh.uni.lu/people/frederic-clavert">profile</a> on the C<sup><small>2</small></sup>DH website.</center>
 
 ## Prez
 
 (date format: dd.mm.yyyy)
+
+(in some cases, you can access the presenter's text by pressing the 's' key)
 
 - 04.07.2021 [usages scientifiques du web : intérêt, méthodes et limites ?](https://inactinique.github.io/2023-07-04_ITI-MAKErs/2023-07-04_ITI-MAKErs.html#/) -- école d'été ITI-MAKErs
 - 24.05.2023 [history and social media](https://inactinique.github.io/2023-05-23_HistorySocialMedia/2023-05-23_HistorySocialMedia.html#/)
