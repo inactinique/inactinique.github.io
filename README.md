@@ -9,7 +9,7 @@ I am using this page as a repository for some of my [prez](#prez), the recent [C
 
 ## Prez
 
-(date format: dd.mm.yyyy )
+(date format: dd.mm.yyyy)
 
 - 04.07.2021 [usages scientifiques du web : intérêt, méthodes et limites ?](https://inactinique.github.io/2023-07-04_ITI-MAKErs/2023-07-04_ITI-MAKErs.html#/) -- école d'été ITI-MAKErs
 - 24.05.2023 [history and social media](https://inactinique.github.io/2023-05-23_HistorySocialMedia/2023-05-23_HistorySocialMedia.html#/)
