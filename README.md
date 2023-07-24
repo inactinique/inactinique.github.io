@@ -2,7 +2,7 @@
 
 I am an assistant professor in contemporary history at the [Centre for Contemporary and Digital History](https://c2dh.uni.lu). My research focuses on social media and some AI system do to the ways we are understanding our historical past. I am the managing editor of the [Journal of Digital History](https://www.journalofdigitalhistory.org) and co-edited the [*Goût de l'archive à l'ère numérique*](https://gout-numerique.net) with Caroline Muller (Rennes 2). 
 
-I am using this page as a repository for some of my [prez](#prez), the recent [ChatGPT roundtables](#chatgpt-roundtables) I was part of, my [non-academic](#non-academic-writings) and  [academic](#academic-writings) writings.
+I am using this page as a repository for some of my [prez](#prez), the recent [ChatGPT roundtables](#chatgpt-roundtables) I was part of, my [non-academic](#non-academic-writings) and  [academic](#all-my-writings) writings.
 
 <center>Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>
 | My <a href="https://www.c2dh.uni.lu/people/frederic-clavert">profile</a> on the C<sup><small>2</small></sup>DH website.</center>
