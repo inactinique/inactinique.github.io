@@ -6,4 +6,6 @@ I am not here starting again a blogging activity, but just storing some texts th
 
 (date format: yyyy.mm.dd)
 
-- 2023.07.24 - [*Chatting with the Past? How AI is Changing Our Notion of History*](20230724.md) -- preparatory text for an interview with Dr. Felix Fuhg (Körber Stiftung)
+- 2023.07.24 - [*Chatting with the Past? How AI is Changing Our Notion of History*](blog/20230724.md) -- preparatory text for an interview with Dr. Felix Fuhg (Körber Stiftung)
+
+[Back](https://inactinique.net/)
