@@ -2,7 +2,7 @@
 
 I am an assistant professor in contemporary history at the [Centre for Contemporary and Digital History](https://c2dh.uni.lu). My research focuses on social media and some AI system do to the ways we are understanding our historical past. I am the managing editor of the [Journal of Digital History](https://www.journalofdigitalhistory.org) and co-edited the [*Goût de l'archive à l'ère numérique*](https://gout-numerique.net) with Caroline Muller (Rennes 2). 
 
-I am using this page as a repository for some of my [prez](#prez), [ChatGPT events](#chatgpt-events) I was part of, my [non-academic](#non-academic-writings) and  [academic](#all-my-writings) writings.
+I am using this page as a repository for some of my [prez](#prez), [ChatGPT events](#chatgpt-events) I was part of, my [non-academic](#non-academic-writings) and  [academic](#all-my-writings) writings. I will publish some unpublished texts on a sort of [blog](content/blog.md).
 
 <!-- <center>Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>
 | My <a href="https://www.c2dh.uni.lu/people/frederic-clavert">profile</a> on the C<sup><small>2</small></sup>DH website.</center>-->
@@ -11,7 +11,7 @@ I am using this page as a repository for some of my [prez](#prez), [ChatGPT even
 
 (date format: dd.mm.yyyy / in some cases, you can access the presenter's text by pressing the 's' key)
 
-- 04.07.2021 [usages scientifiques du web : intérêt, méthodes et limites ?](https://inactinique.github.io/2023-07-04_ITI-MAKErs/2023-07-04_ITI-MAKErs.html#/) -- école d'été ITI-MAKErs
+- 04.07.2023 [usages scientifiques du web : intérêt, méthodes et limites ?](https://inactinique.github.io/2023-07-04_ITI-MAKErs/2023-07-04_ITI-MAKErs.html#/) -- école d'été ITI-MAKErs
 - 24.05.2023 [history and social media](https://inactinique.github.io/2023-05-23_HistorySocialMedia/2023-05-23_HistorySocialMedia.html#/)
 - 13.04.2023 [prompting the past](https://inactinique.github.io/2023-04-13_PromptingThePast/2023-04-13_PromptingThePast.html), Colloque [« History and/in Digital Humanities »](https://www.crihn.org/nouvelles/2023/04/04/colloque-history-and-in-digital-humanities/)
 - 03.04.2023 [Une mémoire collective à haute fréquence ? Propositions méthodologiques et critiques pour l’étude des échos de mémoire collective sur les réseaux sociaux numériques](https://inactinique.github.io/2023-04-03_CEHNUM/2023-04-03_CEHNUM.html) - Colloque [*La mémoire en humanités numériques*](https://www.crihn.org/nouvelles/2023/02/22/1er-colloque-etudiants-du-crihn/)
@@ -24,6 +24,8 @@ I am using this page as a repository for some of my [prez](#prez), [ChatGPT even
 - 02.02.2022 [Goût des archives nativement numérique et *digital bricolage*: L’historien·ne face aux données massives du web](2022-02-02_Epitech/20220202_Epitech.html)
 - 08.04.2021 [Apprendre le numérique et renouveler la critique des sources (Printemps des Humanités numériques)](2021-04-08_printempsHN/2021-04-08_printempsHN.html)
 - 07.01.2020 [Commemorating the Great War on Twitter](2020-01-07_IHR/2020-01-07_IHR.html). You can watch this [seminar's video](https://www.youtube.com/watch?v=KDPONgG5H88) on YouTube.
+
+More on the [archive](content/archive.md) page.
 
 ## ChatGPT events
 
