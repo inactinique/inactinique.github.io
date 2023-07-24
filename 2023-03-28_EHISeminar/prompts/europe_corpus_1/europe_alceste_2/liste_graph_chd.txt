@@ -1,3 +1,0 @@
-dendro1.png;dendrogramme à partir de chd1
-arbre_1.png;chd1
-/Users/frederic.clavert/Desktop/prompts/europe_corpus_1/europe_alceste_2/dendrogramme_1.png;Dendrogramme CHD1 - phylogram

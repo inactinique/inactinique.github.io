@@ -1,8 +1,0 @@
-wellmania
-les filles du derniers rangs
-unstable
-
-
-
-twarc2 counts --archive --csv --granularity day "(stablediffusion) -is:retweet lang:en"  stablediffusion_noRT_en_count.csv
-
