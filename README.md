@@ -2,16 +2,14 @@
 
 I am an assistant professor in contemporary history at the [Centre for Contemporary and Digital History](https://c2dh.uni.lu). My research focuses on social media and some AI system do to the ways we are understanding our historical past. I am the managing editor of the [Journal of Digital History](https://www.journalofdigitalhistory.org) and co-edited the [*Goût de l'archive à l'ère numérique*](https://gout-numerique.net) with Caroline Muller (Rennes 2). 
 
-I am using this page as a repository for some of my [prez](#prez), the recent [ChatGPT roundtables](#chatgpt-roundtables) I was part of, my [non-academic](#non-academic-writings) and  [academic](#all-my-writings) writings.
+I am using this page as a repository for some of my [prez](#prez), [ChatGPT events](#chatgpt-roundtables) I was part of, my [non-academic](#non-academic-writings) and  [academic](#all-my-writings) writings.
 
-<center>Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>
-| My <a href="https://www.c2dh.uni.lu/people/frederic-clavert">profile</a> on the C<sup><small>2</small></sup>DH website.</center>
+<!-- <center>Join me on <a rel="me" href="https://mastodon.social/@inactinique">mastodon</a>
+| My <a href="https://www.c2dh.uni.lu/people/frederic-clavert">profile</a> on the C<sup><small>2</small></sup>DH website.</center>-->
 
 ## Prez
 
-(date format: dd.mm.yyyy)
-
-(in some cases, you can access the presenter's text by pressing the 's' key)
+(date format: dd.mm.yyyy / in some cases, you can access the presenter's text by pressing the 's' key)
 
 - 04.07.2021 [usages scientifiques du web : intérêt, méthodes et limites ?](https://inactinique.github.io/2023-07-04_ITI-MAKErs/2023-07-04_ITI-MAKErs.html#/) -- école d'été ITI-MAKErs
 - 24.05.2023 [history and social media](https://inactinique.github.io/2023-05-23_HistorySocialMedia/2023-05-23_HistorySocialMedia.html#/)
@@ -27,7 +25,7 @@ I am using this page as a repository for some of my [prez](#prez), the recent [C
 - 08.04.2021 [Apprendre le numérique et renouveler la critique des sources (Printemps des Humanités numériques)](2021-04-08_printempsHN/2021-04-08_printempsHN.html)
 - 07.01.2020 [Commemorating the Great War on Twitter](2020-01-07_IHR/2020-01-07_IHR.html). You can watch this [seminar's video](https://www.youtube.com/watch?v=KDPONgG5H88) on YouTube.
 
-## ChatGPT roundtables
+## ChatGPT events
 
 (date format: dd.mm.yyyy)
 
