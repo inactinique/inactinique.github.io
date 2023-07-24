@@ -1,6 +1,6 @@
-title: Frédéric Clavert - (Digital) Historian
+title: Frédéric Clavert
 theme: jekyll-theme-dinky
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 show_downloads: false
-description: I am an assistant professor in contemporary history at the Centre for Contemporary and Digital History. My research focuses on social media and some AI system do to the ways we are understanding our historical past. I am the managing editor of the Journal of Digital History and co-edited the Goût de l’archive à l’ère numérique with Caroline Muller (Rennes 2).
+description: (Digital) Historian
