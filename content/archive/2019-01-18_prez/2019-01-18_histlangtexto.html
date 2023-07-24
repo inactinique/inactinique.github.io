@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content=" Frédéric Clavert (C2DH, fredeirc.clavert@uni.lu)  Colloque «histoire, langues et textométrie»" />
+  <title>Si loin, si proche:  histoire, mémoire et lecture distante  à l’ère des données massives</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="2019-01-18_histlangtexto_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="2019-01-18_histlangtexto_files/reveal.js-3.3.0.1/css/theme/white.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Si loin, si proche:<br /><small> histoire, mémoire et lecture distante<br /> à l’ère des données massives</small></h1>
+    <h2 class="author"><br /><small>Frédéric Clavert<br />(C2DH, <a href="mailto:fredeirc.clavert@uni.lu" class="email">fredeirc.clavert@uni.lu</a>)<br /> Colloque «histoire, langues et textométrie»</small></h2>
+    <h3 class="date"><br /><small>17 janvier 2019</small></h3>
+</section>
+
+<section><section id="introduction" class="title-slide slide level1" data-background="img/Prez_DH-10_trans.jpg"><h1>Introduction</h1></section><section id="section" class="slide level2" data-background="img/Prez_DH-10_trans.jpg">
+<h2></h2>
+<p>Comment faire face à des données massives<br /> en tant qu’historien.ne? <br /><br /> En quoi la textométrie est-elle<br /> l’une des réponses à cette question?</p>
+</section><section id="plan" class="slide level2" data-background="img/Prez_DH-16_trans.jpg">
+<h2>Plan</h2>
+<ol type="1">
+<li>Temporalités et textométrie: la Grande Guerre sur Twitter</li>
+<li>Textométrie et données massives</li>
+<li>Un nouveau paradigme quantitatif?</li>
+</ol>
+</section></section>
+<section><section id="temporalites-et-textometrie-lexemple-de-la-grande-guerre-sur-twitter" class="title-slide slide level1" data-background="img/ww1-flanders-soldiers_trans.jpg"><h1>1. Temporalités et textométrie<br /> <small>L’exemple de la Grande Guerre sur Twitter</small></h1></section><section id="le-projet-ww1" class="slide level2" data-background="img/ww1-flanders-soldiers_trans.jpg">
+<h2>Le projet #ww1</h2>
+<h3 id="la-grande-guerre-sur-twitter">La Grande Guerre sur Twitter</h3>
+<p>À la croisée des <em>memory studies</em> et de l’histoire contemporaine.</p>
+<ul>
+<li>Collecte de tweets depuis 2014</li>
+<li>mots-clés liés à la Grande Guerre et son Centenaire</li>
+<li>7,3 millions de tweets<br /> (900 000 pour le 11 novembre 2018 à lui seul)</li>
+</ul>
+<p>Que font les réseaux sociaux numériques<br /> aux (traces de) mémoires du passé?</p>
+</section><section id="temporalite-generale" class="slide level2">
+<h2>Temporalité générale</h2>
+<p><img src="img/nbtweetsperday.png" style="border:none"></p>
+</section><section id="temporalite-linguistique" class="slide level2">
+<h2>Temporalité linguistique</h2>
+<p><img src="img/chi2perlanguage.png"  style="border:none"></p>
+</section><section id="contenu-des-tweets-en-francais" class="slide level2">
+<h2>Contenu des tweets en Français</h2>
+<p><img src="img/clustering.png"  style="border:none"></p>
+</section><section id="temporalite-du-contenu" class="slide level2">
+<h2>Temporalité du contenu</h2>
+<p><img src="img/topictime.png" style="border:none"></p>
+</section><section id="temporalite-dune-crise" class="slide level2">
+<h2>Temporalité d’une crise</h2>
+<h3 id="le-cas-de-verdun">Le cas de Verdun</h3>
+<p><img src="img/dendrogramme_1.png" style="border:none"></p>
+</section><section id="le-cas-de-verdun-2" class="slide level2">
+<h2>Le cas de Verdun (2)</h2>
+<p><img src="img/VerdunChronoClasses.png" style="border:none"></p>
+</section><section id="le-cas-verdun-3" class="slide level2">
+<h2>Le cas Verdun (3)</h2>
+<p><img src="img/NBTweetsH.png" style="border:none"></p>
+</section></section>
+<section><section id="textometrie-et-donnees-massives" class="title-slide slide level1" data-background="img/wordle_trans.png"><h1>2. Textométrie et données massives</h1></section><section id="lecture-distante-lecture-proche" class="slide level2" data-background="img/darpa_trans.jpeg">
+<h2>Lecture distante<br /> lecture proche</h2>
+<ul>
+<li>Lecture des sources à l’ère numérique comme interaction entre lecture distante et lecture proche (Moretti 2007)</li>
+<li>Pratique de la textométrie: savoir revenir systématiquement à la source
+<ul>
+<li>Voir apparaître un hashtag par la lecture distante, mais lire les tweets précis pour l’inclure ou non dans la collecte</li>
+<li>Analyser l’ensemble d’un corpus pour comprendre ses temporalités générales,</li>
+<li>Mais se concentrer sur des périodes particulières ou regarder la longue traîne d’un tweet unique</li>
+</ul></li>
+</ul>
+</section><section id="enjeu-massivite-des-donnees" class="slide level2" data-background="img/darpa_trans.jpeg">
+<h2>Enjeu: massivité des données</h2>
+<p>Enjeu important car implique:</p>
+<ul>
+<li>Évolution du matériel informatique à disposition</li>
+<li>Évolution des éléments statistiques et des «algorithmes»</li>
+</ul>
+<p>Comment y faire face comme historien?</p>
+</section><section id="histoire-donnees-massives-et-bricolage" class="slide level2">
+<h2>Histoire, données massives et bricolage</h2>
+</section></section>
+<section><section id="histoire-et-donnees-massives-sinserer-dans-un-nouveau-paradigme-quantitatif" class="title-slide slide level1"><h1>3. Histoire et données massives: <br /><small>s’insérer dans un nouveau paradigme quantitatif ?</small></h1></section><section id="un-nouveau-paradigme-quantitatif" class="slide level2">
+<h2>un nouveau paradigme quantitatif ?</h2>
+<ul>
+<li>Les sciences sociales de troisième génération (D. Boullier)</li>
+<li>Nouveau paradigme quantitatif: machine / deep learning - nouvelles sources</li>
+</ul>
+</section><section id="histoire-textometrie-et-nouveau-paradigme-quantitatif" class="slide level2">
+<h2>Histoire, textométrie et nouveau paradigme quantitatif</h2>
+<ul>
+<li>Quel rôle de la textométrie dans ce cadre?</li>
+<li>Comment s’y insère l’histoire?
+<ul>
+<li>Problématique des RSNs comme sources primaires</li>
+<li>Quels usages?</li>
+<li>Nécessaire pour comprendre les traces laissées en lignes</li>
+<li>Nécessaire pour comprendre la diffusion de l’information sur les RSN</li>
+</ul></li>
+</ul>
+</section></section>
+<section><section id="bibliographie" class="title-slide slide level1"><h1>Bibliographie</h1></section><section id="section-1" class="slide level2">
+<h2></h2>
+<ul>
+<li>Boullier, Dominique. 2015. « Les sciences sociales face aux traces du big data ». Revue française de science politique 65 (5): 805–828. <a href="http://www.cairn.info/resume.php?ID_ARTICLE=RFSP_655_0805" class="uri">http://www.cairn.info/resume.php?ID_ARTICLE=RFSP_655_0805</a>.</li>
+<li>———. 2016. Sociologie du numérique. Paris: Armand Colin.</li>
+<li>Levi-Strauss, Claude. 1990. La pensée sauvage. Paris: Pocket.</li>
+<li>Lupton, Deborah. 2015. Digital sociology. Abingdon, Oxon: Routledge, Taylor &amp; Francis Group.</li>
+<li>Moretti, Franco. 2007. Graphs, Maps, Trees: Abstract Models for Literary History. Verso.</li>
+<li>Schafer, Valérie. 2018. Temps et temporalités du Web. Intelligences numériques. Presses universitaires de Paris Ouest.</li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="2019-01-18_histlangtexto_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="2019-01-18_histlangtexto_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '2019-01-18_histlangtexto_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
