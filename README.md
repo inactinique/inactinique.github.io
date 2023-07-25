@@ -28,6 +28,8 @@ More on the [archive](content/archive.md) page.
 
 (date format: dd.mm.yyyy)
 
+- 16.07.2023 - [« Humans ever more important in a world of AI »](https://play.rtl.lu/shows/en/in-conversation-with-lisa-burke/episodes/n/2081642), *The Lisa Burke Show* (RTL Luxembourg).
+ 
 - 05.04.2023 - I participated to a round-table in French at the Université de Montréal. I'll put here the link to the recording as soon as possible.
 
 - 09.02.2023 - I have organized an event on ChatGPT (French). The video's is on the [C<sup><small>2</small></sup>DH's website](https://www.c2dh.uni.lu/thinkering/usages-pedagogiques-de-chatgpt-enregistrement-de-la-table-ronde). 
