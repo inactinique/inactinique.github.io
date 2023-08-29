@@ -28,6 +28,8 @@ More on the [archive](content/archive.md) page.
 
 (date format: dd.mm.yyyy)
 
+- 08.08.2023 - [« Chatting with the Past ». Geschichte ist Gegenwart! Der History & Politics Podcast der Körber-Stiftung](https://koerber-stiftung.de/mediathek/chatting-with-the-past/?fbclid=IwAR1HcVFBSH-6IhcItvX5Ndv22QdQYX1YHLYpck9RgTiYgZ7IRNK3g4Rb7WA) and the [preparatory notes](/content/blog/20230724.html)
+
 - 16.07.2023 - [« Humans ever more important in a world of AI »](https://play.rtl.lu/shows/en/in-conversation-with-lisa-burke/episodes/n/2081642), *The Lisa Burke Show* (RTL Luxembourg).
  
 - 05.04.2023 - I participated to a round-table in French at the Université de Montréal. I'll put here the link to the recording as soon as possible.
