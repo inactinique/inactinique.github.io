@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="frédéric clavert @inactinique@mastodon.social / frederic.clavert@uni.lu / inactinique.github.io Doctoriales internationales en Études des Médias" />
+  <title>Médias sociaux, circulation de l’information et haute fréquence</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="2023-09-14_DIFEM_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="2023-09-14_DIFEM_files/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <script src="2023-09-14_DIFEM_files/header-attrs-2.21/header-attrs.js"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Médias sociaux, circulation de l’information et
+haute fréquence</h1>
+    <h2 class="author">frédéric clavert<br /><small><span
+class="citation" data-cites="inactinique">@inactinique</span><span
+class="citation" data-cites="mastodon.social">@mastodon.social</span> /
+<a href="mailto:frederic.clavert@uni.lu"
+class="email">frederic.clavert@uni.lu</a> /
+inactinique.github.io<br />Doctoriales internationales en Études des
+Médias</small></h2>
+    <h3 class="date">14 septembre 2023</h3>
+</section>
+
+<section id="qui-suis-je" class="title-slide slide level1">
+<h1>qui suis-je?</h1>
+<p>histoire des relations internationales</p>
+<p>histoire numérique</p>
+<p>digital memory studies</p>
+</section>
+
+<section>
+<section id="deux-projets-de-recherche"
+class="title-slide slide level1">
+<h1>deux projets de recherche</h1>
+<ul>
+<li>#ww1 / le centenaire de la grande guerre sur twitter</li>
+<li>#covid19 / commémorations de la fin de la Seconde Guerre mondiale en
+confinement (France / Italie)<br />Avec Deborah Paci (Modène)</li>
+</ul>
+<aside class="notes">
+<p>Je vais fonder cette intervention sur deux projets de recherche</p>
+<ul>
+<li>Le Centenaire de la Grande Guerre sur Twitter / suivi d’une série de
+commémorations de grande ampleur, la première de cette ampleur à l’ère
+des médias sociaux, de 2014 à 2019</li>
+<li>Une comparaison entre la France (8 mai) et l’Italie (25 avril) des
+commémorations de la fin de la Seconde Guerre mondiale en temps de
+confinement.</li>
+</ul>
+</aside>
+</section>
+<section id="quelles-sources" class="slide level2">
+<h2>quelles sources?</h2>
+<ul>
+<li>twitter</li>
+<li>deux manières différentes de collecter</li>
+</ul>
+<aside class="notes">
+<p>Si dans les deux cas, j’ai collecté des tweets via l’API de Twitter,
+les modalités techniques avaient radicalement changé entre les deux:</p>
+<ul>
+<li>#ww1 - utilisation d’un API dite de streaming (v1.1). Permettait de
+collecter, sur la base de hashtags, 1% du firehose. Avait des avantages:
+jusqu’à 5 millions de tweets par jour (en théorie), permet de saisir des
+controverses dans toute leur ampleur, etc. Mais inconvénient: il faut
+des hashtags et il faut les anticiper</li>
+<li>#covid19 - si au début, utilisation du même serveur (il était prêt),
+pour l’article dont je m’inspire avec D. Paci, nous avons utilisé une
+nouvelle version de l’API, avec un produit (gratuit) spécifique pour les
+chercheurs (après procédure de validation), permettant de collecter
+jusque 10 millions de tweets par mois. Le produit a existé de début 2021
+à juin 2023. Avantage: on peut se poser pour définir la méthode de
+collecte. Inconvénient: collecte <em>a posteriori</em> donc risque que
+les controverses, par exemple, soient atténuées.</li>
+</ul>
+<p>Dans les deux cas: collecte par hashtags, qui sous-estime la
+discussion.</p>
+<p>Dnas les deux projets que je vous montre ici, il y a donc des
+similitudes (collecte par hashtags) mais aussi des divergences
+importantes et qui se situent dans les détails technique de l’API. Et
+derrière ces détails techniques, il y a la politique de twitter, y
+compris vis-à-vis des chercheurs et chercheuses.</p>
+</aside>
+</section>
+<section id="quel-objet-de-recherche" class="slide level2">
+<h2>quel objet de recherche?</h2>
+<p>Boullier Dominique, « Les sciences sociales face aux traces du big
+data », dans Revue française de science politique, vol. 65, nᵒ 5, 2015,
+<a href="http://www.cairn.info/resume.php?ID_ARTICLE=RFSP_655_0805"
+class="uri">http://www.cairn.info/resume.php?ID_ARTICLE=RFSP_655_0805</a>
+(consulté le 04/07/2016), p. 805‑828.</p>
+<aside class="notes">
+<p>Quel est mon objet de recherche, finalement? Le projet sur le
+centenaire a été démarré « pour voir », presque pour le défi technique.
+C’est devenu dans un second temps un projet de recherche. Qui lie
+mémoire collective, commémorations, médias sociaux / twitter. <em>In
+fine</em>, l’un des aspects de ma recherche est de regarder les
+phénomènes mémoriels comme, sur twitter, une forme de circulation de
+l’information, ou du moins de regarder les liens circulation de
+l’information / commémorations.</p>
+<p>L’un des moments emblématiques de cette collecte (et du Centenaire) a
+été la commémoration de Verdun et ses deux controverses, autour de
+BlackM et de la mise en scène de la commémoration. Et l’angle par les
+propagations fut ici plutôt convaincant.</p>
+<p>Cela reste un angle parmi d’autres – fred en exposera d’autres.
+N’oublions pas non plus que l’on peut compléter tout ceci avec des
+éléments plus qualitatifs (interview, etc, mais aussi lecture proche de
+tweets particuliers).</p>
+</aside>
+</section></section>
+<section>
+<section id="lire-les-sources-massives"
+class="title-slide slide level1">
+<h1>lire les sources massives</h1>
+
+</section>
+<section id="lecture-proche-lecture-distante" class="slide level2">
+<h2>lecture proche, lecture distante…</h2>
+<p><img src="../img/friedrich.jpeg" width="25%" style="border:none;" /></p>
+<aside class="notes">
+<p>Vous voyez ici un tableau de Friedrich, mais peut-être aussi, un
+checheur ou une chercheuse face à une mer de données. Avec les archives
+du web ou des données issues du web d’une manière ou d’une autre, le
+risque – ou l’avantage – d’avoir un corpus pour ses recherches qui soit
+massif est grand.</p>
+<p>Donnons ici au terme big data une définition simple: lorsque l’on ne
+peut plus lire soi-même ses sources.</p>
+<p>Alors, on doit demander à l’ordinateur de lire pour nous: c’est la
+lecture distante proposée par Franco Moretti en 2007. Pour Moretti, il
+s’agissait de pouvoir faire une histoire de la littérature européenne
+qui soit plus complète, inègrant les oeuvres des auteurs et autrices
+oubliées mais aussi les œuvres oubliées des auteurs et autrices
+connues.</p>
+<p>Par contre, je ne propose pas le même pacte avec le diable que
+Moretti: il ne s’agit pas d’abandoner l’analyse classique des sources
+pour une seule lecture distante.</p>
+<p>L’opposition lecture proche / lecture distante est d’ailleurs une
+opposition issue plutôt du champs littéraire, et finalement pas
+nécessairement adaptée à la pratique d’autres sciences humaines et
+sociales.</p>
+</aside>
+</section>
+<section id="lecture-multiscalaire" class="slide level2">
+<h2>…lecture multiscalaire</h2>
+<p><small>Clavert, Frédéric, and Andreas Fickers. ‘On Pyramids, Prisms,
+and Scalable Reading’. Journal of Digital History, no. jdh001, 2021, <a
+href="https://journalofdigitalhistory.org/en/article/jXupS3QAeNgb"
+class="uri">https://journalofdigitalhistory.org/en/article/jXupS3QAeNgb</a>.</small></p>
+<aside class="notes">
+<p>Nous penchons plutôt pour pour une articulation entre:</p>
+<ul>
+<li>lecture proche (la lecture classique de ses sources par
+l’historien-ne)</li>
+<li>lecture machinique (lecture proche aidée par l’ordinateur: la
+recherche par mots clé dans un document PDF par exemple),</li>
+<li>lecture distante.</li>
+</ul>
+</aside>
+<!-- 
+## la lecture distante pour comprendre un corpus
+
+<div style="float:left">
+<img src="../img/bigdata.png" width='70%' style="border:none;" /></div>
+
+<centre><br /><br />*analysing web archive of the covid crisis (awac2)*<br />
+<small>archives unleashed (waterloo) / archive-it (internet archive)</small></centre>
+
+<aside class="notes">
+
+- corpus covid-19 de l'IIPC
+- au démarrage du projet: 5Tb
+- coopération internationale, énormément d'institutions y cont contribué.
+- comprendrele corpus nous a pris plus d'un an, car chaque institution, malgré les instructions de l'IIPC, a appliqué aussi ses critères.
+- avec S. Aasman, Niels Brügger, Sophie Gébeil, Valérie Schafer, Joshgun Sirajzade, Karin de Wild
+- un ensemble d'entretiens menés par le réseau WARCnet (Danemark) nous a aidé,
+- mais aussi et surtout la lecture distante du corpus. 
+
+Par exemple:
+
+- la question des langues (plus de 50)
+- la question des doublons, des copies et des versions
+- exemple de la banque nationale suisse
+- qualité des métadonnées, etc.
+
+Ici, la lecture distante, avant de nous permettre de faire des analyses, nous permet d'abord de comprendre le corpus lui-même. Finalement la logique de Claire Zalc et Claire Lemercier: travailler avec ces fichiers, etc. est une manière de connaître ses sources.
+
+</aside>
+-->
+</section>
+<section id="analyser" class="slide level2">
+<h2>analyser</h2>
+<p><img src="../img/figure01.png" width=600px style="border:none;" /></p>
+<aside class="notes">
+<p>Toutes les visualisations que vous allez voir ici sont faites avec
+des logiciels (ici iramuteq et gephi, mais j’utilise de plus en plus du
+code ad hoc stocké dans des notebooks) qui me permettent de revenir à
+des tweets, dans ce cas-ci, précis, donc d’articuler ces visualisations
+à des tweets, des sources préçis et à leur lecture proche.</p>
+</aside>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure02.png" width=900px style="border:none;" /></p>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure03.png" width=900px style="border:none;" /></p>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure04.png" width=600px style="border:none;" /></p>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure04b.png" width=900px style="border:none;" /></p>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure06.png" width=500px style="border:none;" /></p>
+<!-- 
+## la lecture proche des archives du web
+
+<small>Brügger, Niels. The Archived Web: Doing History in the Digital Age. MIT Press, 2018.</small>
+
+<aside class='notes'>
+
+- j'insiste sur la lecture distante, dans la mesure où c'est celle que j'ai le plus pratiqué. Cela ne veut pas dire, à l'évidence, que toute autre méthode est mauvaise,
+- par ailleurs, si vous travaillez sur des corpus du web archivé, vous aurez souvent des outils de lecture distante proposé par les services du dépôt légal: je vous laisse chercher les travaux de Valérie Schafer pour le projet ASAP sur les attentats de 2015 et les outils de l'INA. Internet archive a aussi beaucoup d'outils à explorer
+- pour la lecture proche (et aussi distante), il y a quand même plusieurs éléments à considérer, développés dans le livre de Niels Brügger:
+
+  - analyser ce qui est visible (le fichier html interprété par votre navigateur)
+  - analyser ce qui ne l'est pas: le code html, le code css, éventuellement le code javascript
+  - faire la différence entre ce qui est destiné à l'humain et ce qui est destiné à l'ordinateur
+  - regarder les fichiers liés (les fichiers de style, par exemple: les css)
+
+etc.
+
+</aside>
+
+-->
+</section></section>
+<section>
+<section id="commémorer-en-confinement"
+class="title-slide slide level1">
+<h1>commémorer en confinement</h1>
+
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<p><img data-src="img/8mai/Figure02.png" /></p>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<p><img data-src="img/8mai/Figure05.png" /></p>
+<aside class="notes">
+<p>Ce qui est intéressant dans cette recherche, est aussi l’enracinement
+de ce qui se passe sur twitter dans le “monde réel”. En gros, en Italie:
+traditions (chants sur les balcons) + initiatives pour commémorer en
+ligne =&gt; il y a des éléments spécifiques en 2020 croisant confinement
+et commémoration que l’on ne voit pas les autres années + cohérence de
+la commémoration du 25 avril (chute de Mussolini).</p>
+<p>En France: une date contestée (8 mai), discours de Macron sur
+l’impossibilité de commémorer (le goût d’un jour de fête, etc).</p>
+</aside>
+</section></section>
+<section>
+<section id="enjeux-et-limites-méthodologiques"
+class="title-slide slide level1">
+<h1>enjeux et limites méthodologiques</h1>
+<!--
+## archives reconstituées et inconsistences temporelles
+
+<div style="float:left;" />
+<img src="img/internet_archive.png" width="50%" style="border:none;" />
+</div>
+
+<small>Brügger, Niels. The Archived Web: Doing History in the Digital Age. MIT Press, 2018.</small>
+
+<small>Clavert, Frédéric, Mahroug, Sophia, Schafer, Valérie. ‘Préservation et distorsion : l’espace-temps des réseaux socio-numériques et du web archivé’. Revue d’histoire culturelle, vol. 2022, no. 5, Oct. 2022, https://doi.org/10.56698/rhc.2791.</small>
+
+<aside class='notes'>
+
+Les archives du web stockent des pages web qui, pour le web dynamique notamment mais pas uniquement, ont pu ne jamais exister ou du moins ne jamais être vues par des internautes, pour différentes raisons:
+
+- page web dynamique: sa constitution 'à la demande' (sauf cache) peut-être unique au moment où le crawler passe,
+- problèmes techniques faisant que le crawler, par exemple, n'arhivera pas une image => cas du logo du CNRS. Sur internet archive, on peut voir, d'ailleurs, les différences temporelles des différents éléments d'un page (capture présentée)
+
+</aside>
+-->
+</section>
+<section id="choix-des-outils-et-choix-historiographiques"
+class="slide level2">
+<h2>choix des outils et choix historiographiques</h2>
+<aside class="notes">
+<p>C’est une évidence de dire que les outils ne sont ni bons, ni
+mauvais, ni neutres. Un logiciel, c’est un choix.</p>
+<ul>
+<li>Un choix technique: <em>topic modelling</em>: iramuteq ou
+MALLET?</li>
+<li>Un choix historiographique: ex: gephi et Latour</li>
+</ul>
+<p>Importance de documenter ses choix.</p>
+</aside>
+</section>
+<section id="dépendance-aux-grandes-plateformes" class="slide level2">
+<h2>dépendance aux grandes plateformes</h2>
+<p><img src="img/ranke2.png" height="500px" style="border:none;" /></p>
+<p><small> <a
+href="https://www.lemonde.fr/idees/article/2023/06/16/les-conversations-sur-les-medias-sociaux-sont-des-expressions-democratiques-qui-ne-sauraient-etre-cachees-a-la-recherche_6177952_3232.html">« Les
+conversations sur les médias sociaux sont des expressions démocratiques
+qui ne sauraient être cachées à la recherche »’</a>.<br /> Le Monde.fr,
+16 Juin 2023. </small></p>
+<aside class="notes">
+<p>Voici une anecdote: nous avons, avec Hannah Smyth (UCL), préparé pour
+un site de mon centre de recherche appelé ranke2 une leçon sur la
+collecte de tweets et les analyses qui sont possibles. Nous avons pour
+cela pris l’exemple d’un service, appelé netlytic. Ce service ou un
+autre, cela n’a pas d’importance: le résultat aurait été le même.</p>
+<p>pour des raisons multiples – un nouveau mode de publication des
+leçons – , la leçon a été publiée quelques temps après la fin de sa
+rédaction.</p>
+<p>Et donc: Elon Musk. Depuis le 30 avril, la leçon, publiée la semaine
+dernière seulement, ne peut plus marcher. On va la modifier pour en
+faire un témoin de ce que, en tant que chercheurs et chercheuses, vous
+devez garder à l’esprit: l’instabilité de l’accès aux données.</p>
+<p>Même l’accès qui avait été mis en place spécifiquement pour les
+chercheurs en 2021 (academic product track) a été fermé mardi
+dernier.</p>
+<p>Bien évidemment, les conditions d’accès aux corpus varient selon la
+plateforme mais également selon les modes d’archivage du web. Les
+réseaux sociaux numériques sont toujours plus délicats que le web à
+archiver et la plupart du temps les collectes de tweets, de posts
+facebook, ont toujours fait appel à du bricolage.</p>
+<p>Twitter n’est pas la seule plateforme à avoir fermé un accès gratuit
+à ses données, reddit est en train de la faire également.</p>
+</aside>
+</section></section>
+<section>
+<section id="en-guise-de-conclusion" class="title-slide slide level1">
+<h1>en guise de conclusion</h1>
+<ul>
+<li>adaptation nécessaire aux logiciels (gephi et iramuteq ne sont pas
+là pour toujours)</li>
+<li>adaptation nécessaire à la (aux) plateformes que l’on étudie ou que
+l’on utilise comme fournisseur de sources primaires</li>
+<li>instabilité constante, risque de ne pas pouvoir terminer une
+recherche</li>
+<li>le défi technique est une chose, le cadre disciplinire, théorique,
+méthodologique en est une autre</li>
+<li>collaborez, discutez entre vous, échangez vos safoir-faire,
+rendez-vous des services</li>
+</ul>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<p>bricolage. braconnage. sabotage?</p>
+<!-- 
+## pour commencer
+
+- Gebeil, Sophie. *Website story: histoire, mémoires et archives du web*. INA, 2021.
+- Schafer, Valérie. *En construction: La fabrique française d’Internet et du Web dans les années 1990*. INA, 2018.
+- Brügger, Niels. *The Archived Web: Doing History in the Digital Age*. MIT Press, 2018.
+- Milligan, Ian. [*The Transformation of Historical Research in the Digital Age*](https://doi.org/10.1017/9781009026055).Cambridge University Press, 2022.
+- Brügger, Niels, and Ralph Schroeder, editors. [*Web as History: Using Web Archives to Understand the Past and the Present*](https://press.uchicago.edu/ucp/books/book/distributed/W/bo35506603.html). UCL Press, 2017.
+
+## sociologie et memory studies
+
+- Casilli, Antonio. *Les liaisons numériques vers une nouvelle sociabilité?* Le Seuil, 2010.
+- Lupton, Deborah. *Digital Sociology*. Routledge, Taylor & Francis Group, 2015.
+- Boullier, Dominique. *Sociologie du numérique*. Armand Colin, 2016.
+- Casilli, Antonio, and Paola Tubaro. *Le phénomène ‘pro-ana’: Troubles alimentaires et réseaux sociaux*. École des mines, 2016.
+
+- Hoskins, Andrew, editor. *Digital Memory Studies: Media Pasts in Transition*. Routledge, 2018.
+
+## et pour aller plus loin
+
+<small>
+
+[publications de Dana Diminescu](https://www.telecom-paris.fr/dana-diminescu)
+
+Grison, Thibault, and Virginie Julliard. [‘Les enjeux de la modération automatisée sur les réseaux sociaux numériques : les mobilisations LGBT contre la loi Avia’](https://doi.org/10.4000/ctd.6049). Communication, technologies et développement, no. 10, 10, May 2021.
+
+Milligan, Ian. [‘Lost in the Infinite Archive: The Promise and Pitfalls of Web Archives’](https://doi.org/10.3366/ijhac.2016.0161). International Journal of Humanities and Arts Computing, vol. 10, no. 1, Mar. 2016, pp. 78–94.
+
+Milligan, Ian. [‘Welcome to the Web: The Online Community of GeoCities during the Early Years of the World Wide Web’.](https://doi.org/10.2307/j.ctt1mtz55k) in: *The Web as History: Using Web Archives to Understand the Past and the Present*, edited by Niels Brügger and Ralph Schroeder, UCL Press, 2017.
+
+Clavert, Frédéric, and Andreas Fickers. [‘On Pyramids, Prisms, and Scalable Reading’](https://journalofdigitalhistory.org/en/article/jXupS3QAeNgb). Journal of Digital History, no. jdh001, 2021.
+
+Clavert, Frédéric, Mahroug, Sophia, Schafer, Valérie. [‘Préservation et distorsion : l’espace-temps des réseaux socio-numériques et du web archivé’](https://doi.org/10.56698/rhc.2791). Revue d’histoire culturelle, vol. 2022, no. 5, Oct. 2022.
+
+</small>
+
+## pour aller plus loin (suite)
+
+<small> 
+
+[« Les conversations sur les médias sociaux sont des expressions démocratiques qui ne sauraient être cachées à la recherche »’](https://www.lemonde.fr/idees/article/2023/06/16/les-conversations-sur-les-medias-sociaux-sont-des-expressions-democratiques-qui-ne-sauraient-etre-cachees-a-la-recherche_6177952_3232.html). Le Monde.fr, 16 Juin 2023.
+
+Cervulle, Maxime, and Fred Pailler. [*‘#mariagepourtous : Twitter et la politique affective des hashtags’*](http://rfsic.revues.org/717). Revue française des sciences de l’information et de la communication, no. 4, Jan. 2014.
+
+Ben-David, Anat. [‘What Does the Web Remember of Its Deleted Past? An Archival Reconstruction of the Former Yugoslav Top-Level Domain’](https://doi.org/10.1177/1461444816643790). New Media & Society, vol. 18, no. 7, Aug. 2016, pp. 1103–19.
+
+</small>
+
+# ressources
+
+- [WARCnet](https://cc.au.dk/en/warcnet/)
+- [RESAW](https://resaw2023.sciencesconf.org/)
+- [IIPC](https://netpreserve.org/)
+- [The Programming Historian](https://programminghistorian.org/)
+
+-->
+</section></section>
+    </div>
+  </div>
+
+  <script src="2023-09-14_DIFEM_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="2023-09-14_DIFEM_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+        height: 720,
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '2023-09-14_DIFEM_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
