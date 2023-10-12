@@ -49,7 +49,8 @@ More on the [archive](content/archive.md) page.
 
 This is an automatically generated list by the University of Luxembourg repository.
 
-<iframe src="https://orbilu.uni.lu/widget?query=%28%28uid%3A50029240%29%29&chars=50&etal=3&language=en&data=&format=&css=%2Ffiles%2Fcss%2Fwl.css&sort_by0=1&order0=DESC&sort_by1=3&order1=ASC&sort_by2=2&order2=ASC" marginwidth="0" marginheight="0" scrolling="yes" width="100%" height="450" frameborder="0"></iframe>
+<iframe src="https://orbilu.uni.lu/widget?query=author_authority%3A%2850029240%29&format=apa&lang_code=en" title="Publications" marginwidth="0" marginheight="0" scrolling="yes" width="100%" height="450" frameborder="0"></iframe>
+
 
 
 
