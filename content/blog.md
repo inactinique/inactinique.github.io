@@ -6,6 +6,10 @@ I am not here starting again a blogging activity, but just storing some texts th
 
 (date format: yyyy.mm.dd)
 
+
+- 2023.10.23 - [*Mettons fin aux technologies zombies que sont les médias sociaux centralisés*](blog/20231023.md)
+
 - 2023.07.24 - [*Chatting with the Past? How AI is Changing Our Notion of History*](blog/20230724.md) -- preparatory text for an interview with Dr. Felix Fuhg (Körber Stiftung)
+
 
 [Back](https://inactinique.net/)
