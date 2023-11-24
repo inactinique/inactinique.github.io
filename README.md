@@ -4,6 +4,8 @@ I am an assistant professor in contemporary history at the [Centre for Contempor
 
 This page is a repository for some of my [prez](#prez), presents [ChatGPT events](#chatgpt-events) I was part of, list my [non-academic](#non-academic-writings) and my [academic](#all-my-writings) writings. I will publish some unpublished texts on a sort of [blog](content/blog.md).
 
+And, by the way, sign the petition: [stop tracking science](https://stoptrackingscience.eu/).
+
 ## Prez
 
 (date format: dd.mm.yyyy / in some cases, you can access the presenter's text by pressing the 's' key)
