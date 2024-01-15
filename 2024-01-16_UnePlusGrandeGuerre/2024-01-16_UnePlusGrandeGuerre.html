@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="frédéric clavert frederic.clavert@uni.lu / inactinique.net séminaire « une plus grande guerre »" />
+  <title>usages scientifiques du web : intérêt, méthodes et limites ?</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="2024-01-16_UnePlusGrandeGuerre_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="2024-01-16_UnePlusGrandeGuerre_files/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <script src="2024-01-16_UnePlusGrandeGuerre_files/header-attrs-2.21/header-attrs.js"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">usages scientifiques du web : intérêt, méthodes et
+limites ?</h1>
+    <h2 class="author">frédéric clavert<br /><a
+href="mailto:frederic.clavert@uni.lu"
+class="email">frederic.clavert@uni.lu</a> /
+inactinique.net<br />séminaire « une plus grande guerre »</small></h2>
+    <h3 class="date">16 janvier 2024</h3>
+</section>
+
+<section>
+<section id="qui-suis-je" class="title-slide slide level1">
+<h1>qui suis-je?</h1>
+<p>histoire des relations internationales</p>
+<p>histoire numérique</p>
+<p>digital memory studies</p>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<p>#ww1 / le centenaire de la grande guerre sur twitter</p>
+</section></section>
+<section>
+<section id="introduction-le-goût-dun-jour-de-fête"
+class="title-slide slide level1">
+<h1>introduction: le goût d’un jour de fête?</h1>
+<p><img data-src="img/couv.webp" height="500" /></p>
+<p><small>Clavert, Frédéric, and Déborah Paci. <em>‘“Le Goût d’un Jour
+de Fête”? Commemorating the End of the Second World War on Twitter
+during the Lockdown: A Comparison between France and Italy’.</em> The
+Covid-19 Pandemic Memory. Remembrance, Commemoration, and Archiving in
+Crisis, edited by Orli Fridman and Sarah Gensburger, Palgrave Macmillan,
+2024.</small></p>
+<aside class="notes">
+<p>Je vais commencer mon intervention par parler de la commémoration de
+la Seconde Guerre mondiale, qui plus est en confinement. Dans ce volume
+co-dirigé par Sarah Gensburger et Orli Fridman, nous avons essayé de
+comparer avec Deborah Paci la commémoration de la fin de la Seconde
+Guerre mondiale en France (le 8 mai) et en Italie (le 25 avril).</p>
+<p>Et ce qui a été marquand quand nous avons travaillé sur le chapitre –
+avec une méthodologie similaire de celle du projet #ww1 – c’est
+l’amnésie de l’État français. C’est comme s’il n’y avait eu aucune
+activité commémorative en ligne pendant le Centenaire qui aurait pu
+inspirer les commémorations de 2020, dont le 8 mai.</p>
+<p>La comparaison a ses limites:</p>
+<ul>
+<li>le 8 mai n’a absolument pas la légitimité du 11 novembre, son
+histoire est plus complexe et c’est une commémoration très
+concurrencée;</li>
+<li>l’exemple italien montre aussi qu’on est dans une logique “on life”:
+par là je veux dire, qu’il y a intrication entre ce qui se passe sur le
+terrain physique et sur le terrain virtuel. Et en confinement, les
+traditions italienns – les fameux chants sur les balcons – se prêtaient
+mieux à une commemoration en ligne d’une part. En outre, il y a eu au
+moins une initiative privée pour commémorer en ligne en Italie.</li>
+</ul>
+</aside>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<p><a
+href="https://www.elysee.fr/emmanuel-macron/2020/05/08/commemoration-du-75e-anniversaire-de-la-victoire-du-8-mai-1945"><img
+data-src="img/elysee.png" height="600" /></a></p>
+<blockquote>
+<p>« Ce 8 mai ne resemble pas à un 8 mai.<br /> Il n’a pas le goût d’un
+jour de fête »</p>
+</blockquote>
+<aside class="notes">
+<p>Mais ce qui a été finalement le plus marquant, c’est que l’État
+français, en premier lieu la présidence de la République, n’a pas
+imaginé une seule seconde que l’on pouvait faire grand chose en ligne.
+Il y a eu quelques initiatives et notamment une série youtube par le
+service de communication du ministère des Armées et, un peu plus tard,
+quand il est devenu assez étrange qu’il n’y ait rien eu en ligne, ou peu
+de choses, un appel d’offre du ministère de la Culture avec des
+financements de projets intéressants, mais ne permettant pas d’imaginer
+que l’État français puisse mettre en place une réelle politique
+mémorielle et commémorative numérique.</p>
+<p>Je reviendrai là-dessus en conclusion.</p>
+</aside>
+</section></section>
+<section>
+<section
+id="commémorer-en-ligne-pendant-le-centenaire-lexemple-de-twitter"
+class="title-slide slide level1">
+<h1>commémorer en ligne pendant le centenaire? L’exemple de twitter</h1>
+
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<p><img data-src="img/figure01.png" width="1200" /></p>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<p><img data-src="img/figure03a.png" height="720" /></p>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<p><img data-src="img/figure03b.png" width="1200" /></p>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<p><img data-src="img/figure04a.png" height="720" /></p>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<p><img data-src="img/figure04b.png" width="1200" /></p>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<p><img data-src="img/figure04c.png" width="1200" /></p>
+</section>
+<section id="que-conclure" class="slide level2">
+<h2>que conclure?</h2>
+<ul>
+<li>les “cadres” de la mémoires collective de la Grande Guerre restent
+les mêmes en ligne ou hors-ligne (une mémoire très centrée sur le Poilu
+mort pour la France)</li>
+<li>multiplicité des acteurs?</li>
+<li>différences nationales
+<ul>
+<li>fonction des traditions commémoratives
+<ul>
+<li>ex: Royaume Uni (importance des champs de bataille)</li>
+</ul></li>
+<li>rôle différent des musées?</li>
+</ul></li>
+<li>question de la vitesse de circulation des informations (ie
+controverses)</li>
+<li>nouveauté: les pratiques</li>
+</ul>
+</section>
+<section id="section-8" class="slide level2">
+<h2></h2>
+<p><img data-src="img/1j1p.png" height="720" /></p>
+<aside class="notes">
+<p>Et l’exemple paradigmatique de ces nouvelles pratiques, c’est 1 jour
+– 1 poilu.</p>
+<ul>
+<li>commémoration collaborative</li>
+<li>mais en dehors des institutions
+<ul>
+<li>certes, ministère de la Défense puis des Armées a mis à disposition
+le système d’indexation, mais pas de politique / communication pour le
+faire utiliser par les internautes par exemple.</li>
+<li>choc des cultures par moment: quand la base a été indexée, 1j1p qui
+est à l’origine d’une bonne partie des indexations n’est pas cité</li>
+<li>statut incertain de la base de données aujourd’hui.</li>
+</ul></li>
+</ul>
+<p>Autres éléments à considérer:</p>
+<ul>
+<li>liens avec la vie « réelle » (commémorations “on-life”): cf
+communication à l’occasion du Tour de France, de commémorations,
+locales, etc.</li>
+</ul>
+<p>Mais surtout:</p>
+<ul>
+<li>dans le communiqué, donc, annonçant l’indexation, pas de mention
+d’1j1P. Et cela est peut-être un symptôme: finalement, le ministère
+valide sa démarche de mise en place d’un dispositif technique sans
+réelle politique derrière.</li>
+</ul>
+</aside>
+</section>
+<section id="section-9" class="slide level2">
+<h2></h2>
+<p><img data-src="img/vienne.png" height="720" /></p>
+<aside class="notes">
+<p>Bien sûr, 1j1p n’est pas le seul projet collaboratif – ici, les
+POilus de la Vienne, un blog qui était tenu par Frédéric Coussay, qui
+rend hommage aux Poilus du département français de la Vienne, avec
+homologation de la commission du Centenaire. Fred Coussay récupérait
+tout ce qu’il trouvait en ligne sur chaque Poilu de la Vienne. Ce blog
+est même devenu doublement commémoratif: il a été repris après le décès
+de son initiateur, en partie pour lui rendre hommage.</p>
+</aside>
+</section></section>
+<section>
+<section
+id="les-commémorations-en-ligne-exemplaire-de-la-politique-mémorielle-française"
+class="title-slide slide level1">
+<h1>Les commémorations en ligne, exemplaire de la politique mémorielle
+française?</h1>
+<aside class="notes">
+<p>La question centrale de ce séminaire était me semble-t-il le futur
+des projets de commémoration du Centenaire.</p>
+<p>Je ne doute pas qu’il continuera à en avoir.</p>
+<p>Lorsqu’un groupe, dont j’ai fait partie, a tiré le bilan scientifique
+du Centenaire (je faisais la partie “nouveaux médias”), une discussion a
+pris lors de l’une des premières séances – à l’IHA d’ailleurs – autour
+de la question suivante: le Centenaire de la Grande Guerre allait-il
+tuer les recherches sur la Première Guerre mondiale, comme le
+Bicentenaire de la Révolution française a tué les recherches sur la
+Révolution française.</p>
+<p>Il a vite été clair que les deux cas étaient différents. Toutefois,
+on pourrait se reposer une question ici, un peu différente, mais
+parallèle: le Centenaire de la Grande Guerre a-t-il tué, en France, la
+commémoration (de la Grande Guerre ou d’autres événements) en ligne?</p>
+<p>C’est là que nous revenons au 8 mai, mais aussi aux travaux de Sarah
+Gensburger.</p>
+</aside>
+</section>
+<section id="section-10" class="slide level2">
+<h2></h2>
+<p><img data-src="img/learfromthepast.png" width="600" /></p>
+<aside class="notes">
+<p>Je mets la couverture de ce livre – notamment un clin d’oeil à la
+question que je viens de poser: peut-on apprendre du passé des
+commémoration (en ligne)?</p>
+<p>Mais c’est plutôt un livre à paraître, tirée de son habilitation, qui
+m’intéresse. Et dans ce livre, Sarah Gensburger analyse aussi la mémoire
+collective par les méthodes des sciences politiques, en s’arrêtant à
+l’État et à la politique mémorielle de la République française. Dans la
+lecture d’une partie de ce livre que Sarah m’avait fourni il y a
+quelques temps, il y a deux choses qui m’ont frappées:</p>
+<ul>
+<li>la disjonction entre État et Nation par l’application des politique
+néolibérales. Cette disjonction donne aux politiques mémorielles un goût
+particulier à la mémoire collective: la politique mémorielle – ceci
+explique peut-être, plus qu’une collaboration avec Ricoeur finalement
+courte, l’insistance d’Emmanuel Macron autour de diverses commémorations
+– est alors vue comme une manière de palier cettedisjonction;</li>
+<li>mais en parallèle, l’incapacité de l’État à avoir une politique
+mémorielle unifiée: de nombreux ministères, commissions, etc peuvent
+avoir des politiques mémorielles qui peuvent se contredire.</li>
+<li>Finalement, même considérer la politique mémorielle comme
+appartenant au “pré carré de la présidence” (au même titre que la
+politique étrangère – d’ailleurs ça ne marche pas non plus) ne permet
+pas de mettre en place une grille d’analyse unifiée des initiatives
+mémorielles de l’État – l’Élysée n’arrive pas à donner le ton de la
+politique mémorielle de l’État.</li>
+</ul>
+<p>C’est mon interprétation des travaux de Sarah Gensburger et je ne
+suis pas certain qu’elle cautionne cette interprétation d’ailleurs.</p>
+</aside>
+</section>
+<section id="section-11" class="slide level2">
+<h2></h2>
+<p><img data-src="img/memoiredeshommes.png" width="1000" /></p>
+<aside class="notes">
+<p>Alors pourquoi ce détour par les travaux de Sarah Gensburger?</p>
+<ul>
+<li>explique une chose: l’État n’a pas la mémoire de sa politique
+mémorielle, ni n’est capable de regarder ce qui se fait en dehors de
+lui.</li>
+<li>cela expliue cet étrange communiqué de 2018 (que je n’ai pas
+retrouvé, la mémoire du site du ministère des armées s’arrête en 2022)
+où le ministère des armées se félicite d’une indexation de la base de
+données des Morts pour la France sans réellement comprendre qu’il ne l’a
+pas fait, sans comprendre réellement la dimension collaborative et ce
+qu’elle implique (animer une communauté, donner des objectifs, faire
+monter des enjeux, etc)</li>
+</ul>
+<p>(cf. Severo et l’impératif participatif)</p>
+</aside>
+</section></section>
+    </div>
+  </div>
+
+  <script src="2024-01-16_UnePlusGrandeGuerre_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="2024-01-16_UnePlusGrandeGuerre_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+        height: 720,
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '2024-01-16_UnePlusGrandeGuerre_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
