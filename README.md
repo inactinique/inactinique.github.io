@@ -10,6 +10,7 @@ And, by the way, sign the petition: [stop tracking science](https://stoptracking
 
 (date format: dd.mm.yyyy / in some cases, you can access the presenter's text by pressing the 's' key)
 
+-16.01.2024 [commémorer en ligne?](https://inactinique.net/2024-01-16_UnePlusGrandeGuerre/2024-01-16_UnePlusGrandeGuerre.html#/) -- séminaire « une plus grande guerre » (Institut Historique allemand)
 - 04.07.2023 [usages scientifiques du web : intérêt, méthodes et limites ?](https://inactinique.github.io/2023-07-04_ITI-MAKErs/2023-07-04_ITI-MAKErs.html#/) -- école d'été ITI-MAKErs
 - 24.05.2023 [history and social media](https://inactinique.github.io/2023-05-23_HistorySocialMedia/2023-05-23_HistorySocialMedia.html#/)
 - 13.04.2023 [prompting the past](https://inactinique.github.io/2023-04-13_PromptingThePast/2023-04-13_PromptingThePast.html), Colloque [« History and/in Digital Humanities »](https://www.crihn.org/nouvelles/2023/04/04/colloque-history-and-in-digital-humanities/)
@@ -17,12 +18,7 @@ And, by the way, sign the petition: [stop tracking science](https://stoptracking
 - 07.03.2023 [History education in digital age: a critical perspective](2023-03-07_CoE/2023-03-07_CoE.html)
 - 01.02.2023 [ChatGPT: a pedagogical use case (HCI ChatGPT event)](2023-02-01_chatGPT_HCI/2023-02-01_chatGPT_HCI.html)
 - 09.01.2023 [Présentation à l’EHESS (CHR): pratiques numériques discrètes et goût de l’archive à l’ère numérique](https://slides.com/inactinique/gout-de-l-archive-et-pratiques-discretes)
-- 08.12.2022 [Controversies and commemorations: the extreme right and the 2016 commemoration of the battle of Verdun](2022-12-08_Verdun/2022-12-08_Verdun.html) 
-- 15.09.2022 [Keynote for the *Wanted: social media data* conference, organised by the BeSocial project at KBR](https://inactinique.github.io/2022-09-15_BeSocial/besocial_keynote.html#/). My comment for this prez is available at [here](https://inactinique.github.io/2022-09-15_BeSocial/besocial_keynote_comments.html).
-- 07.07.2022 [Nouvelles perspectives sur l’histoire des Humanités numériques](2022-07-07_Poincaré/20220707_Poincaré.html)
-- 02.02.2022 [Goût des archives nativement numérique et *digital bricolage*: L’historien·ne face aux données massives du web](2022-02-02_Epitech/20220202_Epitech.html)
-- 08.04.2021 [Apprendre le numérique et renouveler la critique des sources (Printemps des Humanités numériques)](2021-04-08_printempsHN/2021-04-08_printempsHN.html)
-- 07.01.2020 [Commemorating the Great War on Twitter](2020-01-07_IHR/2020-01-07_IHR.html). You can watch this [seminar's video](https://www.youtube.com/watch?v=KDPONgG5H88) on YouTube.
+
 
 More on the [archive](content/archive.md) page.
 
