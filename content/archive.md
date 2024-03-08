@@ -7,7 +7,7 @@
 - 07.07.2022 [Nouvelles perspectives sur l’histoire des Humanités numériques](https://inactinique.github.io/2022-07-07_Poincaré/20220707_Poincaré.html)
 - 02.02.2022 [Goût des archives nativement numérique et *digital bricolage*: L’historien·ne face aux données massives du web](https://inactinique.github.io/2022-02-02_Epitech/20220202_Epitech.html)
 - 08.04.2021 [Apprendre le numérique et renouveler la critique des sources (Printemps des Humanités numériques)](https://inactinique.github.io/2021-04-08_printempsHN/2021-04-08_printempsHN.html)
-- 07.01.2020 [Commemorating the Great War on Twitter](2020-01-07_IHR/2020-01-07_IHR.html). You can watch this [seminar's video](https://www.youtube.com/watch?v=KDPONgG5H88) on YouTube.
+- 07.01.2020 [Commemorating the Great War on Twitter](https://inactinique.github.io/2020-01-07_IHR/2020-01-07_IHR.html). You can watch this [seminar's video](https://www.youtube.com/watch?v=KDPONgG5H88) on YouTube.
 - 2019.01.18 [*Si loin, si proche: histoire mémoire et lecture distante*](archive/2019-01-18_prez/2019-01-18_histlangtexto.html) - colloque *Histoire, langue et textométrie*
 - You'll find previous prez on my [Slides](https://slides.com/inactinique) profile.
 
