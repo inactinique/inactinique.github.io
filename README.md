@@ -10,6 +10,7 @@ And, by the way, sign the petition: [stop tracking science](https://stoptracking
 
 (date format: dd.mm.yyyy / in some cases, you can access the presenter's text by pressing the 's' key)
 
+- 08.03.22024 [Can history be written out of tweets?](https://inactinique.net/2024-03-08_HistoryMadeOutOfTweets/2024-03-08_HistoryMadeOutOfTweets.html)
 - 16.01.2024 [commémorer en ligne?](https://inactinique.net/2024-01-16_UnePlusGrandeGuerre/2024-01-16_UnePlusGrandeGuerre.html#/) -- séminaire « une plus grande guerre » (Institut Historique allemand)
 - 04.07.2023 [usages scientifiques du web : intérêt, méthodes et limites ?](https://inactinique.github.io/2023-07-04_ITI-MAKErs/2023-07-04_ITI-MAKErs.html#/) -- école d'été ITI-MAKErs
 - 24.05.2023 [history and social media](https://inactinique.github.io/2023-05-23_HistorySocialMedia/2023-05-23_HistorySocialMedia.html#/)

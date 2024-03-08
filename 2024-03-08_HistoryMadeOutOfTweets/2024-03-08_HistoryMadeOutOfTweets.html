@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content=" frédéric clavert frederic.clavert@uni.lu / inactinique.net" />
+  <meta name="dcterms.date" content="2024-08-03" />
+  <title>can history  be written out of tweets?</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="2024-03-08_HistoryMadeOutOfTweets_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="2024-03-08_HistoryMadeOutOfTweets_files/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <script src="2024-03-08_HistoryMadeOutOfTweets_files/header-attrs-2.21/header-attrs.js"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">can history<br /> be written out of tweets?</h1>
+    <h2 class="author"><br />frédéric clavert<br /><a
+href="mailto:frederic.clavert@uni.lu"
+class="email">frederic.clavert@uni.lu</a> / inactinique.net</h2>
+    <h3 class="date">08/03/2024</h3>
+</section>
+
+<section id="who-am-i" class="title-slide slide level1"
+data-background="../img/background01.jpg">
+<h1 data-background="../img/background01.jpg">who am i?</h1>
+
+</section>
+
+<section>
+<section id="an-obvious-answer" class="title-slide slide level1"
+data-background="../img/blacktwitter.jpg">
+<h1 data-background="../img/blacktwitter.jpg">an obvious answer?</h1>
+
+</section>
+<section id="section" class="slide level2"
+data-background="../img/blacktwitter.jpg">
+<h2 data-background="../img/blacktwitter.jpg"></h2>
+<h3 id="yes">yes</h3>
+<aside class="notes">
+<p>‘can history be written out of tweets?’ is a falsely naïve
+question.</p>
+<ul>
+<li>of course, tweets can be and will be primary sources.
+<ul>
+<li>in history or rather mnemohistory or memory studies, it is already a
+primary source. I’ll give some examples from my own research - that will
+be my first part.</li>
+</ul></li>
+</ul>
+<p>In fact, just an illustration that since the School of the Annales
+(at least), the answer to the question ‘what is a primary source’ is
+wider and wider. All along the 20th and 21st centuries, historians have
+conquered more and more fields by considering new kinds of primary
+sources. A good example of that is the rise of oral history.</p>
+</aside>
+</section>
+<section id="section-1" class="slide level2"
+data-background="../img/blacktwitter.jpg">
+<h2 data-background="../img/blacktwitter.jpg"></h2>
+<h3 id="no">no</h3>
+<aside class="notes">
+<p>But there is another way to answer this question: today, there are
+two difficulties that may prevent historians to use tweets as a primary
+sources.</p>
+<ul>
+<li>access</li>
+<li>volume</li>
+</ul>
+<p>and that will be my second and third parts.</p>
+</aside>
+</section></section>
+<section>
+<section id="understanding-commemorations-online"
+class="title-slide slide level1"
+data-background="../img/douaumont_trans.jpg">
+<h1 data-background="../img/douaumont_trans.jpg">understanding
+commemorations online</h1>
+<p>#ww1. online echoes of the centenary of the great war</p>
+</section>
+<section id="analytical-frame" class="slide level2"
+data-background="../img/douaumont_trans.jpg">
+<h2 data-background="../img/douaumont_trans.jpg">analytical frame</h2>
+<p>information</p>
+<p>propagation</p>
+<p>vibrations</p>
+<p><small><a
+href="http://www.cairn.info/resume.php?ID_ARTICLE=RFSP_655_0805">D.
+Boullier, « Les sciences sociales face aux traces du big data », Revue
+française de science politique, vol. 65, nᵒ 5, p. 805‑828,
+2015.</a></small></p>
+</section>
+<section id="collecting-tweets" class="slide level2"
+data-background="../img/douaumont_trans.jpg">
+<h2 data-background="../img/douaumont_trans.jpg">collecting tweets</h2>
+<p>9 million tweets / 1.5 million users</p>
+<p>apiv1.1 / hashtags-based / 2014-2019.</p>
+</section>
+<section id="visualize-analyse-interpret" class="slide level2">
+<h2>visualize, analyse, interpret</h2>
+<p><img src="../img/figure01.png" width="500px" style='border:none; box-shadow:none' /></p>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure02.png" width="900px" style='border:none; box-shadow:none' /></p>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure03.png" width="900px" style='border:none; box-shadow:none' /></p>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure04.png" width="600px" style='border:none; box-shadow:none' /></p>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure04b.png" width="900px" style='border:none; box-shadow:none' /></p>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure05.png" width="600px" style='border:none; box-shadow:none' /></p>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure05b.png" width="900px" style='border:none; box-shadow:none' /></p>
+</section>
+<section id="section-8" class="slide level2">
+<h2></h2>
+<p><img src="../img/figure06.png" width="500px" style='border:none; box-shadow:none' /></p>
+</section></section>
+<section>
+<section id="access" class="title-slide slide level1"
+data-background="../img/vibrations_bg.jpg">
+<h1 data-background="../img/vibrations_bg.jpg">access</h1>
+
+</section>
+<section id="section-9" class="slide level2"
+data-background="../img/vibrations_bg.jpg">
+<h2 data-background="../img/vibrations_bg.jpg"></h2>
+<h3 id="from-dependence-to-apicalypse">from dependence to
+apicalypse</h3>
+<aside class="notes">
+<p>The problem of this research is that it was depdendant on the
+willingness of Twitter to allow us access to its data. And for a long
+time, Twitter has been a researcher’s eldorado.</p>
+<p>Twitter allowed access <em>via</em> its API – a way, here, to connect
+to Twitter to get its data in a quite structured form (135 metadata /
+json). For free: first via its streaming set of commands, and then, for
+a couple of years, via a specific product for researchers, still free,
+after a small procedure to get recognized as researcher by twitter
+(through the new APIv2).</p>
+<p>Both kinds of access had their methodological limitations, but it
+made collecting data so easy.</p>
+<p>With deborah paci, for instance, we could collect data on the
+commemoration of the end of the second world war in italy and france
+during the lockdowns in 2020. It was easy, fast, the data was well
+structured, etc.</p>
+<p>But that is over. For two reasons:</p>
+<ul>
+<li>Elon Musk</li>
+<li>Large Language Models</li>
+</ul>
+<p>Why LLM? Data is all the more valuable (financially speaking) today
+that the numerous large language models that are available or being
+developped incited many platforms to close their access to data (twitter
+and reddit in 2023 for instance). And they closed it fully: they closed
+their apis (or made it much more expensive) and limited the ways we had
+before to scrap data online.</p>
+<p>this is the consequence of our dependance, in the age of big data,
+towards the big web platforms. and this might prevents us to access data
+and just do our work.</p>
+</aside>
+</section>
+<section id="section-10" class="slide level2"
+data-background="../img/vibrations_bg.jpg">
+<h2 data-background="../img/vibrations_bg.jpg"></h2>
+<h3 id="digital-dark-age">digital dark age</h3>
+<aside class="notes">
+<p>this dependance is all the more important that libraries and archive
+centres do what they can but cannot do much.</p>
+<p>From 2006 to 2018, twitter is archived at the Library of Congress.
+But today, the LoC is unable to give access to this archive. Among the
+resasons of this archive being a ‘dark archive’, to use Lise Jaillant’s
+expression, it has not the technology to let people search it. It would
+take days to answer a query, if not weeks or months.</p>
+<p>But Twitter is here an exception: facebook, most google products,
+etc., are just not archived or rather are self-archived. What would
+happen if those societies disappear? their data will probably be
+lost.</p>
+<p>and in a way, lots of data, in the 1990s, have been lost. So why not
+more recent data?</p>
+</aside>
+</section></section>
+<section>
+<section id="volume" class="title-slide slide level1"
+data-background="../img/Prez_DH-13.png">
+<h1 data-background="../img/Prez_DH-13.png">volume</h1>
+
+</section>
+<section id="section-11" class="slide level2"
+data-background="../img/Prez_DH-13.png">
+<h2 data-background="../img/Prez_DH-13.png"></h2>
+<h3 id="big-data">big data</h3>
+<p><img src="../img/bigdata.png" width="40%" style="border:none; box-shadow:none" /></p>
+<aside class="notes">
+<p>what we speak about is big data. the #ww1 is an easy project: 9
+millions tweets is manageable, all the more that for most analyses,
+retweets should be removed.</p>
+<p>it’s a different story with #covid19. This project, originally, was
+using the same ways to collect data, mostly tweets in french: 65
+millions tweets in 4 years. and there are tweets dataset on covid that
+are much larger.</p>
+<p>hard to exploit 65 millions tweets without strongly thinking about
+methods.</p>
+</aside>
+</section>
+<section id="section-12" class="slide level2"
+data-background="../img/Prez_DH-13.png">
+<h2 data-background="../img/Prez_DH-13.png"></h2>
+<h3 id="methods">methods</h3>
+<aside class="notes">
+<p>you don’t use the same methods / here I mean methods as algorithms /
+with 9 million and 65 million tweets, at last without sampling. But in
+our case sampling resulted in very different results, even while keeping
+the same sampling method. The data was, in the end, too diverse, event
+if made out of tweets.</p>
+<p>the tools I have used for the #ww1 project could be used with the
+work we did with deborah’s because we limited the number of tweets we
+analysed.</p>
+<p>but if I don’t want to limit it? then I need to switch method. and an
+unavoidable family of method will be ai.</p>
+</aside>
+</section>
+<section id="section-13" class="slide level2"
+data-background="../img/Prez_DH-13.png">
+<h2 data-background="../img/Prez_DH-13.png"></h2>
+<h3 id="ai">ai</h3>
+<aside class="notes">
+<p>we use too much the acronym “ai”. Here, I’m speaking about machine
+and deep learning, which is already something wide.</p>
+<p>and there are different ways to use that kinds of ai. MALLET for
+instance, for Latent Dircihlet Allocation, the dominant way to perform
+topic modelling, is already based on machine learning, with training,
+etc. But it’s a first step to analyse large dataset.</p>
+<p>with more advanced ai-based systems, including some uses of large
+language models, problem is: infrastructure. Of course we can use those
+systems for our research, but we need a performant digital
+infrastructure.</p>
+<p>and here, we go from access / volume to inequalities. All
+universities, all the more when those specialising in humanities and
+social sciences, are / will not be able to acquire and maintain such
+infrastructures.</p>
+</aside>
+</section></section>
+<section id="conclusion" class="title-slide slide level1"
+data-background="../img/friedrich_bg.png">
+<h1 data-background="../img/friedrich_bg.png">conclusion</h1>
+<aside class="notes">
+</aside>
+</section>
+    </div>
+  </div>
+
+  <script src="2024-03-08_HistoryMadeOutOfTweets_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="2024-03-08_HistoryMadeOutOfTweets_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '2024-03-08_HistoryMadeOutOfTweets_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
