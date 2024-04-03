@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Frédéric Clavert, C2DH, Université du Luxembourg" />
+  <title>« Prompting the European Union history » perspectives sur les IA génératives et l’histoire de l’intégration européenne</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="2024-06_InviterHistoireEurope_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="2024-06_InviterHistoireEurope_files/reveal.js-3.3.0.1/css/theme/black.css" id="theme">
+
+<style type="text/css">
+.reveal section img {
+  background: rgba(255, 255, 255, 0.85);
+}
+</style>
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <script src="2024-06_InviterHistoireEurope_files/header-attrs-2.21/header-attrs.js"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">« Prompting the European Union
+history »<br /><small>perspectives sur les IA génératives et l’histoire
+de l’intégration européenne</small></h1>
+    <h2 class="author"><a href="https://inactinique.net">Frédéric
+Clavert</a>, C<sup><small>2</small></sup>DH,<br />Université du
+Luxembourg</h2>
+    <h3 class="date"><small><em>L’Europe dans les médias.</em> Chaire
+Jean Monnet IDECE. 4 avril 2024.</small></h3>
+</section>
+
+<section>
+<section id="introduction" class="title-slide slide level1">
+<h1>introduction</h1>
+
+</section>
+<section id="qui-suis-je" class="slide level2">
+<h2>qui suis-je?</h2>
+<p>histoire des relations internationales</p>
+<p>histoire numérique</p>
+<p>memory studies</p>
+<aside class="notes">
+<p>professeur assistant (maître de conférence) au <em>Centre for
+Contemporary and Digital History</em> (C<exp>2</exp>DH) de l’Université
+du Luxembourg. Issu de l’histoire des relations internationales, il
+s’est progressivement orienté vers les méthodes numériques appliquées à
+l’histoire ou l’étude des échos des commémorations des guerres mondiales
+sur les réseaux sociaux numériques. Il a co-dirigé avec Caroline Muller
+(Rennes 2) le livre en ligne <a href="https://gout-numerique.net"><em>Le
+goût de l’archive à l’ère numérique</em></a> qui se penche sur les
+relations des historiens et historiennes à leurs sources à l’ère
+numérique. Il est <em>managing editor</em> du <em>Journal of Digital
+History</em>.</p>
+<p>Parmi ses publications récentes:</p>
+<ul>
+<li><p>Clavert, Frédéric. « History in the Era of Massive Data ».
+<em>Geschichte Und Gesellschaft</em>, vol. 46, no. 1, 2021, pp. 175–94,
+<a href="https://doi.org/10.13109/gege.2021.47.1.175"
+class="uri">https://doi.org/10.13109/gege.2021.47.1.175</a>.</p></li>
+<li><p>Clavert, Frédéric, Mahroug, Sophia et Schafer, Valérie.
+« Préservation et distorsion : l’espace-temps des réseaux
+socio-numériques et du web archivé ». <em>Revue d’histoire
+culturelle</em>, vol. 2022, no. 5, Oct. 2022, <a
+href="https://doi.org/10.56698/rhc.2791"
+class="uri">https://doi.org/10.56698/rhc.2791</a>.</p></li>
+<li><p>Bunout, Estelle, Ehrmann, Maud et Clavert, Frédéric, dirs.
+<em>Digitised Newspapers – A New Eldorado for Historians? Tools,
+Methodology, Epistemology, and the Changing Practices of Writing History
+in the Context of Historical Newspapers Mass Digitization</em>, De
+Gruyter Oldenbourg, 2022.</p></li>
+</ul>
+</aside>
+</section>
+<section id="ia-générative" class="slide level2">
+<h2>IA générative?</h2>
+<aside class="notes">
+<p>Depuis 2022, diverses plateformes et logiciels fondés sur des
+systèmes d’intelligence artificielle (IA) proposent à leurs utilisateurs
+et utilisatrices de créer des images (<a
+href="https://www.midjourney.com/">MidJourney</a>, <a
+href="https://github.com/Stability-AI/stablediffusion">Stable
+Diffusion</a>, <a href="https://openai.com/dall-e-2">Open AI DALL·E
+2</a>, etc.) ou des textes (<a
+href="https://openai.com/blog/chatgpt">ChatGPT</a>, <a
+href="https://huggingface.co/bigscience/bloom">BLOOM</a>, etc.) sur la
+base d’une « invite » (<em>prompt</em>), c’est-à-dire une courte
+description, une question, de ce que l’utilisateur ou l’utilisatrice
+souhaite. Ces systèmes ont régulièrement, notamment depuis l’ouverture
+au public de ChatGPT par la société états-unienne OpenAI, défrayé la
+chronique et suscité une ébullition au sein du monde académique à
+laquelle <a
+href="https://www.c2dh.uni.lu/events/table-ronde-usages-pedagogiques-de-chatgpt">l’auteur
+de ce texte a pu participer</a>.</p>
+<p>Au-delà des craintes, parfois justifiées, autour de la question du
+plagiat dans le monde académique, une réflexion est à mener sur les
+visions du passé historique qui sont intégrées dans ces systèmes.</p>
+</aside>
+</section>
+<section id="quelques-recherches-en-cours-en-histoire-memory-studies"
+class="slide level2">
+<h2>Quelques recherches en cours<br /> en histoire / memory studies</h2>
+<p><small></p>
+<ul>
+<li><em>History &amp; Theory</em> (<span class="citation"
+data-cites="kansteinerDigitalDopingHistorians2022">Kansteiner
+(2022)</span> / <span class="citation"
+data-cites="bonaldoPotentialHistoryReading2023">Bonaldo and Pereira
+(2023)</span>),</li>
+<li>Frédéric Clavert / Sarah Gensburger (Sciences Po), <em>Memory
+Studies Review</em>: <a
+href="https://www.c2dh.uni.lu/news/artificial-intelligence-future-collective-memory-bridging-ai-scholarship-and-memory-studies">« Is
+AI the future of collective memory? »</a>,</li>
+<li>Un article plus généraliste pour <em>20&amp;21</em>, avec Caroline
+Muller (Rennes 2),</li>
+<li>Dossier <em>American Historical Review</em>, <a
+href="https://academic.oup.com/ahr/issue/128/3#1715527-7282240">Artificial
+Intelligence and the Practice of History</a></li>
+<li>Philippe Rygiel, <a
+href="https://shs.hal.science/halshs-03989854">« ChatGPT : “Non je n’ai
+pas inventé cette une de presse” (menteur) »</a></li>
+<li><a
+href="https://www.degruyter.com/document/doi/10.1515/eehs-2023-0053/html">« OpenForum »,
+<em>Eastern European Holocaust Studies</em>, M. Makhortykh</a></li>
+</ul>
+<p></small></p>
+</section></section>
+<section>
+<section id="ia-générative-et-histoire"
+class="title-slide slide level1">
+<h1>IA générative et histoire</h1>
+<p><em>quelles peuvent être nos sources?</em><br /><br /></p>
+<p>données d’entraînement</p>
+<p>prompts (invites)</p>
+<p>texte/image généré(e)</p>
+<aside class="notes">
+<p>Il y a, disons, trois points d’entrée pour un récit historique dans
+ces IA génératives:</p>
+<ul>
+<li>l’entraînement de ces IA</li>
+<li>les prompts ou invites</li>
+<li>le texte ou l’image généré(e)</li>
+</ul>
+</aside>
+</section>
+<section id="entraînement" class="slide level2">
+<h2>entraînement</h2>
+<ul>
+<li>jeux de données massifs (image+métadonnées ou texte)</li>
+<li><em>Reinforcement Learning with Human feedback</em> (RLHF)
+<ul>
+<li>aspects humains de l’entraînement</li>
+<li><em>digital labor</em></li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>Ces derniers reposent sur, notamment, de l’apprentissage profond
+(<em>deep learning</em>). Cet « apprentissage » implique l’usage de jeux
+de données massifs permettant d’« entraîner » ces systèmes génératifs
+d’images ou de textes. Ces jeux de données d’entraînement, souvent issus
+du web, embarquent, ainsi, des points de vue sur le passé historique.
+Peu ou pas d’historiens ou d’historiennes sont capables d’analyser ces
+données, souvent propriétaires et massives. De plus, la notion
+d’entraînement implique l’introduction d’une perspective probabilistique
+dans la description du passé qui peut ressortir des réponses de ces
+systèmes aux invites des utilisateurs et utilisatrices. Ces réponses
+sont des assemblages de mots ou de pixels statistiquement pertinents :
+il n’y a aucune notion de vérité, de juste ou de faux, de factualité
+dans ces systèmes, du moins pour le moment.</p>
+<p>Pour une explication « vulgarisée » de l’apprentissage profond et
+plus largement de l’intelligence artificielle ou plus largement de
+l’algorithmique, voir: <span class="citation"
+data-cites="lecunQuandMachineApprend2019">Le Cun (2019)</span> ou <span
+class="citation" data-cites="domingosMasterAlgorithmHow2015">Domingos
+(2015)</span>.</p>
+<p>Interrogé sur les jeux de données qui ont servi à entraîner GPT-3.5,
+sur lequel ChatGPT repose, la réponse de ce dernier est la suivante
+« […] GPT-3.5 est entraîné sur une vaste quantité de données provenant
+d’Internet. Les chercheurs et les ingénieurs en apprentissage
+automatique collectent des textes provenant de diverses sources, telles
+que des articles de presse, des livres, des sites web, des forums, des
+blogs et d’autres documents accessibles au public. Ces textes couvrent
+un large éventail de sujets et de styles d’écriture, ce qui permet au
+modèle de développer une compréhension générale de la langue. […] »</p>
+</aside>
+</section>
+<section
+id="quelles-perceptions-du-passé-sont-elles-embarquées-dans-ces-jeux-de-données"
+class="slide level2">
+<h2>Quelles perceptions du passé sont-elles embarquées dans ces jeux de
+données?</h2>
+<p>voir <span class="citation"
+data-cites="makhortykhGenerativeAIContestation2023">Makhortykh,
+Vziatysheva, and Sydorova (2023)</span> sur la Shoah en Ukraine</p>
+</section>
+<section id="charles-de-gaulle-bronze-sur-une-plage-de-normandie"
+class="slide level2">
+<h2>« Charles De Gaulle bronze sur une plage de Normandie »</h2>
+<p><img src="img/04_DeGaulle.jpg" width="30%" /></p>
+<aside class="notes">
+<p>Quand je parle de « perceptions du passé embarquées dans ces jeux de
+données », voici un exemple.</p>
+<p>Si vous regardez les mots utilisés: bronze, De Gaulle, Normandie sont
+trop chargés historiquement ou conceptuellement pour donner le résultat
+auquel on devrait s’attendre.</p>
+</aside>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<blockquote>
+<p>[…] GPT-3.5 est entraîné sur une vaste quantité de données provenant
+d’Internet. Les chercheurs et les ingénieurs en apprentissage
+automatique collectent des textes provenant de diverses sources, telles
+que des articles de presse, des livre$$s, des sites web, des forums, des
+blogs et d’autres documents accessibles au public. Ces textes couvrent
+un large éventail de sujets et de styles d’écriture, ce qui permet au
+modèle de développer une compréhension générale de la langue.</p>
+</blockquote>
+<p><small>(source: ChatGPT)</small></p>
+<aside class="notes">
+<p>Interrogé sur les jeux de données qui ont servi à entraîner GPT-3.5,
+sur lequel ChatGPT repose, la réponse de ce dernier est la suivante
+« […] GPT-3.5 est entraîné sur une vaste quantité de données provenant
+d’Internet. Les chercheurs et les ingénieurs en apprentissage
+automatique collectent des textes provenant de diverses sources, telles
+que des articles de presse, des livres, des sites web, des forums, des
+blogs et d’autres documents accessibles au public. Ces textes couvrent
+un large éventail de sujets et de styles d’écriture, ce qui permet au
+modèle de développer une compréhension générale de la langue. […] »</p>
+</aside>
+</section>
+<section id="les-textes-crées" class="slide level2">
+<h2>les textes crées</h2>
+<p><img src="img/monnet.jpg" width="50%" /></p>
+<aside class="notes">
+<p>Jean Monnet. ChatGPT 3.5 il y a un an.</p>
+</aside>
+</section>
+<section id="les-images-créées" class="slide level2">
+<h2>les images créées</h2>
+<blockquote>
+<p>Ursula von Der Leyne [sic] and Emmanuel Macron, Peter Pavel in the
+image of knights of the round table</p>
+</blockquote>
+<p><img src="img/macron-leyen-knights.jpg" width="40%" /></p>
+<p>(<a
+href="https://stablediffusionweb.com/image/2562767-knights-of-the-round-table-von-der-leyne-macron-and-peter-pavel">source</a>)</p>
+<aside class="notes">
+<p>faire un assemblage</p>
+</aside>
+</section>
+<section id="les-prompts" class="slide level2">
+<h2>les prompts</h2>
+<aside class="notes">
+<p>Le coeur de la contribution d’aujourd’hui.</p>
+<p>les prompts sont:</p>
+<ul>
+<li>écrits par des utilisateurs</li>
+<li>peuvent être ensuite “négociés” avec la machine.</li>
+</ul>
+</aside>
+</section>
+<section id="des-perroquets-stochastiques" class="slide level2">
+<h2>des perroquets stochastiques?</h2>
+<ul>
+<li>séquence de mots la plus probable</li>
+<li>assemblage de pixels le plus probable</li>
+</ul>
+</section></section>
+<section>
+<section id="prompts-et-union-européenne"
+class="title-slide slide level1">
+<h1>prompts et Union européenne</h1>
+
+</section>
+<section id="la-difficile-quête-des-sources" class="slide level2">
+<h2>la difficile quête des sources</h2>
+<p>Jeu de données issues de <a
+href="https://github.com/krea-ai/open-prompts/">Stable Diffusion</a></p>
+<ul>
+<li>dix millions de prompts,</li>
+<li>très peu sur l’Union européenne,</li>
+<li>beaucoup plus sur des personnages liées à l’Union européenne.</li>
+</ul>
+</section>
+<section id="mélanger-passé-présent-et-futur" class="slide level2">
+<h2>mélanger passé, présent et futur</h2>
+<blockquote>
+<p>army of the european union invades budapest 2 0 2 2, highly detailed
+painting, digital painting, artstation, concept art</p>
+</blockquote>
+<blockquote>
+<p>army of the european union fighting on the streets of budapest 2 0 2
+2, highly detailed illustration for time magazine cover art</p>
+</blockquote>
+<blockquote>
+<p>army of the european union with tanks fighting on the streets of
+budapest 2 0 2 2, highly detailed oil painting</p>
+</blockquote>
+<aside class="notes">
+<p>Ici, il est manifeste que différentes temporalités se mélangent:</p>
+<ul>
+<li>probablement un lien avec la Hongrie de 1956 et comparaison
+implicite avec l’URSS</li>
+<li>difficultés de Viktor Orban au sein de l’Union européenne</li>
+<li>vision de l’UE comme puissance impérialiste</li>
+</ul>
+<p>La multiplicité des prompts ici montre probablement une volonté de
+« négocier » avec la machine: probablement que les prompts ont été
+modifiés pour que l’image corresponde à ce que l’utilisateur attend.</p>
+Août 2022. Moment de négociations pour des fonds européens et la Hongrie
+et sa gestion de la démocratie.
+</aside>
+</section>
+<section id="mélanger-présent-et-mythologie-européenne"
+class="slide level2">
+<h2>mélanger présent et mythologie européenne</h2>
+<p><img src="img/macron-leyen-knights.jpg" width="40%" /></p>
+<blockquote>
+<p>Ursula von Der Leyne and Emmanuel Macron, Peter Pavel in the image of
+knights of the round table</p>
+</blockquote>
+<aside class="notes">
+</aside>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<p><img src="img/macron-leyen-knights2.jpg" width="40%" /></p>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<p><img src="img/leyen.jpg" width="40%" /></p>
+<blockquote>
+<p>ChatGPT “Crée une image représentant Ursula Von der Leyen, actuelle
+présidente de la Commission européenne, lors de son couronnement en tant
+que reine de l’Europe. Assure-toi que les drapeaux de l’Union européenne
+sont visibles et que la cérémonie de couronnement est mise en
+évidence.”</p>
+</blockquote>
+</section></section>
+<section>
+<section id="conclusion" class="title-slide slide level1">
+<h1>Conclusion</h1>
+
+</section>
+<section id="lien-actualités-perceptions-de-lhistoire"
+class="slide level2">
+<h2>lien actualités – perceptions de l’histoire</h2>
+<ul>
+<li>agression russe contre l’Ukraine comme exemple paradigmatique</li>
+</ul>
+</section>
+<section id="négocier-avec-la-machine" class="slide level2">
+<h2>négocier avec la machine</h2>
+</section>
+<section id="quelle-influence-sur-la-façon-dont-nous-voyons-le-passé"
+class="slide level2">
+<h2>quelle influence sur la façon dont nous voyons le passé</h2>
+</section>
+<section id="bibliographie" class="slide level2">
+<h2>Bibliographie</h2>
+<p><small></p>
+<div id="refs" class="references csl-bib-body hanging-indent"
+data-entry-spacing="0" role="list">
+<div id="ref-bonaldoPotentialHistoryReading2023" class="csl-entry"
+role="listitem">
+Bonaldo, Rodrigo, and Ana Carolina Barbosa Pereira. 2023.
+<span>“Potential History: Reading Artificial Intelligence from
+Indigenous Knowledges*.”</span> <em>History and Theory</em> 62 (1):
+3–29. <a
+href="https://doi.org/10.1111/hith.12290">https://doi.org/10.1111/hith.12290</a>.
+</div>
+<div id="ref-domingosMasterAlgorithmHow2015" class="csl-entry"
+role="listitem">
+Domingos, Pedro. 2015. <em><span>The Master Algorithm: How the Quest for
+the Ultimate Learning Machine Will Remake Our World</span></em>. New
+York: Basic Books.
+</div>
+<div id="ref-kansteinerDigitalDopingHistorians2022" class="csl-entry"
+role="listitem">
+Kansteiner, Wulf. 2022. <span>“Digital <span>Doping</span> for
+<span>Historians</span>: <span>Can History</span>, <span>Memory</span>,
+and <span>Historical Theory Be Rendered Artificially
+Intelligent</span>?”</span> <em>History and Theory</em> 61 (4): 119–33.
+<a
+href="https://doi.org/10.1111/hith.12282">https://doi.org/10.1111/hith.12282</a>.
+</div>
+<div id="ref-lecunQuandMachineApprend2019" class="csl-entry"
+role="listitem">
+Le Cun, Yann. 2019. <em><span>Quand la machine apprend: La
+r<span>é</span>volution des neurones artificiels et de l’apprentissage
+profond</span></em>. Odile Jacob.
+</div>
+<div id="ref-makhortykhGenerativeAIContestation2023" class="csl-entry"
+role="listitem">
+Makhortykh, Mykola, Victoria Vziatysheva, and Maryna Sydorova. 2023.
+<span>“Generative <span>AI</span> and <span>Contestation</span> and
+<span>Instrumentalization</span> of <span>Memory About</span> the
+<span>Holocaust</span> in <span>Ukraine</span>.”</span> <em>Eastern
+European Holocaust Studies</em>, November. <a
+href="https://doi.org/10.1515/eehs-2023-0054">https://doi.org/10.1515/eehs-2023-0054</a>.
+</div>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script src="2024-06_InviterHistoireEurope_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="2024-06_InviterHistoireEurope_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '2024-06_InviterHistoireEurope_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
