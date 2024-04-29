@@ -6,6 +6,7 @@ I am not here starting again a blogging activity, but just storing some texts th
 
 (date format: yyyy.mm.dd)
 
+- 2024.04.26 - [*Archiving social media in an age of APIcalypse*](blog/20240426.md)
 
 - 2023.10.23 - [*Mettons fin aux technologies zombies que sont les médias sociaux centralisés*](blog/20231025.md)
 
