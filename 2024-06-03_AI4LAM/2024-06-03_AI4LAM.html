@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="une approche des intelligences artificielles génératives par les humanités et l’histoire numériques" />
+  <title>Produites par des sources et productrices de sources</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="2024-06-03_AI4LAM_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="2024-06-03_AI4LAM_files/reveal.js-3.3.0.1/css/theme/league.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <script src="2024-06-03_AI4LAM_files/header-attrs-2.21/header-attrs.js"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Produites par des sources et productrices de
+sources</h1>
+    <h2 class="author">une approche des intelligences artificielles
+génératives par les humanités et l’histoire numériques</h2>
+    <h3 class="date"><small><a href="https://inactinique.net">Frédéric
+Clavert</a>, C2DH, Université du Luxembourg <br />AI4LAM / 3 juin
+2024</small></h3>
+</section>
+
+<section id="section" class="title-slide slide level1"
+data-background="../img/figure01_bg.png">
+<h1 data-background="../img/figure01_bg.png"></h1>
+<p>histoire des relations internationales</p>
+<p>histoire numérique</p>
+<p>memory studies</p>
+<aside class="notes">
+</aside>
+</section>
+
+<section>
+<section id="section-1" class="title-slide slide level1">
+<h1><!-- {data-background="img/RecodeCLIGame.gif"} --></h1>
+<p><img style='border:none' src='img/RecodeCLIGame.gif' width="75%" /></p>
+<aside class="notes">
+<p>Je ne vais pas beaucoup parler des usages presque déjà classiques des
+LLMs en histoire et en sciences humaines et sociales. Je vais juste
+insister sur un point:</p>
+<ul>
+<li>en un peu plus d’un an, les LLMs, souvent leurs versions optimisées
+et très anthropomorphiques des chatbots, sont entrées dans les mœurs de
+la recherche :
+<ul>
+<li>et ce malgré les nombreux reproches qui ont pu leur être faits,
+notamment le risque du « plagiat »,</li>
+<li>nous menons des expériences de recherche et d’enseignement avec ces
+systèmes,</li>
+<li>cela rend particulièrement importantes des journées comme celles-ci,
+car il faut aussi investiguer les risques que nous prenons dans ces
+expérimentations d’une parts, les éléments éthiques à prendre en compte
+d’autre part.</li>
+</ul></li>
+<li>l’un des usages qui s’est le plus diffusé au C2DH du moins est le
+développement informatique, l’écriture de scripts, en python la plupart
+du temps.
+<ul>
+<li>Par exemple, écrire un script pour scrapper des données – en toute
+conformité avec le RGPD, bien entendu – sur le web, si le site n’est pas
+trop complexe, est une histoire d’une heure, pour un chercheur ou une
+chercheuse ayant une solide culture numérique mais sans capacité à
+écrire du code,</li>
+</ul></li>
+<li>à terme, c’est un changement important, par exemple, de la
+définition de l’histoire et des humanités numériques, des équilibres
+entre les différents corps de métiers de la recherche – ce qui inclut
+ici métiers des archives et des bibliothèques –, y compris des
+équilibres qui s’étaient instaurés depuis environ 2010, c’est-à-dire le
+début des DH en France, par exemple, au moment du <em>Manifeste des
+Digital Humanities</em>;</li>
+<li>il y a d’autres usages à explorer, y compris, dans ma discipline,
+les manières d’écrire.
+<ul>
+<li>Une collègue du C2DH expliquait, par exemple, qu’elle utilisait les
+chatbots pour lutter contre la page blanche: elle demandait au chatbot
+d’écrire sur le sujet qui la bloquait, elle ne garde rien du texte ainsi
+engendré, mais cela la débloque. Beaucoup d’autres petites pratiques
+d’écriture s’insèrent comme ça avec les <em>Large Language Models</em>,
+de l’ordre de ce qu’avec Caroline Muller nous avons appelé les
+<em>pratiques numériques discrètes</em>.</li>
+</ul></li>
+</ul>
+</aside>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<p><img style='border:none' src='img/whichdata.gif' width="75%" /></p>
+<aside class="notes">
+<p>Ce qui va plus m’intéresser ici, c’est de voir les système d’IA
+génératifs, d’image, de texte ou de vidéos, comme des produits de
+quelque chose qui nous est commun à tous, dans cette salle, les sources
+primaires.</p>
+<p>Dans le processus d’entraînement puis d’usage des LLMs et
+éventuellement des chatbots – sur ce gif, MS copilot qui est fourni par
+l’Université du Luxembourg, sur le précédent, Anthropic Claude, car nous
+en utilisons tous et toutes plusieurs – quelque chose que l’on peut
+qualifier de sources primaires (pas archives, mais des sources primaires
+néanmoins) sont utilisés.</p>
+<p>La phase d’entraînement d’un LLM se déroule en quelques étapes. Pour
+résumer et d’après ce que l’on sait:</p>
+<ul>
+<li>Une phase d’entraînement non encadrée des LLMs,</li>
+<li>Un réglage (<em>tuning</em>) encadré sur base d’instructions
+(utilisé aussi pour les <em>fine tuning</em>),</li>
+<li><em>reinforcement learning from human feedback</em> (RLHF) – quand
+vous appuyez sur les pouces haut ou bas parce que vous êtes contents du
+résultats, ou, avant la publication du LLM ou du chatbot, du digital
+labor – des travailleurs kenyans, dans le cas de ChatGPT, peu payés pour
+un travail très toxique.</li>
+</ul>
+<p>Pour la phase d’entraînement principale, par exemple, on sait à peu
+près pour le cas de ChatGPT que les données issues de CommonCrawl
+(2016-2019), de WebText 2 (text de pages web dont les liens sont inclus
+dans des posts Reddit), deux corpus de livres (Book1 et Book2), les
+pages en anglais de wikipedia.</p>
+</aside>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<p><img style='border:none' src='img/commoncrawl.gif' width="75%" /></p>
+<aside class="notes">
+<p>Si l’on regarde plus précisément l’élément principal d’entraînement
+des LLMs, c’est-à-dire <em>commoncrawl</em>, il n’est finalement pas si
+différent de ce que l’on appelle les archives du web, en fait comme vous
+le savez plutôt un dépôt légal. Les technologies (<em>crawlers</em>)
+pour le créer ne sont pas si différentes. Par contre sa mise à
+disposition est bien différente: d’immenses dumps, années après années,
+de données rassemblant du contenu textuel massif, un peu filtré, du
+web.</p>
+</aside>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<p><img style='border:none' src='img/instruction-tuning.gif' width="75%" /></p>
+<aside class="notes">
+<p>Le second élément de l’entraînement d’un LLM, revient en gros à lui
+soumettre des questions – les prompts – et des réponses qu’en tant
+qu’humains nous pensons être les bonnes.</p>
+<p>De plus en plus ces instructions sont issues des prompts que les
+utilisateurs eux-mêmes produisent.</p>
+<p>Par exemple – il ne s’agit ici pas d’un LLM mais d’un système
+générateur d’images – StableDiffusion a rendu publique un jeu de donné
+associant des prompts à des images (10 millions de lignes), à utiliser
+dans le cadre des entraînements, ici, des systèmes à diffusion, donc
+générateurs d’images.</p>
+<p>Mais des jeux de données comme ceci, on en trouve de nombreux sur une
+plateforme comme HuggingFace. Parfois, ils sont synthétiques,
+c’est-à-dire créés par des LLMs (ou des systèmes de diffusion) pour des
+LLMs.</p>
+<p>Ils peuvent être aussi semi-synthétiques: un collègue, par exemple,
+est en train de tester la possibilité de faire un chatbot sur la base
+des ouvrages de Gilbert Trausch, l’historien national luxembourgeois
+décédé il y a quelques années. Pour ce faire, il a demandé à un LLM de
+créer pour chaque paragraphe de chaque livre une série de questions (de
+prompts) avec des réponses issues des paragraphes. Là, on est plutôt sur
+des sources secaondaires, mmais dans une telle bibliothèque, cela compte
+aussi, je crois.</p>
+</aside>
+</section></section>
+<section>
+<section id="section-5" class="title-slide slide level1">
+<h1></h1>
+<p><img src="../img/gpt_monnet.png" width=75% style="border:none" /></p>
+<aside class="notes">
+<p>Les LLMs et systèmes génératifs d’image sont dont largement
+dépendants de jeux de données que l’on peut voir, aussi, comme des
+sources primaires. Ils en produisent aussi.</p>
+<ul>
+<li>Les modèles eux-mêmes, et leurs évolutions,</li>
+<li>Les textes et images qu’ils produisent, et dont on se demande s’ils
+n’entraîneront pas des problèmes s’ils intègrent les jeux de données
+d’entraînement,</li>
+<li>et les prompts.</li>
+</ul>
+</aside>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<p><img src="img/huggingface.png" width=75% style="border:none" /></p>
+<aside class="notes">
+<p>La majeure partie des modèles – dont beaucoup que l’on ne connaît
+pas, même si vous reconnaîtrez sur cette capture plusieurs grands noms
+(mistral, llama, phi-3, etc) – sont finalement stockés sur Hugging Face
+qui est devenu une plateforme majeure pour l’IA en quelques années.
+Mais, j’anticipe ici sur la suite de ce que je souhaitais dire, je n’ai
+aucune idée de la manière dont HuggingFace est archivé.</p>
+</aside>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<p><img src="img/napoleon.gif" width=75% style="border:none" /></p>
+<aside class="notes">
+<p>Les textes et images que les LLMs et systèmes de création d’images,
+qui aujourd’hui fusionnent de plus en plus, sont bien sûr des sources
+primaires à proprement parler mais surtout des sources qui nous
+permettent de comprendre, finalement, la manière dont fonctionnent les
+systèmes génératifs. Surtout, ils sont une manière d’explorer les jeux
+de données d’entraînement via les systèmes génératifs eux-mêmes. Avec le
+fine-tuning, on peut aussi imaginer qu’ils servent à explorer des jeux
+de données importants, par exemple des jeux de données d’archives
+numérisées, c’est-à-dire qu’ils pourraient devenir des outils de lecture
+distante des archives, en tout est-ce ce que certains de mes collègues
+explorent en ce moment. Le problème étant d’évaluer la qualité des
+réponses de ces systèmes.</p>
+</aside>
+</section>
+<section id="section-8" class="slide level2">
+<h2></h2>
+<p><img src="img/verdun.gif" style="border:none" /></p>
+<aside class="notes">
+<p>Pour me recherches actuelles, ce qui m’intéresse plus aujourd’hui
+sont les prompts eux-mêmes, vus à la fois comme une porte ouverte sur
+l’imagination des utilisateurs de systèmes génératifs, surtout
+lorsqu’ils évoquent le passé dans leurs prompts, mais imagination qui
+reste triplement cadrée:</p>
+<ul>
+<li>par le contexte social dans lequel ils et elles évoluent
+(cf. Halbwachs, Gensburger),</li>
+<li>le contexte social (et économique) de création de ces systèmes,</li>
+<li>le fonctionnement même de ces systèmes – ce sont de puissants
+systèmes probabilistiques, dont le but est de produire à la fin quelque
+chose qui puisse plaire au plus grand nombre (Smits et al.),
+c’est-à-dire quelque chose de moyen (Geffen), où le moyen risque de
+devenir hégémonique, en tout cas, pour ce qui est de mes travaux, dans
+le domaine de la mémoire collective.</li>
+</ul>
+<p>Si l’on prend ces trois cadres, on voit alors les utilisateurs et
+utilisatrices, souvent, entrer dans une sorte de négociation avec la
+machine pour obtenir ce qu’il veut – comme je l’ai fait il y a quelques
+jours à titre d’exemple dans le GIF que vous voyez ici.</p>
+</aside>
+</section></section>
+<section id="conclusion-quel-archivage-pour-les-systèmes-génératifs"
+class="title-slide slide level1">
+<h1>Conclusion: quel archivage pour les systèmes génératifs?</h1>
+<p><img src="img/huggingface_co.gif" style="border:none" /></p>
+<aside class="notes">
+<p>Comment archiver les systèmes génératifs d’image, de texte de vidéos?
+Comment archiver tous leurs intrants et tous leurs extrants?</p>
+<p>Si l’on regarde l’archivage de huggingface – un archivage qui serait
+bien pratique, puisqu’il permettrait d’archiver de nombreux modèles et
+de nombreux jeux de données d’entraînement – par Internet Archive est
+parcellaire: le site web lui-même est bien archivé, mais pas les
+fichiers à télécharger, souvent encore en ligne néanmoins.</p>
+<p>Par contre, se pose le problèmes des prompts. Bien sûr, on trouve des
+jeux de données faits de prompts en ligne. Sur GitHub ou Huggingface, on
+peut trouver des fichiers parfois de 10 millions de lignes, avec de
+nombreux prompts intéressants.</p>
+<p>Néanmoins, 10 millions de prompts ne sont pas grand chose. De
+nombreux prompts sont publiés sur des serveurs discord (chaque serveur a
+ses règles de collecte de données) – MidJourney fonctionne comme ça par
+exemple.</p>
+<p>Finalement, nous nous trouvons – historien.nes, archivistes,
+conservateurices des bibliothèques – face à des enjeux relativement
+similaires à ceux qui se posaient à partir de 2005-2006 pour les réseaux
+sociaux numériques. Comment archiver de nouvelles sources nées
+numériques? Quel périmètre d’archivage?</p>
+</aside>
+</section>
+    </div>
+  </div>
+
+  <script src="2024-06-03_AI4LAM_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="2024-06-03_AI4LAM_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '2024-06-03_AI4LAM_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
