@@ -17,6 +17,10 @@ body {
 
 }
 
+h1, h2, h3 {
+	font-family:"EB Garamond", serif;
+}
+
 a.buttons {
 	-webkit-font-smoothing: antialiased;
 	background: none;
@@ -26,3 +30,12 @@ a.buttons {
 	padding: 2px 2px 2px 2px;
 	height: 30px;
 }
+
+h1.header {
+	font-family: "EB Garamond", serif;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 1.3em;
+	border-bottom: none;
+	margin-top: 0;
+  }
