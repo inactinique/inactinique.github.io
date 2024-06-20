@@ -46,3 +46,9 @@ header {
 	color: #232323;
 	border-left-width: 0px;
 }
+
+header+li {
+	color: #232323;
+	background: none;
+	background-color: none;
+}
