@@ -28,13 +28,9 @@ More on the [archive](content/archive.md) page.
 (date format: dd.mm.yyyy)
 
 - 08.08.2023 - [« Chatting with the Past ». Geschichte ist Gegenwart! Der History & Politics Podcast der Körber-Stiftung](https://koerber-stiftung.de/mediathek/chatting-with-the-past/?fbclid=IwAR1HcVFBSH-6IhcItvX5Ndv22QdQYX1YHLYpck9RgTiYgZ7IRNK3g4Rb7WA) and the [preparatory notes](/content/blog/20230724.html)
-
 - 16.07.2023 - [« Humans ever more important in a world of AI »](https://play.rtl.lu/shows/en/in-conversation-with-lisa-burke/episodes/n/2081642), *The Lisa Burke Show* (RTL Luxembourg).
- 
 - 05.04.2023 - I participated to a round-table in French at the Université de Montréal. I'll put here the link to the recording as soon as possible.
-
 - 09.02.2023 - I have organized an event on ChatGPT (French). The video's is on the [C<sup><small>2</small></sup>DH's website](https://www.c2dh.uni.lu/thinkering/usages-pedagogiques-de-chatgpt-enregistrement-de-la-table-ronde). 
-
 - 01.02.2023 - I participated to the History Communication Institute's ChatGPT, AI & history event (English). My prez is [here](2023-02-01_chatGPT_HCI/2023-02-01_chatGPT_HCI.html)). [The round-table is available as a podcast](https://jasonsteinhauer.substack.com/p/chatgpt-ai-and-history#details) and [as a YouTube Video](https://www.youtube.com/watch?v=Eu0ARkdZ2X0).
 
 ## Non-academic writings
@@ -50,5 +46,3 @@ More on the [archive](content/archive.md) page.
 This is an automatically generated list by the University of Luxembourg repository.
 
 <iframe src="https://orbilu.uni.lu/widget?query=author_authority%3A%2850029240%29&format=apa&lang_code=en" title="Publications" marginwidth="0" marginheight="0" scrolling="yes" width="100%" height="450" frameborder="0"></iframe>
-
-
