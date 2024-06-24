@@ -62,9 +62,5 @@ header+ul {
 }
 
 ul {
-	list-style-type:none;
-}
-
-li:before {
-	content: '- ';
+	list-style-type:'-';
 }
