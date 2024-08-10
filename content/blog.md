@@ -6,6 +6,8 @@ I am not here starting again a blogging activity, but just storing some texts th
 
 (date format: yyyy.mm.dd)
 
+- 2024.08.12 - [*prompting the past*](blog/20240812.md) - a text that goes with my [DH2024 prez](../prez/2024_DH024_prompting_the_past/prompting_the_past_prez.html) and with a [github repository](https://github.com/inactinique/DH2024_prompting_the_past)
+
 - 2024.06.11 - [*La haine en ligne: quelques perspectives comparatives historiques*](blog/20240611.md)
 
 - 2024.04.26 - [*Archiving social media in an age of APIcalypse*](blog/20240426.md)

@@ -8,18 +8,12 @@ This page is a repository for some of my [prez](#prez), presents [ChatGPT events
 
 (date format: dd.mm.yyyy / in some cases, you can access the presenter's text by pressing the 's' key)
 
-- 08.08.2024 [prompting the past (same name, not same prez)](prez/2024_DH024_prompting_the_past/prompting_the_past_prez.html)
+- 08.08.2024 [prompting the past (same name, not same prez)](prez/2024_DH024_prompting_the_past/prompting_the_past_prez.html). You'll find a [written and modified version of this prez](content/blog/20240812.md) in the blog section and a [repository with some code](https://github.com/inactinique/DH2024_prompting_the_past) on github. 
 - 02.06.2024 [Produites par des sources et productrices de sources: une approche des IA génératives par les humanités et l'histoire numérique](prez/2024-06-03_AI4LAM/2024-06-03_AI4LAM.html) -- Chapitre francophone ai4lam, rencontre régionale Grand-Est « Intelligence artificielle, patrimoine et humanités numériques »
 - 04.04.2024 [Prompting the European Union History (colloque chaire Jean Monnet IDECE)](prez/2024-06_InviterHistoireEurope/2024-06_InviterHistoireEurope.html)
 - 08.03.22024 [Can history be written out of tweets?](prez/2024-03-08_HistoryMadeOutOfTweets/2024-03-08_HistoryMadeOutOfTweets.html) -- unimore, dipartimento di studi linguinstici e culturalli: [« Storia e rivoluzione digitale. Come cambiano le fonti e il lavoro degli storici »](https://tv.unimore.it/in-unimore/in-primopiano/item/2999-storia-e-rivoluzione-digitale-come-cambiano-le-fonti-e-il-lavoro-degli-storici)
 - 16.01.2024 [commémorer en ligne?](prez/2024-01-16_UnePlusGrandeGuerre/2024-01-16_UnePlusGrandeGuerre.html#/) -- séminaire « une plus grande guerre » (Institut Historique allemand)
 - 04.07.2023 [usages scientifiques du web : intérêt, méthodes et limites ?](prez/2023-07-04_ITI-MAKErs/2023-07-04_ITI-MAKErs.html#/) -- école d'été ITI-MAKErs
-- 24.05.2023 [history and social media](prez/2023-05-23_HistorySocialMedia/2023-05-23_HistorySocialMedia.html#/)
-- 13.04.2023 [prompting the past](prez/2023-04-13_PromptingThePast/2023-04-13_PromptingThePast.html), Colloque [« History and/in Digital Humanities »](https://www.crihn.org/nouvelles/2023/04/04/colloque-history-and-in-digital-humanities/)
-- 03.04.2023 [Une mémoire collective à haute fréquence ? Propositions méthodologiques et critiques pour l’étude des échos de mémoire collective sur les réseaux sociaux numériques](prez/2023-04-03_CEHNUM/2023-04-03_CEHNUM.html) - Colloque [*La mémoire en humanités numériques*](https://www.crihn.org/nouvelles/2023/02/22/1er-colloque-etudiants-du-crihn/). L'[enregistrement est disponible en ligne](https://crihn.openum.ca/nouvelles/2023/05/01/video-de-la-conference-de-frederic-clavert-u-de-luxembourg/).
-- 07.03.2023 [History education in digital age: a critical perspective](prez/2023-03-07_CoE/2023-03-07_CoE.html)
-- 01.02.2023 [ChatGPT: a pedagogical use case (HCI ChatGPT event)](prez/2023-02-01_chatGPT_HCI/2023-02-01_chatGPT_HCI.html)
-- 09.01.2023 [Présentation à l’EHESS (CHR): pratiques numériques discrètes et goût de l’archive à l’ère numérique](https://slides.com/inactinique/gout-de-l-archive-et-pratiques-discretes)
 
 
 More on the [archive](content/archive.md) page.
