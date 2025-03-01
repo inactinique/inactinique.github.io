@@ -8,7 +8,7 @@ This page is a repository for some of my [prez](#prez), presents [ChatGPT events
 
 (date format: dd.mm.yyyy / in some cases, you can access the presenter's text by pressing the 's' key)
 
-- 04.02.2024 [bricolage / braconnage / sabotage](2025-02-04_MSHMondes_Bricolage-Braconnage-Sabotage/2025-02-04_MSHMondes_Bricolage-Braconnage-Sabotage.index). Séminaire « les sciences humaines et sociales à l’ère numérique : entre low tech et informatisation générale des données » (MSH mondes / Huma-Num Lab)
+- 04.02.2024 [bricolage / braconnage / sabotage](prez/2025-02-04_MSHMondes_Bricolage-Braconnage-Sabotage/2025-02-04_MSHMondes_Bricolage-Braconnage-Sabotage.index). Séminaire « les sciences humaines et sociales à l’ère numérique : entre low tech et informatisation générale des données » (MSH mondes / Huma-Num Lab)
 - 08.08.2024 [prompting the past (same name, not same prez)](prez/2024_DH024_prompting_the_past/prompting_the_past_prez.html). You'll find a [written and modified version of this prez](content/blog/20240812.md) in the blog section and a [repository with some code](https://github.com/inactinique/DH2024_prompting_the_past) on github. 
 - 02.06.2024 [Produites par des sources et productrices de sources: une approche des IA génératives par les humanités et l'histoire numérique](prez/2024-06-03_AI4LAM/2024-06-03_AI4LAM.html) -- Chapitre francophone ai4lam, rencontre régionale Grand-Est « Intelligence artificielle, patrimoine et humanités numériques »
 - 04.04.2024 [Prompting the European Union History (colloque chaire Jean Monnet IDECE)](prez/2024-06_InviterHistoireEurope/2024-06_InviterHistoireEurope.html)
