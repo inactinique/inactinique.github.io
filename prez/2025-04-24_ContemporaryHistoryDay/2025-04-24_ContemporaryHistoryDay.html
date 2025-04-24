@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="frédéric clavert | frederic.clavert@uni.lu" />
+  <title>artificielle ou humaine? la mémoire collective au travers des prompts</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="2025-04-24_ContemporaryHistoryDay_files/reveal.js-4.2.1/dist/reset.css">
+  <link rel="stylesheet" href="2025-04-24_ContemporaryHistoryDay_files/reveal.js-4.2.1/dist/reveal.css">
+
+  <style type="text/css">
+    /* CSS from pandoc style.html() */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+                  </style>
+
+  <link rel="stylesheet" href="2025-04-24_ContemporaryHistoryDay_files/reveal.js-4.2.1/dist/theme/simple.css" id="theme">
+
+
+  <style type="text/css">
+  /* some tweaks to reveal css */
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+  </style>
+
+    <script src="2025-04-24_ContemporaryHistoryDay_files/header-attrs-2.29/header-attrs.js"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">artificielle ou humaine?<br /><small>la mémoire
+collective au travers des prompts</small></h1>
+  <h2 class="author"><small>frédéric clavert | <a
+href="mailto:frederic.clavert@uni.lu">frederic.clavert@uni.lu</a></small></h2>
+  <h3 class="date"><small>24/04/2025</small></h3>
+</section>
+
+<section>
+<section id="introduction" class="title-slide slide level1">
+<h1>introduction</h1>
+
+</section>
+<section id="qui-suis-je" class="slide level2">
+<h2>qui suis-je?</h2>
+</section>
+<section id="generative-ai" class="slide level2">
+<h2>generative ai</h2>
+<blockquote>
+<p>AI systems <strong>trained</strong> to create new content (text,
+images, etc.) rather than classify or predict. They learn patterns from
+vast datasets and generate outputs that <strong>resemble the
+data</strong> (<em>stochastic parrots</em>) they were trained on.</p>
+</blockquote>
+<p>text / image / video / multimodal</p>
+<aside class="notes">
+<p>Mentionner la notion de dataset d’entraînement, souvent inconnu, même
+si on en a habituellement une idée.</p>
+<p>Par exemple, un modèle de langage (LLM) comme GPT-4 a ingurgité des
+millions de textes et va <strong>générer du texte en continuant une
+phrase</strong> statistiquement. Ce sont des sortes de « perroquets
+stochastiques » : ils reproduisent des schémas de langage sans avoir
+conscience du vrai ou du faux.</p>
+<p>Des IA comme DALL·E ou Midjourney créent des images à partir de
+descriptions textuelles en utilisant des réseaux entraînés sur des
+millions d’images.</p>
+Certains modèles récents sont <strong>multimodaux</strong>, combinant
+plusieurs types de données (texte + image).
+</aside>
+</section>
+<section id="prompts-as-interface-to-generative-ai"
+class="slide level2">
+<h2>prompts as interface to generative ai</h2>
+<blockquote>
+<p>prompts are text descriptions or questions that generative AI systems
+require will to produce content</p>
+</blockquote>
+<aside class="notes">
+<p><strong>L’utilisateur doit écrire une requête (prompt)</strong>, pour
+guider l’IA. L’IA répond en fonction de ce prompt et de sa “mémoire”
+apprise, c’est-à-dire de ses données d’entraînement et des modalités de
+son entraînement, souvent complété par un entraînement ‘humain’, qui
+peut impliqué du travail du clic.</p>
+<p>C’est cette interaction par prompt qui m’intéresse ici:</p>
+<ul>
+<li>le travail de l’histoire est de poser des questions au passé,</li>
+<li>que se passe-t-il quand on pose des questions (des prompts) évoquant
+le passé?</li>
+</ul>
+</aside>
+</section>
+<section id="why-should-we-care" class="slide level2">
+<h2>Why Should We Care?</h2>
+<ul>
+<li>Widely used <em>to obtain information</em>, write content, etc.</li>
+<li>Includes the <em>production</em> of ‘original’ content on history,
+hence mediating the past</li>
+<li>mediation with the past with no sense of truth but many biases</li>
+<li>might in the future shape popular (political) understanding of
+history</li>
+</ul>
+<aside class="notes">
+<p>D’où la question suivante: pourquoi, en tant qu’historiens
+devraient-on se préoccuper des IA génératives?</p>
+<p>Désormais présents dans toute la société, le grand public utilise ces
+plateformes pour poser des questions, y compris sur des sujets
+historiques. Donc: de plus en plus, <strong>la première interface avec
+le passé pourrait être une IA générative</strong> et non un livre ou un
+enseignant.</p>
+<p>En produisant du contenu historique – de diverses natures et dans
+différents cadres (un musée ayant créé un chatbot permettant de
+témoigner sur un événement).</p>
+<p>Change la <strong>médiation du passé</strong>: toute mémoire
+collective est médiée et les “affordances” des IA génératives doivent
+ici être prises en compte: - comment ces récits sont-ils produits ? L’IA
+<strong>n’a pas conscience des faits ou de la vérité</strong>; elle peut
+affirmer des erreurs avec aplomb. - mode de production des connaissances
+qui n’est pas conforme à la démarche critique des historiens et
+historiennes - ces modèles apprennent sur des bases de connaissances
+existantes: ils peuvent renforcer des biais ou des omissions, même s’il
+existe des moyens de limiter les effets de ces biais. - s’il y a peu de
+femmes dans les sources d’entraînement, l’IA parlera peu des femmes dans
+ses réponses historiques.</p>
+bref, ces IA sont <em>de facto</em> des <strong>vecteurs de la mémoire
+collective</strong> : il faut comprendre ce qu’elles diffusent comme
+image du passé, avec quelle fiabilité, et comment encadrer ou corriger
+cela.
+</aside>
+</section></section>
+<section id="vectors-of-collective-memory"
+class="title-slide slide level1">
+<h1>Vectors of Collective Memory</h1>
+<ul>
+<li>Training data are embedding collective narratives about the
+past<br />
+</li>
+<li>Training data carries <strong>biases, gaps, and
+silences</strong></li>
+</ul>
+<p>→ the vectorization of memory means AI outputs can <strong>reinforce
+certain recollections</strong> and <strong>erase others</strong>.</p>
+<blockquote>
+<p>our cultural heritage is “morally and politically deeply flawed,” so
+an AI drawing on it might replicate those flaws (Kansteiner)</p>
+</blockquote>
+<aside class="notes">
+<p>Ici, on aborde l’idée que les IA génératives servent de
+<strong>vecteurs de la mémoire collective</strong>.</p>
+<ul>
+<li><p>Leur “mémoire” à elles, c’est le corpus d’entraînement : des
+milliards de mots tirés de Wikipédia, de livres, d’articles de presse,
+de réseaux sociaux… qui contiennent nos récits sur le passé. On peut
+dire qu’une partie de notre mémoire collective est encodée dans ces
+bases de données utilisées par les IA.</p></li>
+<li><p>mémoire codée hérite de tous les <strong>biais et de toutes les
+omissions</strong> de ces données d’entraînement, reproduisant les zones
+d’ombre historiques – par exemple l’histoire de populations
+marginalisées par exemple.</p></li>
+<li><p>Les biais (occidentalo-centriques, sexistes, etc.) présents dans
+les contenus du web se retrouveront dans les réponses de l’IA. cf
+Kansteiner</p></li>
+</ul>
+L’IA peut donc <strong>façonner la mémoire collective</strong> en
+renforçant les versions dominantes de l’histoire (puisque ce sont elles
+qu’on lui a le plus fournies) et en passant sous silence d’autres
+versions.
+</aside>
+</section>
+
+<section id="prompts-as-a-negotiation-with-the-past"
+class="title-slide slide level1">
+<h1>Prompts as a Negotiation with the Past</h1>
+<ul>
+<li>Prompts as questions about the past
+<ul>
+<li>prompts are then <strong>doors into collective memory</strong></li>
+</ul></li>
+<li>Prompts as User–Machine interaction / negociation
+<ul>
+<li>final content as a cyborg content</li>
+<li>tensions can appear in this human/machine interaction</li>
+</ul></li>
+</ul>
+<aside class=notes>
+<ul>
+<li>interroger une IA via un prompt faisant référence au passé comme
+forme de <strong>négociation avec le passé</strong>.</li>
+<li>réponse liée aux mémoires collectives embarquées via le jeu de
+données d’entraînement de l’IA génératice.</li>
+<li>mais interaction utilisateur / machine: reformulation du prompt pour
+obtenir une réponse différente – c’est là que la négociation se fait,
+négociation entre la vision du passé de l’utilisateur et celle de la
+plateforme d’IA générative</li>
+<li>le résultat est un texte cyborg, hybride, résultat d’une
+conversation homme/machine</li>
+<li>Peut révéler des tensions dans la mémoire collective:</li>
+<li>En somme, les prompts sont un nouveau terrain où se joue
+l’<strong>écriture de l’histoire</strong>
+</aside></li>
+</ul>
+</section>
+
+<section>
+<section id="examples" class="title-slide slide level1">
+<h1>Examples</h1>
+
+</section>
+<section id="europe" class="slide level2">
+<h2>Europe</h2>
+<p><img src="img/06_dendro.png" style="border:none;" width=80% /></p>
+</section>
+<section id="joe-biden" class="slide level2">
+<h2>Joe Biden</h2>
+<p><img src="img/05_Biden.jpg" style="border:none;" width=60% /></p>
+</section>
+<section id="hello-history" class="slide level2">
+<h2>Hello history</h2>
+<p><img src="img/hellohistory.png" style="border:none;" width=60% /></p>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<p><img src="../img/07_mr_bean_napoleon.png" style="border:none;" width=60% /></p>
+</section></section>
+<section id="conclusion" class="title-slide slide level1">
+<h1>Conclusion</h1>
+
+</section>
+    </div>
+  </div>
+
+  <script src="2025-04-24_ContemporaryHistoryDay_files/reveal.js-4.2.1/dist/reveal.js"></script>
+  
+  <!-- reveal.js plugins -->
+  <script src="2025-04-24_ContemporaryHistoryDay_files/reveal.js-4.2.1/plugin/notes/notes.js"></script>
+  
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+        // Display a presentation progress bar
+        progress: true,
+        // Can be used to limit the contexts in which the slide number appears
+        showSlideNumber: 'all',
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+        // Push each slide change to the browser history
+        // Implies `hash: true`
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Transition style
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+        // The display mode that will be used to show slides
+        display: 'block',
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+
+
+        // Optional reveal.js plugins
+        plugins: [
+          RevealNotes,
+        ]
+      });
+
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
