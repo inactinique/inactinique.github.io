@@ -8,6 +8,8 @@ This page is a repository for some of my [prez](#prez), presents [ChatGPT events
 
 (date format: dd.mm.yyyy / in some cases, you can access the presenter's text by pressing the 's' key)
 
+- 30.05.2025 [une écriture machinique
+de l’histoire? les grands modèles de langue et la discipline historique](prez/2025-05-30_CSDH/2025_CSDH.html)
 - 12.05.2025 [negotiating the past](prez/2025-05-14_negotiating_the_past/negotiating_the_past.html)
 - 24.04.2025 [artificielle ou humaine? la mémoire collective au travers des prompts](prez/2025-04-24_ContemporaryHistoryDay/2025-04-24_ContemporaryHistoryDay.html)
 - 04.02.2024 [bricolage / braconnage / sabotage](prez/2025-02-04_MSHMondes_Bricolage-Braconnage-Sabotage/bricolage-braconage-sabotage.html). Séminaire « les sciences humaines et sociales à l’ère numérique : entre low tech et informatisation générale des données » (MSH mondes / Huma-Num Lab)
