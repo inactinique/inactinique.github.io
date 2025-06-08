@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="frédéric clavert" />
+  <title>L’IA comme pratique numérique (discrète) en histoire contemporaine</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="2025-06-10_doctoriales_files/reveal.js-4.2.1/dist/reset.css">
+  <link rel="stylesheet" href="2025-06-10_doctoriales_files/reveal.js-4.2.1/dist/reveal.css">
+
+  <style type="text/css">
+    /* CSS from pandoc style.html() */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+                  </style>
+
+  <link rel="stylesheet" href="2025-06-10_doctoriales_files/reveal.js-4.2.1/dist/theme/simple.css" id="theme">
+
+
+  <style type="text/css">
+  /* some tweaks to reveal css */
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+  </style>
+
+    <script src="2025-06-10_doctoriales_files/header-attrs-2.29/header-attrs.js"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">L’IA comme pratique numérique (discrète) en histoire
+contemporaine</h1>
+  <h2 class="author">frédéric clavert</h2>
+  <h3 class="date">doctoriales c²dh / cruhl</h3>
+</section>
+
+<section>
+<section id="une-panique-peut-en-cacher-une-autre"
+class="title-slide slide level1">
+<h1>une panique peut en cacher une autre</h1>
+<p><img src="img/train.jpg" width="30%" /></p>
+<aside class="notes">
+<p>Quelque semaines après la sortie de ChatGPT, panique chez les
+historiens et historiennes, sur la question, comme pour beaucoup
+d’autres disciplines, du plagiat des étudiants. Et la question de
+l’enseignement de l’histoire: comment le réformer, comment adapter nos
+cours? Peut-on simplement l’ignorer, faut-il le prendre en compte,
+faut-il l’inteerdire, etc.</p>
+<p>Mais depuis, une autre panique, peut-être plus sourde, est apparue:
+quelles conséquences pour la recherche? Que faut-il savoir des IA
+génératives, des chatbots – dans un sens large, générant image, texte,
+vidéo –, de leurs APIs pour comprendre ce qu’il se passe et les
+conséquences qu’il y aura dans la reccherche en histoire?</p>
+</aside>
+</section>
+<section id="sources-interprétation-écriture" class="slide level2">
+<h2>sources, interprétation, écriture</h2>
+<p><small></p>
+<ol type="1">
+<li><p>Clavert, Frédéric, and Caroline Muller. <a
+href="https://doi.org/10.3917/vin.162.0013">“L’histoire au temps des
+algorithmes: Une réflexion prospective sur l’introduction de
+l’intelligence artificielle en histoire au 21e siècle.”</a> <em>20 &amp;
+21. Revue d’histoire</em>, 162(2), Oct. 2024, pp. 13–26.</p></li>
+<li><p>AI Working Group (C²DH), <em>AI Manifesto</em>, 12.2024.</p></li>
+</ol>
+<p></small></p>
+<aside class="notes">
+<p>En me reposant sur deux éléments:</p>
+<ol type="1">
+<li><p>article écrit et publié avec Caroline Muller dans 20&amp;21, de
+suivre les différentes étapes de l’écriture de l’histoire et de regarder
+ce que l’IA générative peut y changer;</p></li>
+<li><p>les travaux, pour une partie plus empirique, de l’IA Working
+Group au C²DH.</p></li>
+</ol>
+<p>Je propose ici de regarder les trois grandes étapes (très
+schématiques) de la recherche en histoire – la collecte des sources,
+leur interprétation et l’écriture – et de voir à quel point l’IA
+générative peut intervenir à chaque étape de la recherche en
+histoire.</p>
+</aside>
+</section>
+<section id="pratiques-numériques-discrètes" class="slide level2">
+<h2>pratiques numériques discrètes</h2>
+<aside class="notes">
+<p>Je vais entre autre utiliser une notion que nous avons
+progressivement développé avec Caroline Muller, celle de pratique
+numérique discrète.</p>
+<p>Les pratiques numériques discrètes sont toutes ces pratiques ayant
+une influence sur le résultat d’une recherche et qui ne sont pas
+réellement documentées.</p>
+<p>La plus connue et de moins en moins discrète, c’est la prise de
+photographie en centre d’archives, qui change notre appréhension des
+sources, surtout si les photographies ne sont pas très bien classées
+après leur prise de vue.</p>
+<p>Si cette pratique de la photographie d’archives est de plus en plus
+documentée, elle pose néanmoins déjà la question de l’IA, pas
+nécessairement générative: les documents d’archives sont souvent pris en
+photo avec des smartphones. Or la plupart des logiciels de photographie
+des smartphones embarquent déjà une certaine dose de machine learning,
+notamment pour les corrections des défauts des photos prises.</p>
+<p>En clair, les historiens et historiennes, en emportant des
+smartphones dans les centres d’archive, embarquent déjà de l’IA dans
+leurs travaux, de manière, donc, implicite et discrète. En ce sens, les
+historiens et historiennes sont déjà cyborg, comme l’avaient déjà écrit
+Nicolas Delalande et Julien Vincent en 2011 dans la RHMC.</p>
+<p>Mais, près de 15 ans après cet article, ce cyborg est encore
+largement inconnu, et il a aussi nettement évolué, entre autre en raison
+de l’introduction de l’IA, notamment générative, depuis quelques années,
+dans les travaux des historiens.</p>
+</aside>
+</section>
+<section id="gen-ai-c²dh-n60" class="slide level2">
+<h2>gen ai @ c²dh (n=60)</h2>
+<p><img src="2025-06-10_doctoriales_files/figure-revealjs/ai-usage-1.png" width="768" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+<p>Parmi les éléments qui ont incités l’<em>AI Working Group</em> que je
+coordonne avec Sean Takats à régulièrement nous réunir est la chose
+suivante:</p>
+<p>À la question: Avez-vous déjà utilisé un chatbot et trois réponses
+possibles (Oui, Non, mais c’est prévu, Non), 56 de nos collègues du C2DH
+ont répondu oui, et 4 ont répondu non, en précisant néanmons qu’ils ou
+elles prévoyaient de le faire.</p>
+<p>Nous pouvons le dire autrement: nous utilisons presquez tous et
+toutes l’IA générative. Et si j’entends bien que le C²DH n’est pas
+représentatif de tous les historiens et historiennes, il n’empêche que
+l’usage, même inconscient, se répand de plus en plus, notamment car nous
+dépendons aussi des logiciels qui nous sont fournis et qui, de plus en
+plus, embarque de l’ia générative.</p>
+</aside>
+</section></section>
+<section>
+<section id="sources" class="title-slide slide level1">
+<h1>sources</h1>
+<aside class="notes">
+<p>Qu’est-ce que cela change? Sources / Interprétations / Écritures.</p>
+<p>Commençons par les sources.</p>
+</aside>
+</section>
+<section id="ia-et-sources-primaires" class="slide level2">
+<h2>ia et sources primaires</h2>
+<aside class="notes">
+<p>L’IA générative n’arrive pas à un moment anodin. L’IA telle que nous
+la vivons aujourd’hui – le machine learning – est cause et conséquence,
+intrinséquement liée aux phénomènes de mise en données et de mise en
+réseau du monde.</p>
+<p>Pour le dire plus rapidement, big data et machine learning (dont l’IA
+générative) sont les deux faces d’une même pièce.</p>
+<p>Historiens et historiennes du contemporain notamment sont ainsi
+confrontés à la numérisation de masse, à l’émergence du records
+management, à la multiplication des archives nativement numériques.</p>
+<p>Pour faire sens d’une telle masse d’archives en ligne, nous devons
+avoir recours à quelques chose de bien connu au sein des humanités
+numériques, la lecture distante. Et de nombreux dispositifs de lecture
+distante intègre du machine learning. Mais de plus en plus, on peut
+directement, plus facilement, faire appel à un grand modèle de
+langue.</p>
+<p>Par exemple, pour mon corpus de données de 10 millions de prompts où
+je recherche des références au passé, le plus efficace reste
+l’utilisation d’un modèle de langue, avec un prompt système détaillé
+permettant la définition de ces références au passé.</p>
+<p>Le Big Data rend ainsi indispensable, pour certaines recherches y
+compris en histoire et pour les futures historiens et historiennes,
+l’usage d’un modèle de langue, y compris sous la forme d’une API, comme
+celle d’anthropic ou d’openAI.</p>
+<p>Une API est une interface de programmation applicative, un ensmeble
+de commande fournie par une application – y compris un site web, un
+chatbot, etc – à d’autres applications pour qu’elles puissent dialoguer
+entre elles et échanger des fonctionnalités ou des données.</p>
+</aside>
+</section>
+<section id="sources-engendrées-par-lia" class="slide level2">
+<h2>sources engendrées par l’ia</h2>
+<p><img src="img/biden.jpg" /></p>
+<aside class="notes">
+<p>Mais l’IA générative ne va pas alors seulement fournir les moyens de
+‘lire’ nos sources, elle en crée aussi, ajoutant à ce big data en
+constante expansion.</p>
+<p>Quelles sont ces sources? Les sorties de ces systèmes, les textes et
+images engendrés par les chatbots ou directement les modèles si l’on y
+fait appel. Les prompts des utilisateurs – ce sont mes recherches
+actuelles sur les visions du passé que l’on peut lire dans ces
+prompts.</p>
+<p>Ce qui est frappant, c’est la nature de ces sources: ce sont des
+sources cyborg, fruits d’une collaboration humain-machine.</p>
+<p>Et cela interroge sur la capacité future des historiens à comprendre
+ce qu’est une source cyborg, d’autant plus que, in fine, cela ne
+concerne pas que l’histoire contemporaine: une transcription obtenue par
+Transkribus est aussi une source cyborg, par exemple.</p>
+</aside>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<p>humain</p>
+<p>artificiel</p>
+<p><strong>cyborg</strong></p>
+<aside class="notes">
+<p>Comment mettre en place une méthode relayant, reprenant, modifiant,
+la traditionnelle critique interne / critique externe des documents
+d’archives afin de comprendre ce qui est lié à la machine, à l’humain ou
+aux deux?</p>
+<p>Je n’ai pas de réponse à cela, je vais simplement me permettre de
+donner un exemple issu de mon doctorat.</p>
+<p><strong>Traditional</strong>: Reichsbank press reviews (1930s) -
+Traceable human selection process - Understandable decision logic</p>
+<p><strong>Today</strong>: Algorithm-driven content curation - AI
+recommendation systems - Opaque decision processes - <strong>Behavioral
+surplus</strong> utilization</p>
+</aside>
+</section></section>
+<section>
+<section id="interprétation" class="title-slide slide level1">
+<h1>interprétation</h1>
+<p><img src="img/duroselle.png" width="75%" /></p>
+<aside class="notes">
+<p>Des sources primaires seules ne veulent souvent rien dire. C’est leur
+analyse, leur contextualisation, mais surtout leur mise en relation,
+leur mise en réseau par le travail des historiens et historiennes qui
+est important et qui, pour moi, est l’essentiel du travail
+d’interprétation nécessaire de l’historien ou de l’historienne.</p>
+<p>Ce n’est pas une petite chose: de nombreux processus décisionnels,
+par exemple, ne sont compréhensibles que parce que nous menons un long
+travail dans les archives et parce que nous mettons ensuite en relation
+les différentes archives que nous avons lues, éventuellement aussi avec
+les travaux d’autres historiens ou historiennes.</p>
+<p>Bref, faire de l’histoire c’est interpréter (Duroselle).</p>
+<p>Et l’interprétation repose énormément sur la manière dont nous lisons
+les sources.</p>
+</aside>
+</section>
+<section id="patterns" class="slide level2" data-background="#000000">
+<h2 data-background="#000000">patterns</h2>
+<p><img src="img/fractal.gif" /></p>
+<aside class="notes">
+<p>Or la lecture distante que permet l’IA, y compris générative, dans
+son sens de ‘machine learning’, permet une lecture particulière des
+sources, fondées sur la détection de motifs (patterns) la plupart du
+temps.</p>
+<p>Malgré les tentatives répétées depuis Newton de trouver des lois
+régissant le fonctionnement des sociétés humaines – tentatives qui ont
+échoue jusqu’à maintenant –, historiens et historiennes sont
+habituellement plutôt à la recherche du particulier, un particulier qui
+éventuellement permet de généraliser, c’est l’essence de la
+micro-histoire et de sa critique dans les années 1970 de l’histoire
+quantitative reposant sur les grandes séries statistiques des années
+1960.</p>
+<p>Cette lecture spécifique, par motifs, des sources permet de répondre
+à de nouvelles questions de recherche. Ce sont les travaux de nombreux
+projets, depuis notamment <em>Oceanic Exchanges</em>, mais aussi
+NewsEye, Impresso, etc, autour de la presse ancienne numérisée. On peut
+désormais étudier la circulation de l’information à grande échelle et au
+travers des continents.</p>
+<p>On peut aussi utilise l’IA (pas nécessairement générative) pour
+sortir certains chaps d’études de leur silos nationaux, ce qu’a fait le
+projet EyCon mené entre la France et le Royaume-Uni par Julien Schuh et
+Lise Jaillant autour des grandes bases de photographies issues des
+empires coloniaux français et britanniques.</p>
+<p>Mais toute la recherche, même en histoire, ne peut reposer que sur la
+détection de motifs, ou sur des modèles dont le fonctionnement repose
+sur des poids, des paramètres qui eux-mêmes sont des motifs. Il y a ici
+des dispositifs IA/Big Data qui ouvrent de nouvelles questions de
+recherche, mais probablement en ferment d’autres.</p>
+</aside>
+</section>
+<section id="méthodes" class="slide level2">
+<h2>méthodes</h2>
+<aside class="notes">
+<p>Et bien sûr, il y a tout un ensemble d’éléments, souvent analysés,
+qui doivent être pris en compte:</p>
+<ul>
+<li>les données d’entraînement, pour les grands modèles de langue, ne
+sont pas correctement connues, sauf exception</li>
+<li>ces données d’entraînement reflètent souvent des biais de notre
+époque ou des époques précédentes, biais de genre, d’âge, d’origines,
+etc</li>
+<li>et il y a toutes les données qui n’existent pas. Patrick Manning
+rappelait dans Big Data in History qu’il y a des régions pauvres en
+données, notamment pour les cultures orales.</li>
+</ul>
+<p>Surtout, les systèmes de machine learning reposent pour beaucoup sur
+de la probabilité. Que signifie appliquer un raisonnement
+probabilistique au passé, qui est arrivé et n’est donc plus une
+probabilité? Je ne suis pas sûr d’avoir la réponse.</p>
+</aside>
+</section></section>
+<section>
+<section id="écriture" class="title-slide slide level1">
+<h1>écriture</h1>
+
+</section>
+<section id="nietzsche" class="slide level2">
+<h2>nietzsche</h2>
+<p><img src="img/boule.jpg" /></p>
+<aside class="notes">
+<p>L’histoire s’écrit, au sens où il faut une narration pour la
+restitution de la preuve, mais aussi pour ordonancer les preuves, les
+archives, dans quelque chose d’intelligible.</p>
+<p>Je ferai ici référence à Jack Goody et aux technologies de
+l’intellect – pour Goody, l’écriture est conditionnée aux outils que
+l’on invente pour écrire.</p>
+<p>Un bon exemple est la boule à écrire de Nietzsche:</p>
+<ul>
+<li>Style became more <strong>concise and telegraphic</strong></li>
+<li>Technology shapes writing style</li>
+</ul>
+</aside>
+</section>
+<section id="écriture-générative" class="slide level2">
+<h2>écriture générative</h2>
+<p><img src="img/clippy.png" width="40%"/></p>
+<aside class=notes>
+<p>On peut donc légitimement s’interroger sur les effets de
+l’intégration de l’IA générative dans les outils que nous utilisons pour
+écrire, c’est-à-dire pour les historiens et historiennes des traitements
+de texte commerciaux où des fonctionalités d’IA générative, d’aide à
+l’écriture sont déjà intégrées, par exemple dans les systèmes de
+suggestion de mots.</p>
+<p>Ceci pose de nombreuses questions. L’auctorialité devient ainsi
+partagée entre l’humain et la machine – on revient aux contenus cyborg,
+mais cette fois-ci du côté de l’écriture de l’histoire.</p>
+<p>Cette délégation cognitive à la machine qui engendre une forme de
+collaboration, donc, aura des conséquences sur le style narratife des
+historiens et historiennes, style qui est important dans l’identité des
+historiens, mais aussi dans la manière dont les lecteurs et lectrices
+comprendront ce que nous écrivons, et donc comprendront le passé.</p>
+<p>Or, il y a quand même un risque d’une standardisation. Les IA
+génératives, surtout si l’on passe par les grandes plateformes, ont
+tendance à donner une sorte de style moyen, à standardiser
+l’écriture.</p>
+<p>Est-ce que ce n’est pas le futur de l’écriture de l’histoire, d’être
+fondamentalement standardisée? Or le style d’écriture peut aussi être
+constitutif d’une école historiographique – les Annales n’ont pas écrit
+comme la micro-histoire (Kansteiner).</p>
+</section></section>
+<section>
+<section id="usages-de-recherche" class="title-slide slide level1"
+data-background-color="#000000">
+<h1 data-background-color="#000000">usages de recherche</h1>
+<aside class="notes">
+<p>Revenonx un peu à ce que l’on peut faire avec les ia génératives
+aujourd’hui. Je vais donner des exemples qui sont applicables à beaucoup
+de recherches, avec, dans mon cas, usage de l’API de Claude. Notez que
+d’autres API peuvent être utilisées, mais également des modèles de
+langue plus petits, par exemple ayant fait l’objet d’un RAG, pour
+travailler sur ses propres données.</p>
+<p>Mon premier exemple sera lié à mes recherches actuelles: ce qui
+m’intéresse, c’est de comprendre comment, lorsque des utilisateurs d’ia
+génératives écrivent des prompts liés au passé, ils font référence au
+passé, comment ils considèrent les réponses obtenues, etc. Ce que
+j’essaye de montrée, c’t qu’il existe des cas de négociation avec la
+machine, afin d’obtenir un texte ou une image, une vidéo, qui soit
+conforme à la vision du passé de l’utilisateur. Mais cette négociation
+n’aboutit pas toujours à ce que souhaite l’utilisateur, et emmène ce
+dernier parfois dansune impasse: les visions du passé – la mémoire
+collective – embarquée dans les grandes modèles de langue sont parfois
+plus présents que la vision du passé embarquée dans le prompt de
+l’utilisateur.</p>
+</aside>
+</section>
+<section id="quest-ce-quune-référence-au-passé" class="slide level2"
+data-background-color="#000000">
+<h2 data-background-color="#000000">qu’est-ce qu’une référence au
+passé?</h2>
+<aside class="notes">
+<p>Pour ceci, j’ai un problème double:</p>
+<ul>
+<li>comment définir une référence au passé?</li>
+<li>comment ensuite détecter cette référence au passé dans un
+prompt?</li>
+</ul>
+<p>Je peux répondre à ces deux questions par deux méthodes:</p>
+<ul>
+<li><p>une approche par mots-clés peut être utilisée, pour étudier un
+événement spécifique, un individu, une institution ou une
+période,</p></li>
+<li><p>une approche plus large, qui implique de définir ce qu’est une
+référence au passé, y compris quand elle est implicite.</p></li>
+</ul>
+</aside>
+</section>
+<section id="section-1" class="slide level2"
+data-background-color="#000000">
+<h2 data-background-color="#000000"></h2>
+<div style="font-size:14pt;">
+<blockquote>
+<p>army of the european union invades budapest 2 0 2 2, highly detailed
+painting, digital painting, artstation, concept art</p>
+</blockquote>
+<blockquote>
+<p>army of the european union fighting on the streets of budapest 2 0 2
+2, highly detailed illustration for time magazine cover art</p>
+</blockquote>
+<blockquote>
+<p>army of the european union with tanks fighting on the streets of
+budapest 2 0 2 2, highly detailed oil painting</p>
+</blockquote>
+</div>
+<aside class="notes">
+<p>Prenons un exemple : les trois prompts ici ne font pas explicitement
+référence au passé. Mais utilisez simplement le prompt pour une
+recherche sur un moteur de recherche d’images : tous les résultats sont
+historiques. Nous avons ici une référence implicite, probablement à la
+révolution hongroise de 1956, qui fut mise à terme par une intervention
+soviétique.</p>
+<p>Alors comment construire une stratégie d’identification robuste ?</p>
+</aside>
+</section>
+<section id="section-2" class="slide level2"
+data-background-color="#000000">
+<h2 data-background-color="#000000"></h2>
+<blockquote>
+<p>krea corpus (sample) → claude api → 5000 prompts</p>
+</blockquote>
+<aside class="notes">
+<p>J’ai essayé plusieurs stratégies pour constituer mon corpus
+généraliste.</p>
+<p>Le premier est basé sur le Corpus Krea, un corpus de 10 millions de
+prompts, élaboré par Krea, une plateforme basée sur Stable Diffusion
+;</p>
+<ul>
+<li>sur la base de ce corpus de 10 millions de prompt, j’ai extrait un
+échantillon de 50 000 lignes (sinon trop coûteux), les ai envoyées à
+l’API Claude avec un prompt expliquant à Claude Sonnet comment
+déterminer si une ligne contenait des références au passé, et Claude
+renvoie un ‘oui’ ou un ‘non’.</li>
+</ul>
+</aside>
+</section>
+<section id="prompt-système" class="slide level2"
+data-background-color="#000000">
+<h2 data-background-color="#000000">prompt système</h2>
+<p><img src="img/prompt.png" width=80% /></p>
+<aside class="notes">
+<p>Concentrons-nous un peu sur Claude : ce prompt a été co-écrit avec
+Claude pour aider Claude à raisonner pour chaque élément de mon
+corpus.</p>
+<p>C’est une approche mixte : raisonnement et personas, le prompt étant
+conçu à travers une négociation entre moi et Claude (le chatbot).</p>
+<p>C’est l’utilisation de Claude qui a le mieux fonctionné. C’est loin
+d’être parfait : la partie implicite n’est pas entièrement prise en
+compte et certains prompts font référence au passé, mais pas au passé
+historique.</p>
+<p>Je dois préciser que pour l’instant je n’ai fait aucun benchmarking,
+ce qui est une faiblesse évidente, que je prévois d’adresser. De plus,
+j’ai utilisé un échantillon du corpus Krea pour des raisons de coût. Le
+plan est à un moment donné de trouver des prompts avec des références au
+passé dans le corpus complet de 10 millions de lignes, ce qui devrait me
+permettre d’obtenir environ 900 000 prompts avec des références au
+passé.</p>
+</aside>
+</section>
+<section id="négocier-le-passé" class="slide level2"
+data-background-color="#000000">
+<h2 data-background-color="#000000">négocier le passé</h2>
+<p><img src="img/historical_yes_dendrogramme_1.png" width=60% /></p>
+<aside class="notes">
+<p>Ceci est une dataviz obtenue avec Iramuteq. Iramuteq effectue quelque
+chose qui ressemble à de la modélisation de sujets, mais ce n’est pas du
+sac de mots. Les mots que vous voyez sont en fait les mots les plus
+représentatifs des clusters de prompts. Il y a du passé partout ici.
+Dans le style, évidemment, mais aussi dans le contenu. Et la plupart des
+références au passé, si elles ne sont pas artistiques, sont aux guerres
+(cluster 17), ou aux guerres de propagande (cluster 8). Et la plupart
+d’entre elles sont d’une manière ou d’une autre liées aux nouvelles
+actuelles (trump, propagande, soviétique, macron dans le même cluster
+par exemple).</p>
+<p>Ces analyses de lecture distante sont intéressantes, mais confirment
+plus qu’elles ne découvrent : d’une certaine manière, nous nous
+attendons à ce que l’Europe soit liée au concept d’empire, nous nous
+attendons à ce que beaucoup de références au passé soient liées à la
+partie ‘style’ d’un prompt.</p>
+<p>Mais ces lectures distantes nous permettent aussi de revenir à des
+prompts spécifiques. En regardant des prompts qui sont très similaires,
+nous pouvons tracer l’évolution d’un prompt écrit / réécrit plusieurs
+fois par un utilisateur. Et c’est ici, que nous pouvons voir que les
+plateformes d’IA générative, vues comme des frameworks, encouragent les
+utilisateurs à négocier avec la machine le passé qu’ils veulent voir ou
+lire.</p>
+<p>Cette négociation peut être vue comme une confrontation entre
+plusieurs types de mémoires collectives : celle qui sont intégrées dans
+la plateforme d’IA générative et qui provient de la façon dont le LLM ou
+le système de diffusion a été entraîné et du corpus sur lequel il a été
+entraîné ; la mémoire collective du groupe auquel l’individu appartient
+; la propre vision du passé de l’individu.</p>
+<p>Je donnerai un exemple.</p>
+</aside>
+</section>
+<section id="section-3" class="slide level2"
+data-background-color="#000000">
+<h2 data-background-color="#000000"></h2>
+<p><img src="img/biden.png" width="50%" /></p>
+<blockquote>
+<p><small>joe biden doing a nazi salute, in front of brandenburger tor.
+huge nazi crowd in front of him. face of joe biden is clearly visible.
+canon eos r 3, f / 1. 4, iso 1 6 0 0, 1 / 8 0 s, 8 k, raw,
+grainy</small></p>
+</blockquote>
+<aside class="notes">
+<p>Ceci est un exemple frappant de négociation avec une machine pour
+obtenir quelque chose dans le présent avec des références au passé qui
+sert comme lecture idéologique du présent.</p>
+<p>L’utilisateur n’a jamais obtenu ce qu’il voulait. Biden faisant un
+salut nazi devant des nazis – cela n’existe tout simplement pas.
+Néanmoins, le prompt a activé des modèles de la seconde guerre mondiale
+et peut-être de la guerre froide.</p>
+<p>Je sur-interprète peut-être, mais je peux voir l’influence, bien sûr,
+des images nazies, mais aussi de De Gaulle en août 1944 (26) sur les
+Champs-Élysées, Kennedy devant la porte de Brandebourg.</p>
+<p>L’objectif politique de l’auteur du prompt ici est partiellement en
+échec : cet objectif politique est confronté à la mémoire collective de
+la seconde guerre mondiale, qui est prééminente sur leurs vues.</p>
+</aside>
+</section>
+<section id="usages-variés" class="slide level2">
+<h2>usages variés</h2>
+<aside class="notes">
+<p>L’utilisation d’une API permet de faire de nombreuses choses
+faisables auparavant, mais souvent de manière plus laborieuses:</p>
+<ul>
+<li>reconnaissance d’entités nommées – c’est le projet
+<em>letterbox</em> de Benoît Majerus par exemple,</li>
+<li>notre collègue actuellement à Mayence, Sarah Oberblicher, utilise ce
+type de démarche pour faire de la détection d’arguments (y compris en
+faisant du RAG sur des petits modèles de langue installés sur du
+HPC)</li>
+</ul>
+<p>Pour donner deux exemples.</p>
+</aside>
+</section>
+<section id="et-le-chatbot" class="slide level2">
+<h2>et le chatbot?</h2>
+<aside class="notes">
+<p>Mais hors de l’API, l’on peut aussi faire un usage direct du
+chatbot.</p>
+<ul>
+<li>l’émergence du <em>vibe coding</em>, c’est-à-dire faire du
+développement informatique en langage naturel, se répand de plus en
+plus,</li>
+<li>sous condition d’une sérieuse culture numérique, permet d’écrire des
+petits scripts qui peuvent accélérer mais aussi systématiser une
+recherche.</li>
+<li>mais aussi travailler avec son corpus de sources: par exemple,
+développement d’une application permetant une analyse rapide d’un
+dossier zotero, puis permettant d’utiliser une interface pour dialoguer
+avec ses propres documents.</li>
+</ul>
+</aside>
+</section></section>
+<section id="conclusion" class="title-slide slide level1">
+<h1>conclusion</h1>
+<p><img src="img/ai_manifesto.png" width="75%" /></p>
+<aside class="notes">
+<p>En conclusion, j’aimerais revenir sur les travaux de l’AI working
+group au C2DH.</p>
+<p>Nous avons collaborativement écrit un AI Manifesto – je concède que
+le titre est un peu grandiloquent – pour, non pas répondre, mais nous
+préparer aux grands enjeu épistémologiques auxquels nous faisons face au
+temps de l’IA.</p>
+<p>Nous avons essayé de structurer ce document en quelques grands
+principes:</p>
+<ol type="1">
+<li><strong>Think &amp; Discuss</strong> - Critical reflection
+essential</li>
+<li><strong>Infrastructure</strong> - Institutional subscriptions
+needed<br />
+</li>
+<li><strong>Human Expertise</strong> - Data scientists, research
+engineers</li>
+<li><strong>Learning</strong> - Prompt engineering, API skills
+required</li>
+<li><strong>Partnerships</strong> - Collaboration across
+disciplines</li>
+</ol>
+<p>Ce document est daté, parce que tout ceci est amené à évoluer,
+peut-être encore plus vite que nous le pensons. Mais l’idée est, outre
+quelques recommandations de court terme, de mettre en place des buts de
+long terme:</p>
+<ul>
+<li>créer un cadre / un workflow pour la recherche historique utilisant,
+notamment, de l’IA générative</li>
+<li>définir un cadre éthique de leur utilisation</li>
+<li>initier des collaborations externes larges, car un centre seul, bien
+évidemment, ne résoudra pas toutes les questions épistémo qui se
+posent.</li>
+<li>mettre au point un programme systématique de formation</li>
+</ul>
+<p>Les grands enjeux sont ainsi les suivants:</p>
+<ul>
+<li><p><strong>What constitutes authorship</strong> in human-AI
+collaboration?</p></li>
+<li><p><strong>How do we maintain source criticism</strong> with
+AI-generated content?</p></li>
+<li><p><strong>What is the role of human expertise</strong> when
+machines can read/write?</p></li>
+</ul>
+<p>Mais pour y répondre, nous devons mettre en place les outils
+critiques nécessaires, et cela ne peut se faire que par l’enseignement
+et la formation:</p>
+<p><strong>New Skills Required</strong>: - <strong>Digital
+diplomatics</strong> for AI-generated sources - Understanding of
+algorithmic processes<br />
+- Human-machine collaboration assessment</p>
+<p><strong>Traditional Skills Enhanced</strong>: - Source criticism
+remains essential - Interpretation expertise more valuable - Narrative
+construction skills crucial</p>
+<p>La panique liée à chatgpt a commencé par l’enseignement. Elle nous
+ramène à l’enseignement.</p>
+</aside>
+<!--
+## references
+
+- Clavert, F. & Muller, C. (2024). "L'histoire au temps des algorithmes". *Revue d'histoire*, 162.
+- C²DH (2024). "AI Manifesto". Centre for Contemporary and Digital History.
+- Moretti, F. (2007). *Graphs, Maps, Trees: Abstract Models for Literary History*.
+- Goody, J. (1978). *La Raison graphique*.
+-->
+</section>
+    </div>
+  </div>
+
+  <script src="2025-06-10_doctoriales_files/reveal.js-4.2.1/dist/reveal.js"></script>
+  
+  <!-- reveal.js plugins -->
+  <script src="2025-06-10_doctoriales_files/reveal.js-4.2.1/plugin/notes/notes.js"></script>
+  
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+        // Display a presentation progress bar
+        progress: true,
+        // Can be used to limit the contexts in which the slide number appears
+        showSlideNumber: 'all',
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+        // Push each slide change to the browser history
+        // Implies `hash: true`
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Transition style
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+        // The display mode that will be used to show slides
+        display: 'block',
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+
+
+        // Optional reveal.js plugins
+        plugins: [
+          RevealNotes,
+        ]
+      });
+
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
