@@ -4,7 +4,7 @@
 
 ### 2024
 
-- 02.06.2024 [../Produites par des sources et productrices de sources: une approche des IA génératives par les humanités et l'histoire numérique](prez/2024-06-03_AI4LAM/2024-06-03_AI4LAM.html) -- Chapitre francophone ai4lam, rencontre régionale Grand-Est « Intelligence artificielle, patrimoine et humanités numériques »
+- 02.06.2024 [Produites par des sources et productrices de sources: une approche des IA génératives par les humanités et l'histoire numérique](../prez/2024-06-03_AI4LAM/2024-06-03_AI4LAM.html) -- Chapitre francophone ai4lam, rencontre régionale Grand-Est « Intelligence artificielle, patrimoine et humanités numériques »
 - 04.04.2024 [Prompting the European Union History (colloque chaire Jean Monnet IDECE)](../prez/2024-06_InviterHistoireEurope/2024-06_InviterHistoireEurope.html)
 - 08.03.2024 [Can history be written out of tweets?](../prez/2024-03-08_HistoryMadeOutOfTweets/2024-03-08_HistoryMadeOutOfTweets.html) -- unimore, dipartimento di studi linguinstici e culturalli: [« Storia e rivoluzione digitale. Come cambiano le fonti e il lavoro degli storici »](https://tv.unimore.it/in-unimore/in-primopiano/item/2999-storia-e-rivoluzione-digitale-come-cambiano-le-fonti-e-il-lavoro-degli-storici)
 - 16.01.2024 [commémorer en ligne?](../prez/2024-01-16_UnePlusGrandeGuerre/2024-01-16_UnePlusGrandeGuerre.html#/) -- séminaire « une plus grande guerre » (Institut Historique allemand)
