@@ -8,7 +8,7 @@ This page is a repository for some of my [prez](#prez), presents [ChatGPT events
 
 (date format: dd.mm.yyyy / in some cases, you can access the presenter's text by pressing the 's' key)
 
-- 04.07.2025 [la fin de l'historien programmeur?](prez/2025-07-03_DH-LLM.html) ([colloque DH@LLM](https://www.crihn.org/nouvelles/2025/01/16/colloque-dhllm-grands-modeles-de-langage-et-humanites-numeriques-sorbonne-universite/))
+- 04.07.2025 [la fin de l'historien programmeur?](prez/2025-07-03_DH-LLM/2025-07-03_DH-LLM.html) ([colloque DH@LLM](https://www.crihn.org/nouvelles/2025/01/16/colloque-dhllm-grands-modeles-de-langage-et-humanites-numeriques-sorbonne-universite/))
 - 10.06.2025 [L’IA comme pratique numérique (discrète) en histoire contemporaine](prez/2025-06-10_doctoriales/2025-06-10_doctoriales.html)
 - 30.05.2025 [une écriture machinique
   de l’histoire? les grands modèles de langue et la discipline historique](prez/2025-05-30_CSDH/2025_CSDH.html)
