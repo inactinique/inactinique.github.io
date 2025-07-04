@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="frédéric clavert" />
+  <title>la fin de l’historien programmeur?</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="2025-07-03_DH-LLM_files/reveal.js-4.2.1/dist/reset.css">
+  <link rel="stylesheet" href="2025-07-03_DH-LLM_files/reveal.js-4.2.1/dist/reveal.css">
+
+  <style type="text/css">
+    /* CSS from pandoc style.html() */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+                  </style>
+
+  <link rel="stylesheet" href="2025-07-03_DH-LLM_files/reveal.js-4.2.1/dist/theme/simple.css" id="theme">
+
+
+  <style type="text/css">
+  /* some tweaks to reveal css */
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+  </style>
+
+    <script src="2025-07-03_DH-LLM_files/header-attrs-2.29/header-attrs.js"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">la fin de l’historien programmeur?</h1>
+  <h2 class="author"><a href="https://inactinique.net">frédéric
+clavert</a></h2>
+  <h3 class="date"><a href="mailto:DH@LLM" class="email">DH@LLM</a>
+03/07/2025</h3>
+</section>
+
+<section>
+<section id="historien-programmeur" class="title-slide slide level1">
+<h1>historien programmeur</h1>
+<p><img src='img/erudits.jpg' /></p>
+<aside class="notes">
+<p>L’historien-programmeur a une longue histoire, qui démarre avec la
+publication d’un texte devenu classique, <em>La fin des érudits</em>
+d’Emmanuel Leroy-Ladurie, publié en août 1968 dans le <em>Nouvel
+Observateur</em>, réédité dans le territoire de l’historien en 1973 chez
+Gallimard. L’article est alors renommé en ‘L’historien et
+l’ordinateur’.</p>
+<p>1968: cela signifie que l’ordinateur, ici, est encore piloté par des
+cartes perforées, qu’il en coûte de les utiliser – il faut louer du
+temps de calcul, pas toujours en France, puisque les ordinateurs
+d’Euratom, par exemple, peuvent être en Italie, pour des résultats qui
+ne sont pas toujours probants: les erreurs font perdre énormément de
+temps, surtout si elles impliquent de refaire des cartes perforées.
+Bref, on ne parle pas de l’ordinateur que l’on connaît et les opérations
+faisables à l’époque correspondent parfois à ce que nous pouvons faire
+aujourd’hui avec un simple tableur, parfois en quelques heures, voire
+moins si les données sont prêtes et structurées.</p>
+<p>Cette expression - fondée sur un extrait de cet article proclamant:
+« L’historien de demain sera programmeur ou ne sera pas » - est devenue
+une expression incontournable du débat historien autour de l’usage de
+l’ordinateur. Elle est souvent mal citée et mal contextualisée:
+Leroy-Ladurie s’inquiétait d’abord d’une concurrence, celle des
+États-Unis, où il pense que de nombreux étudiants et étudiantes en
+histoire sont directement formés à ces usages informatiques et ont,
+surtout, les ordinateurs à disposition. Il oppose cette situation à
+celle de la France, où les méthodes informatiques ne sont que peu
+enseignées, d’après lui, et surtout où l’accès à des ordinateurs est
+alors difficile.</p>
+<p>Bref, Leroy-Ladurie dramatise un débat qui, dans un premier temps, va
+disparaître. Pourquoi? parce que Leroy Ladurie ne parle pas de toute
+l’histoire, mais des recherches qui impliquent l’usage de méthodologies
+quantitatives (économie, démographie, etc).</p>
+<p>Néanmoins, pour reprendre Emilien Ruiz et Franziska Heimburger, cette
+expression est devenue un « spectre [qui] hante les réflexions autour du
+tournant numérique » de l’histoire (<a
+href="https://boiteaoutils.info/2011/09/les-historiens-seront-ils-finalement/"
+class="uri">https://boiteaoutils.info/2011/09/les-historiens-seront-ils-finalement/</a>).
+Emilien et Franziska, d’ailleurs, répondait à un billet de blog que
+j’avais écrit et à une séance que nous avions organisée à THATCamp Paris
+2012. Billet de blog que je ne réécrirai plus aujourd’hui, mais qui
+correspond, disons, à une étape de mes réflexions sur l’histoire
+numérique. Cet échange via nos blogs respectifs n’est qu’un exemple
+parmi d’autres de débat autour de cette expression – je l’ai entendue
+pour la première fois en 1999, pendant mon DEA et mon DEA était de facto
+ma première année d’histoire, puisque j’étais avant dans un IEP.</p>
+<p>2012, donc, une éternité, puisque 5 ans avant la sortie du fameux
+papier de google sur les transformers (All you need is attention), 8
+avant la sortie de GPT3 et 10 avant la sortie de ChatGPT. Bref un autre
+monde.</p>
+</aside>
+</section>
+<section id="une-écriture-discrète" class="slide level2">
+<h2>une écriture discrète</h2>
+<aside class="notes">
+<p>Or, la multiplication des chatbots qui reposent sur des grand modèles
+de langue a totalement changé ce débat. Quand je parle de la fin de
+l’historien programmeur, je ne parle pas de savoir s’il est important
+qu’historiens et historiennes programment, ou du moins pas que de ceci.
+Je parle plutôt, via les chatbots ou les LLMs – qui étrangement sont de
+nature assez différentes, en tout cas du point de vue de leurs usages –,
+de la transformations de l’écriture de code informatique en écriture
+historienne courante, intégrée dans l’écriture historienne plus large,
+et surtout dans la boîte à outils commune des historiens et
+historiennes, éventuellement sous la forme de ce que nous avons appelé
+“pratique numérique discrète” avec Caroline Muller, c’est-à-dire une
+pratique historienne non documentée, mais somme toute banale.</p>
+</aside>
+</section>
+<section id="vibe-writing" class="slide level2">
+<h2>vibe writing</h2>
+<aside class="notes">
+<p>Or, que l’écriture de code – <em>via</em> ce qui est appelé
+aujourd’hui de manière barbare le <em>vibe coding</em> – devienne une
+part courante de l’écriture historienne n’est pas anodin du tout.</p>
+<p>L’écriture, chez les historiens et les historiennes, n’est pas qu’un
+outil narratif (on pourrait argumenter, j’entends bien, que pour
+personne l’écriture n’est qu’un outil narratif). Elle est le principal
+outil d’administration de la preuve, d’agencement et de mise en relation
+des sources primaires entre elles, et évidemment de narration. Mais
+c’est bien <em>écrire</em> qui donne toute une cohérence, parfois ex
+post – une fois que la phase de recherche est terminée –, à un projet de
+recherche.</p>
+<p>Or, le code comme écriture – au sens où le code peut permettre
+d’administrer la preuve (déjà sa découverte quand il permet de croiser
+des bases de données séparées), de relier entre elles les sources
+primaires, parfois même, par les visualisations de données, d’entamer
+une forme de narration – change beaucoup de choses. Et, en premier lieu,
+le rapport de l’historien ou de l’historienne à la source.</p>
+<p>Pour investiguer cette question de la fin de l’historien-programmeur,
+c’est-à-dire, potentiellement, de l’écriture de code comme une écriture
+courante de l’historien ou de l’historienne, je vais prendre ma propre
+expérience pour mes recherches en cours autour des traces du passé dans
+les prompts soumis aux chatbots d’une part, d’un projet de petite
+application reposant sur Zotero et permettant de dialoguer avec ses
+sources d’autre part. Ces deux exemples me permettront aussi de poser
+une double question: celle du coût du dernier kilomètre, celle de
+l’enseignement de l’IA générative au cours des études d’histoire.</p>
+</aside>
+</section></section>
+<section>
+<section id="dialoguer-avec-les-sources"
+class="title-slide slide level1">
+<h1>dialoguer avec les sources</h1>
+<aside class="notes">
+<p>Je vais maintenant commenter une première expérienec de vibe coding
+appliquée à l’écriture de l’histoire – ici le développement d’un petit
+logiciel en python dont le but est de se connecter à zotero, de
+récupérer des PDFs d’une collection précise, d’en faire du topic
+modeling (pour avoir un premier aperçu), puis de pouvoir dialoguer avec
+ses PDFs, soit via claude, soit via un modèle installable sur son ordi,
+si possible un modèle sensible au RAG, plutôt léger.</p>
+<p>Pourquoi cette petite expérience? Elle n’a rien d’original, des
+services en ligne permettent de faire la même chose, par exemple.
+Néanmoins,il y a toujours une limitation en nombre de documents d’une
+part, il y aura toujours des sources que nous ne voulons ou ne pouvons
+partager, y compris pour des motifs très sérieux.</p>
+<p>Prévoir dès le départ d’utiliser un modèle local, y compris des
+petits modèles, permet aussi, à terme – car ce n’est pour le moment pas
+aussi efficace qu’utiliser directement Claude ou ChatGPT, ou plutôt
+leurs APIs – de répondre à des questions éthiques (les modèles de
+pleias, par exemple, sont entraînés sur un corpus constitué de documents
+du domaine public, sans appel à des travailleurs du clic) et
+environnementaux (les petits modèles – hors distillation – sont
+nettement moins gourmands et à l’entraînement, et à l’utilisation).</p>
+<p>Surtout, le coeur du travail des historiens et historiennes est de
+travailler sur des sources. D’une certaine manière, nous sommes de
+travailleurs de la données, ou plutôt de la source, aujourd’hui souvent
+transformée en données. Et au moment de l’écriture, l’exercice le plus
+complexe est de retravailler ces sources, d’en tirer ce qui est utile
+pour répondre à une question de recherche. L’écriture d’un article, d’un
+livre est issu d’un véritable dialogue entre l’historien ou
+l’historienne et ses sources.</p>
+<p>Or, quoi de plus intéressant pour une discussion qu’un chatbot?
+Hormis l’Humanité, bien entendu.</p>
+</aside>
+</section>
+<section id="maïeutique-stochastique-de-lécriture-historienne-du-code"
+class="slide level2">
+<h2>maïeutique stochastique <br />de l’écriture historienne du code</h2>
+<aside class="notes">
+<p>Bien sûr l’on peut utiliser des applis toutes faites et à n’en pas
+douter, de nombreuses applications seront bientôt disponibles. Mais
+coder soi-même l’application permet d’être plus précis sur ce que l’on
+veut. Si bien sûr travailler avec des développeurs est susceptible
+d’être plus efficace, disons que le faire soi-même permet de se rendre
+contre de diverses embûches et des choix à faire au moment du
+développement.</p>
+<p>Commence alors une sorte de maïeutique stochastique – car ayant des
+aspects tout-à-fait imprévisible – de l’écriture historienne du code. Le
+processus est simple, d’une certaine manière, il est fait d’aller-retour
+entre, pour ma part, Claude et l’historien ou l’historienne qui s’est
+lancé là-dedans.</p>
+<p>Ces allers-retours permettent de comprendre véritablement ce qu’est
+du RAG, la difficulté à le faire, l’échec, parfois. Avec un espoir
+non-négligeable de pouvoir travailler différemment à la fin.</p>
+<p>L’application est lente, peu optimisée, l’interface est moche, etc.
+Il faut le voir comme un proof of concept.</p>
+<p>Au total, c’est le résultat d’une discussion avec Claude qui a durée
+environ une dizaine d’heures.</p>
+<p>Je ne suis pas sûr de savoir si c’est beaucoup ou pas, mais toujours
+est-il qu’auparavant mes talent de codeur étant limité à copier le code
+des autres et, parfois, à vaguement l’adapter, je n’aurais tout
+simplement pas pu le faire.</p>
+<p>Par contre, cette maïeutique stochastique m’a permis de comprendre
+des choses: la difficulté du choix d’une base de données vectorielles,
+par exemple, qui puisse être portée sur d’autres OS que celui de ma
+machine; s’assurer que ce genre de logiciels puissent fonctionner sur
+CPU et non GPU, pour qu’un nombre maximum de personnes, à terme, puisse
+l’utiliser, etc.</p>
+<p>En termes d’écriture, cela permet aussi de saisir vraiment l’effet de
+l’utilisation des chatbots en histoire. Je vais prendre un exemple:
+coder, c’est écrire du code mais aussi des commentaires.</p>
+<p>L’équipe qui travaille avec moi dans le cadre du Journal of Digital
+History, avait regardé des notebooks écrit par des historiens –
+notamment Philippe Rygiel. Et elles avaient été frappées: il y a un
+style historien de l’écriture du code, non dans le code lui-même, mais
+dans ses commentaires, là manière de les écrire, etc. Titaÿna Kaufmann,
+doctorante du C2DH, en regardant le code du LISA, est en train de
+montrer que les commentaires des développeurs du LISA ont des styles
+différents, selon l’auteur ou l’autrice du commentaire, ce qui permet
+aussi de savoir qui a écrit ou modifié quelle partie du code.</p>
+<p>Or, les commentaires ici sont écrits par Claude lui-même – il y a par
+cette démarche une uniformisation des styles d’écriture des
+commentaires, et probablement du code lui-même, sur laquelle il faudra
+s’interroger.</p>
+</aside>
+</section>
+<section id="le-dernier-kilomètre" class="slide level2">
+<h2>le dernier kilomètre</h2>
+<aside class="notes">
+<p>Servanne Monjour pour le sémnaire IA et Recherche du projet Revue 3.0
+avait présenté un projet autour de l’IA générative, des données
+bibliographiques et de la revue Humanités numériques et elle évoquait le
+“dernier kilomètre” : l’IA générative permettait d’accélérer le travail
+sur les références bibliographiques, mais n’était jamais parfait, et
+restait toujours ce dernier km. Il en va de même ici.</p>
+<p>Car, outre le problème de la culture informatique de l’historien ou
+de l’historienne – c’est-à-dire de celle ou celui qui écrit les prompts,
+problème que nous aborderons après, le plus grand écueil de cette
+démarche est bien le dernier kilomètre, celui qui permettrait que ce
+logiciel soit exploitable pleinement, éventuellement portable sur
+d’autres configs que la mienne.</p>
+<p>C’est le plus long. Il est même potentiellement impossible à
+franchir. Ce n’est pas nécessairement grave, dans la mesure où ce peut
+être aussi le moment où l’on fait appel à d’autres personnes, plus
+compétentes.</p>
+<p>Que contient le dernier kilomètre: l’optimisation, l’amélioration de
+l’interface, la stabilité, bref tout ce qui fait sortir un logiciel du
+proof of concept vers quelque chose de vraiment exploitable. La gestion
+des erreurs.</p>
+<p>Je n’ai pas encore de solutions à donner, et je ne suis pas sûr qu’il
+y en ait.</p>
+</aside>
+</section>
+<section id="qui-écrit" class="slide level2">
+<h2>qui écrit?</h2>
+<aside class="notes">
+<p>Mais revenons sur le code comme écriture historienne. Finalement,
+ici, ce qui est une écriture historienne n’est pas tant l’écriture du
+code, mais l’écriture des prompts. C’est dans ces prompts que
+l’historien ou l’historienne affirme ses spécificités, ses besoins.
+C’est là que l’écriture de l’histoire se joue. Or dans mon expérience,
+prompter n’est pas une compétence simple. Et c’est une compétence que
+peu d’historiens et d’historiennes ont acquis.</p>
+<p>Pire, beaucoup de nos collègues – et je l’ai vu encore dans une
+séance autour de l’enseignement en licence et des usages de l’IA par les
+étudiants il y a quelques jours – ne pensent pas que c’est une
+compétence, et pensent que leur expérience avec des chatbots
+(uniquement, pas en direct avec un grand modèle de données) est une
+expérience qui vaut universellement. Demander à un chatbot d’écrire une
+biogarphie de Jean Monnet et ensuite constater que cette biographie est
+mauvaise – elle l’est effectivement – n’est pas utiliser correctement un
+chatbot, en tout cas dans le cadre d’un enseignement d’histoire.</p>
+<p>Le problème de l’usage de l’IA par les étudiant.e.s vu comme du
+plagiat est ainsi d’abord un problème de compétence des enseignants.</p>
+<p>Ainsi, la question du prompting pose celle de l’enseignement, des
+compétences à enseigner aux étudiant.e.s est ainsi au cœur de nos
+préoccupations.</p>
+</aside>
+</section></section>
+<section id="enseignement" class="title-slide slide level1">
+<h1>enseignement</h1>
+<p><img src='img/prompt.png' width=80% /></p>
+<aside class="notes">
+<p>Je vous avais annoncé que je parlerais de mon projet sur les
+références au passé dans les prompts écrits par tout-un-chacun face à un
+chatbot (dans mon projet une base de données de prompts issue des usages
+d’une plateforme fondée sur StableDiffusion). C’est un prompt système
+qui est très imparfait, qui suffit pour le moment, mais qui devra être
+largement revu.</p>
+<p>Pour un écrire un tel prompt – qui mélange ici plusieurs techniques
+de prompting (personae et tree of thought si mes souvenirs sont bons) et
+qui est un system_prompt, c’est-à-dire une instruction en langage
+naturel envoyé à un grand modèle de données (dans mon cas à l’API de
+Claude) pour qu’ensuite il renvoit une réponse – ici définir si une
+série de prompts contiennent ou non des références au passé,
+éventuellement implicites – il faut une solide culture historienne et
+une solide culture numérique.</p>
+<p>Or c’est bien l’association des deux que nous devons viser lorsque
+nous enseignons aujourd’hui l’histoire.</p>
+<p>Cette association est un problème car l’ia générative – en fait, les
+chatbots – joue ici un rôle assez ambivalent. Car l’usage des chatbots
+engendre des changements de comportement chez les étudiant.e.s, mal
+compris par les enseignant.e.S (qui plaque sur ce changement de
+comportement des récriminations très anciennes, sans trop réfléchir), et
+la réponse qui consiste à utiliser explicitement l’IA générative en
+cours pourrait être vue comme une logique de pharmakon.</p>
+<p>Donc, qu’enseigner?</p>
+<ul>
+<li>l’histoire – on ne peut se passer d’une forte culture
+historique,</li>
+<li>l’écriture – les IAs génératives, peut-être que temporairement comme
+le web des anées 1990, remet la lecture et l’écriture au centre de leurs
+démarches,</li>
+<li>la culture informatique et numérique – au sens à la fois de Doueihi
+et de Cardon, le Coder/Décoder.</li>
+</ul>
+<p>Ce sont les éléments à insérer dans les curriculums et d’une certaine
+manière, cela semble basique – mais si l’on regarde les formations
+aujourd’hui en histoire, pas mal de ces éléments n’y sont pas. Et
+suivant plus ou moins Marcello Vitali-Rosati – mais même Marcello
+peut-être disrupté –, même l’écriture n’est plus enseignée correctement,
+finalement, puisqu’il n’y a aucune considération dans nos enseignements
+autour de l’écriture de l’histoire pour les technologies de l’intellect
+(au sens de Jack Goody) (c’est ma slide name-dropping).</p>
+</aside>
+</section>
+
+<section id="conclusion-une-écriture-au-ressenti"
+class="title-slide slide level1">
+<h1>conclusion: une écriture au ressenti?</h1>
+<aside class="notes">
+<p>Je suis assez conscient que mon intervention d’aujourd’hui a emprunté
+un chemin assez tortueux.</p>
+<p>Je suis parti d’un historique très imparfait de
+l’historien-programmeur mais aussi de la notion de <em>vibe
+coding</em>.</p>
+<p>Mais, revenons à la fin de l’historien-programmeur: je suis parti en
+expliquant que les chatbots et certains usages des grands modèles de
+langue sont susceptibles d’intégrer, éventuellement discrètement,
+l’écriture du code dans les pratiques communes des historiens et
+historiennes. Le but est de s’interroger sur le code comme écriture
+historienne, mais aussi sur la transformation de l’écriture historienne
+à l’ère de l’IA générative.</p>
+<p>Revenons à ce qu’est le vibe coding. La traduction proposée sur la
+fiche wikipédia est intéressante, c’est la traduction littérale: la
+“programmation au ressenti”.</p>
+<blockquote>
+<p><em>Vibe coding</em> est une notion récente, datant de février 2025,
+introduite par un informaticien Andrej Karpathy. Et Karpathy n’est pas
+n’importe quel informaticien: ancien maître de l’IA chez Tesla, et
+co-fondateur d’OpenAI. Si je suis Karpathy, donc, le petit logiciel
+montré ici est « pas trop mauvais[e] pour les projets jetables du
+week-end. »</p>
+</blockquote>
+<p>Et ma question aujourd’hui, c’est qule fin de l’historien
+programmeur, c’est-à-dire l’intégration de types d’écriture
+inateignables pour une grande partie des historiens et historiennes
+(dont celle du code) dans une écriture quotidienne, signifie une
+transformation possible, majeure de ce qu’est écrire l’histoire. Et
+écrire l’histoire est censé être un peu plus qu’un projet jetable du
+weekend, c’est-à-dire que cette écriture doit être un peu plus qu’une
+écriture au ressenti, sans pour autant rejeter ce qu’est cette écriture
+au ressenti peut apporter.</p>
+</aside>
+</section>
+    </div>
+  </div>
+
+  <script src="2025-07-03_DH-LLM_files/reveal.js-4.2.1/dist/reveal.js"></script>
+  
+  <!-- reveal.js plugins -->
+  <script src="2025-07-03_DH-LLM_files/reveal.js-4.2.1/plugin/notes/notes.js"></script>
+  
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+        // Display a presentation progress bar
+        progress: true,
+        // Can be used to limit the contexts in which the slide number appears
+        showSlideNumber: 'all',
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+        // Push each slide change to the browser history
+        // Implies `hash: true`
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Transition style
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+        // The display mode that will be used to show slides
+        display: 'block',
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+
+
+        // Optional reveal.js plugins
+        plugins: [
+          RevealNotes,
+        ]
+      });
+
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

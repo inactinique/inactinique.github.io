@@ -8,14 +8,14 @@ This page is a repository for some of my [prez](#prez), presents [ChatGPT events
 
 (date format: dd.mm.yyyy / in some cases, you can access the presenter's text by pressing the 's' key)
 
+- 04.07.2025 [la fin de l'historien programmeur?](prez/2025-07-03_DH-LLM.html) ([colloque DH@LLM](https://www.crihn.org/nouvelles/2025/01/16/colloque-dhllm-grands-modeles-de-langage-et-humanites-numeriques-sorbonne-universite/))
 - 10.06.2025 [L’IA comme pratique numérique (discrète) en histoire contemporaine](prez/2025-06-10_doctoriales/2025-06-10_doctoriales.html)
 - 30.05.2025 [une écriture machinique
-de l’histoire? les grands modèles de langue et la discipline historique](prez/2025-05-30_CSDH/2025_CSDH.html)
+  de l’histoire? les grands modèles de langue et la discipline historique](prez/2025-05-30_CSDH/2025_CSDH.html)
 - 12.05.2025 [negotiating the past](prez/2025-05-14_negotiating_the_past/negotiating_the_past.html)
 - 24.04.2025 [artificielle ou humaine? la mémoire collective au travers des prompts](prez/2025-04-24_ContemporaryHistoryDay/2025-04-24_ContemporaryHistoryDay.html)
-- 04.02.2024 [bricolage / braconnage / sabotage](prez/2025-02-04_MSHMondes_Bricolage-Braconnage-Sabotage/bricolage-braconage-sabotage.html). Séminaire « les sciences humaines et sociales à l’ère numérique : entre low tech et informatisation générale des données » (MSH mondes / Huma-Num Lab)
+- 04.02.2025 [bricolage / braconnage / sabotage](prez/2025-02-04_MSHMondes_Bricolage-Braconnage-Sabotage/bricolage-braconage-sabotage.html). Séminaire « les sciences humaines et sociales à l’ère numérique : entre low tech et informatisation générale des données » (MSH mondes / Huma-Num Lab)
 - 08.08.2024 [prompting the past (same name, not same prez)](prez/2024_DH024_prompting_the_past/prompting_the_past_prez.html). You'll find a [written and modified version of this prez](content/blog/20240812.md) in the blog section and a [repository with some code](https://github.com/inactinique/DH2024_prompting_the_past) on github. 
-- 02.06.2024 [Produites par des sources et productrices de sources: une approche des IA génératives par les humanités et l'histoire numérique](prez/2024-06-03_AI4LAM/2024-06-03_AI4LAM.html) -- Chapitre francophone ai4lam, rencontre régionale Grand-Est « Intelligence artificielle, patrimoine et humanités numériques »
 
 
 More on the [archive](content/archive.md) page.
