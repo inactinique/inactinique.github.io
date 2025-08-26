@@ -20,7 +20,19 @@ This page is a repository for some of my [prez](#prez), presents [ChatGPT events
 
 More on the [archive](content/archive.md) page.
 
-## ChatGPT events
+
+
+## Non-academic writings
+
+(date format: dd.mm.yyyy)
+
+- 18.08.2025 ([English version](https://www.lemonde.fr/en/opinion/article/2025/08/19/by-choosing-ai-for-its-remembrance-policy-the-french-government-is-automating-an-intellectual-process_6744517_23.html))[« En choisissant l’IA pour sa politique mémorielle, le gouvernement automatise un travail intellectuel »](https://www.lemonde.fr/idees/article/2025/08/18/en-choisissant-l-ia-pour-sa-politique-memorielle-le-gouvernement-automatise-un-travail-intellectuel_6631638_3232.html)
+- 10.11.2023 [« Commémorer les Guerres mondiales en 2023 »](https://aoc.media/analyse/2023/11/09/commemorer-les-guerres-mondiales-en-2023/) (AOC)
+- 16.06.2023 [« Les conversations sur les médias sociaux sont des expressions démocratiques qui ne sauraient être cachées à la recherche »](https://www.lemonde.fr/idees/article/2023/06/16/les-conversations-sur-les-medias-sociaux-sont-des-expressions-democratiques-qui-ne-sauraient-etre-cachees-a-la-recherche_6177952_3232.html) (op-ed signed, but the text was not written by me).
+- 17.12.2022 [« Préservons notre patrimoine numérique grâce au contre-archivage décentralisé et collaboratif »](https://www.lemonde.fr/idees/article/2022/12/17/preservons-notre-patrimoine-numerique-grace-au-contre-archivage-decentralise-et-collaboratif_6154820_3232.html)
+- 12.05.2021 [« Un autre numérique reste possible »](https://phiantique.medium.com/un-autre-num%C3%A9rique-reste-possible-1bee2e3b273) (with Chloé-Agathe Azencott, Anne Baillot, Alix Deleporte, Julie Giovacchini, Anne Grand d’Esnon and Catherine Psilakis)
+
+## ChatGPT/AI events
 
 (date format: dd.mm.yyyy)
 
@@ -29,14 +41,6 @@ More on the [archive](content/archive.md) page.
 - 05.04.2023 - I participated to a round-table in French at the Université de Montréal. I'll put here the link to the recording as soon as possible.
 - 09.02.2023 - I have organized an event on ChatGPT (French). The video's is on the [C<sup><small>2</small></sup>DH's website](https://www.c2dh.uni.lu/thinkering/usages-pedagogiques-de-chatgpt-enregistrement-de-la-table-ronde). 
 - 01.02.2023 - I participated to the History Communication Institute's ChatGPT, AI & history event (English). My prez is [here](2023-02-01_chatGPT_HCI/2023-02-01_chatGPT_HCI.html)). [The round-table is available as a podcast](https://jasonsteinhauer.substack.com/p/chatgpt-ai-and-history#details) and [as a YouTube Video](https://www.youtube.com/watch?v=Eu0ARkdZ2X0).
-
-## Non-academic writings
-
-(date format: dd.mm.yyyy)
-
-- 10.11.2023 [« Commémorer les Guerres mondiales en 2023 »](https://aoc.media/analyse/2023/11/09/commemorer-les-guerres-mondiales-en-2023/) (AOC)
-- 17.12.2022 [« Préservons notre patrimoine numérique grâce au contre-archivage décentralisé et collaboratif »](https://www.lemonde.fr/idees/article/2022/12/17/preservons-notre-patrimoine-numerique-grace-au-contre-archivage-decentralise-et-collaboratif_6154820_3232.html)
-- 12.05.2021 [« Un autre numérique reste possible »](https://phiantique.medium.com/un-autre-num%C3%A9rique-reste-possible-1bee2e3b273) (with Chloé-Agathe Azencott, Anne Baillot, Alix Deleporte, Julie Giovacchini, Anne Grand d’Esnon and Catherine Psilakis)
 
 ## All my writings
 
