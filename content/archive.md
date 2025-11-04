@@ -4,6 +4,7 @@
 
 ### 2024
 
+- 08.08.2024 [prompting the past (same name, not same prez)](../prez/2024_DH024_prompting_the_past/prompting_the_past_prez.html). You'll find a [written and modified version of this prez](blog/20240812.md) in the blog section and a [repository with some code](https://github.com/inactinique/DH2024_prompting_the_past) on github. 
 - 02.06.2024 [Produites par des sources et productrices de sources: une approche des IA génératives par les humanités et l'histoire numérique](../prez/2024-06-03_AI4LAM/2024-06-03_AI4LAM.html) -- Chapitre francophone ai4lam, rencontre régionale Grand-Est « Intelligence artificielle, patrimoine et humanités numériques »
 - 04.04.2024 [Prompting the European Union History (colloque chaire Jean Monnet IDECE)](../prez/2024-06_InviterHistoireEurope/2024-06_InviterHistoireEurope.html)
 - 08.03.2024 [Can history be written out of tweets?](../prez/2024-03-08_HistoryMadeOutOfTweets/2024-03-08_HistoryMadeOutOfTweets.html) -- unimore, dipartimento di studi linguinstici e culturalli: [« Storia e rivoluzione digitale. Come cambiano le fonti e il lavoro degli storici »](https://tv.unimore.it/in-unimore/in-primopiano/item/2999-storia-e-rivoluzione-digitale-come-cambiano-le-fonti-e-il-lavoro-degli-storici)

@@ -8,15 +8,14 @@ This page is a repository for some of my [prez](#prez), presents [ChatGPT events
 
 (date format: dd.mm.yyyy / in some cases, you can access the presenter's text by pressing the 's' key)
 
+- 05.11.2025 [negotiating the past. towards a new framework for digital memory studies?](prez/2025-11-05_Siena/2025-11-05_Siena.html) (Conferenza *[AI and Digital Humanities](https://www.unisi.it/unisilife/eventi/ai-and-digital-humanities-methodological-approaches-theories-and-methods). Methodologcal Approaches, Theories and Methods*, 4-5.11.2025)
 - 22.10.2025 [the probable past](prez/2025-10-22_PrezIAS-NUQ/2025-06-10_IAS-NUQ.html) ([round table at the #IAS_NUQ](https://www.qatar.northwestern.edu/events/2025-ias-panel-digital-public-history.html))
 - 04.07.2025 [la fin de l'historien programmeur?](prez/2025-07-03_DH-LLM/2025-07-03_DH-LLM.html) ([colloque DH@LLM](https://www.crihn.org/nouvelles/2025/01/16/colloque-dhllm-grands-modeles-de-langage-et-humanites-numeriques-sorbonne-universite/))
 - 10.06.2025 [L’IA comme pratique numérique (discrète) en histoire contemporaine](prez/2025-06-10_doctoriales/2025-06-10_doctoriales.html)
 - 30.05.2025 [une écriture machinique
   de l’histoire? les grands modèles de langue et la discipline historique](prez/2025-05-30_CSDH/2025_CSDH.html)
-- 12.05.2025 [negotiating the past](prez/2025-05-14_negotiating_the_past/negotiating_the_past.html)
 - 24.04.2025 [artificielle ou humaine? la mémoire collective au travers des prompts](prez/2025-04-24_ContemporaryHistoryDay/2025-04-24_ContemporaryHistoryDay.html)
 - 04.02.2025 [bricolage / braconnage / sabotage](prez/2025-02-04_MSHMondes_Bricolage-Braconnage-Sabotage/bricolage-braconage-sabotage.html). Séminaire « les sciences humaines et sociales à l’ère numérique : entre low tech et informatisation générale des données » (MSH mondes / Huma-Num Lab)
-- 08.08.2024 [prompting the past (same name, not same prez)](prez/2024_DH024_prompting_the_past/prompting_the_past_prez.html). You'll find a [written and modified version of this prez](content/blog/20240812.md) in the blog section and a [repository with some code](https://github.com/inactinique/DH2024_prompting_the_past) on github. 
 
 
 More on the [archive](content/archive.md) page.
