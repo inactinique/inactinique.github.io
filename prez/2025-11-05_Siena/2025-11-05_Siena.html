@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="frédéric clavert" />
+  <title>negotiating the past towards a new framework for digital memory studies?</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="2025-11-05_Siena_files/reveal.js-4.2.1/dist/reset.css">
+  <link rel="stylesheet" href="2025-11-05_Siena_files/reveal.js-4.2.1/dist/reveal.css">
+
+  <style type="text/css">
+    /* CSS from pandoc style.html() */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+                  </style>
+
+  <link rel="stylesheet" href="2025-11-05_Siena_files/reveal.js-4.2.1/dist/theme/simple.css" id="theme">
+
+
+  <style type="text/css">
+  /* some tweaks to reveal css */
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+  </style>
+
+    <script src="2025-11-05_Siena_files/header-attrs-2.29/header-attrs.js"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">negotiating the past<br /><small>towards a new
+framework for digital memory studies?</small></h1>
+  <h2 class="author"><small><a href="https://inactinique.net">frédéric
+clavert</a></small></h2>
+  <h3 class="date"><small>5.11.2025 – ai and digital humanities –
+siena</small></h3>
+</section>
+
+<section id="section" class="title-slide slide level1"
+data-background-color="#000000">
+<h1 data-background-color="#000000"></h1>
+<p>historical representations</p>
+<p>generative artificial intelligence</p>
+<p>collective memory</p>
+<aside class="notes">
+<p>Good morning.</p>
+<p>First, I would like to thank you for inviting me today.</p>
+<p>This talk will explore the intersection of historical
+representations, artificial intelligence, and collective memory.</p>
+<p>Negotiating the past? Negotiating the past is not something new.
+There are many spaces where, as social groups, as a society, we
+negotiate the past: committees that define which historical knowledge
+students should learn, for instance, are space of negociation about the
+past.</p>
+<p>Today, my argument will be that, though spaces of negotiations about
+the past are already existing, generative AI platforms open new ones,
+that have their own specificities.</p>
+<p>I’ll try to examine how users “negotiate” with AI systems to express
+their conceptions of the past, how these interactions can reveal
+tensions between user expectations and AI-embedded historical patterns,
+and how to insert this into memory studies.</p>
+<ul>
+<li>I’ll try first to show how LLMs encode historical perspectives,
+trying to set up a theoretical framework.</li>
+<li>I’ll then show how I am using myself AI and LLMs to set up a corpus
+of prompts to analyse, and how I do analyse them.</li>
+<li>I’ll then comment the analyses before concluding on chatbots as new
+spaces / frameworks for negotiation on the diverse ways we collectively
+see the past.</li>
+</ul>
+</aside>
+</section>
+
+<section>
+<section id="an-attempt-at-a-theoretical-framework"
+class="title-slide slide level1" data-background-color="#000000">
+<h1 data-background-color="#000000">an attempt at a theoretical
+framework</h1>
+
+</section>
+<section id="chatbots-as-medium-of-memory" class="slide level2"
+data-background-color="#000000">
+<h2 data-background-color="#000000">chatbots as medium of memory</h2>
+<p><img data-src="img/invite.gif" /></p>
+<aside class="notes">
+<p>I define here ‘chatbots’ as generative AI platforms designed for wide
+audiences, made of an interface that encourages users to enter a prompt,
+in order to generate text, images, videos. Those platforms are more and
+more multimodal – inputs can be texts or images, as well as outputs. So
+we consider here chatbots that are based on diffusion systems and/or
+large language models.</p>
+<p>We also consider specifically chatbots, and not only their underlying
+engines (large language or diffusion models), because chatbots have
+additional layers of filtering, feedbacks, alignments and fine
+tuning.</p>
+<p>For instance, DeepSeek – the online chatbot – is well known to refuse
+to answer a question on the Tiananmen massacre. But if you used one of
+the DeepSeek R1 models, when they were released, directly on your
+computer (I’ve tested the 7b parameters one), it did not refuse to
+answer questions on the Tiananmen massacre, though it clearly indicates
+in its reasoning that it should be respecting the chinese law and
+sensibility on the subject. Even if, isnce then, they have been updated
+in order either to refuse to answer or to deny it even existed, the fact
+that the initial models runable on your computer would answer a question
+that the chatbots refused to show that there can be very strong
+differences betwxeen a model and a chatbot using this model.</p>
+<p>The Tiananmen example brings us back to memory: in those additional
+layers of alignment and fine tuning that are made to allow wide
+audiences to use easily chatbots, there are additional views on the past
+that are modified or embedded.</p>
+<p>As a consequence, those chatbots can be considered as medium of
+memory. I use here Astrid Erll’s work (Memory in Culture, 2011) where
+she writes that medium of memory are « “constructs versions of a past
+reality” and plays a role “in the encoding and decoding [Stuart Hall,
+1980.] of that which is (to be) remembered.” » (p. 120ff). For Erll,
+medium of memory performs several functions:</p>
+<ul>
+<li>they store information</li>
+<li>they allow a form of ciruclation of this information</li>
+<li>they can also be collective memory triggers</li>
+</ul>
+<p>For instance, let’s take the example of the French numerous
+<em>Monuments aux morts</em>, that can be considered as medium of
+memory:</p>
+<ul>
+<li>they in some ways allow for the storage of information,</li>
+<li>though it is not their main function, they allow this information to
+circulate – basically they are a message to people passing by,</li>
+<li>they are trigger of collective memory with the many commemorations
+that are organised close to them.</li>
+</ul>
+<p>Let’s go back to chatbots and let’s try to define them as medium of
+memory:</p>
+<ul>
+<li>chatbots are based on models that are <strong>storing
+information</strong>. Models are sets of parameters deduced from a
+training phase, parameters that contain patterns based on training
+datasets. In this sense they can be seen as storage of information,
+including information on the historical past,</li>
+<li>chatbots allow a form of <strong>circulation of
+information</strong>, when their users query them, even if their
+stochastic ways to restitute information, that does not include any
+sense of truth that can lead to hallucinations, should be carefully
+considered.</li>
+<li>chatbots are also <strong>triggers of collective memory</strong>.
+That’s their interface, based on, often, a single box where users can
+type questions. Studying the past, in a professional way or a more
+amateur one, is all about asking questions and trying to find ways to
+answer them. Prompts are hence a huge incentive / trigger to query the
+past, even if it is not the main use of generative AI platforms, of
+course.</li>
+</ul>
+<p>So, if we consider chatbots as medium of memory, we should also try
+understanding how they embed views on the past.</p>
+</aside>
+</section>
+<section id="chatbots-and-historical-patterns" class="slide level2"
+data-background-color="#000000">
+<h2 data-background-color="#000000">chatbots and historical
+patterns</h2>
+<p><img src='img/fractal.png' style="opacity: 0.2;" /></p>
+<aside class="notes">
+<p>We’ll take the example of text generation through LLMs.</p>
+<p>LLMs are made to “generate the next word”. They do that by using
+patterns, deduced from a training dataset, that is usually not very well
+known.</p>
+<p>We should consider training datasets as primary sources, as an object
+of the historian’s inquiry and critique: a training dataset is an
+archive, it is made of historical records. But as all historical
+records, they contain specific views of the past – I could speak of
+‘biases’, but I think this word is really not pertinent here.</p>
+<p>And, the way the training phase is embedding those views of the past
+into the model is not at all the way we are dealing with historical
+records as historians. There’s no critical appraisal of those historical
+records. What matters are patterns, probabilities, hence the famous
+article of Bender et al. on stochastic parrots.</p>
+<p>It says something about the fact that chatbots are changing our
+regime of truth – truth becomes a matter of probabilities – and this
+change of regime of truth have concequences on how we consider our past:
+through chatbots and our prompts, we inquire for a probable past. This
+probable past is not only the result of large language or diffusion
+models, but also the results on how chatbots are fine tuned and
+aligned.</p>
+</aside>
+</section>
+<section id="aligning-the-past" class="slide level2"
+data-background-color="#000000">
+<h2 data-background-color="#000000">aligning the past</h2>
+<p><img data-src="img/leopold.png" /></p>
+<aside class="notes">
+<p>We should also look at the alignment, feedback (with or without
+humans in the loop), fine-tuning and any other operations that can be
+performed to create the chatbot itself. Alignment, for instance, is
+supposed to ensure that the answers of a chatbot, whatever their
+modalities, fit with the value of a society, whatever that means.</p>
+<p>But this “Alignment” also ensure that the firm publishing the chatbot
+gets money from it, which probably means that the answers must please a
+large number of users (and also the firm’s shareholders). That poses the
+question of minority voices and makes the choice of the training dataset
+a real decision of memory politics (see Smits et al and Wandel
+Richardson et al., 2024).</p>
+<p>Of course, this alignement is obvious for chatbots that are published
+in an authoritarian state. We have seen the DeepSeek Tienanmen example
+before. I could also give the example of ruDALLE, a russian image
+generation platform, that will send back an image of flowers to all
+prompts mentioning something related to Ukraine.</p>
+<p>Here is a different example: midjourney has filters that encourage
+the representation of minorities on the images they produce, which is
+obviously of good intent. But this can lead to abberations. In this
+image, the aberration is to represent Leopold III as a black king
+colonizing Congo.</p>
+</aside>
+</section>
+<section id="the-latent-space-of-the-past" class="slide level2"
+data-background-color="#000000">
+<h2 data-background-color="#000000">the latent space of the past</h2>
+<p><img data-src="img/zeus_vectors.png" /></p>
+<aside class="notes">
+<p>Let’s go back to large language models and how they are created. One
+of the step of the creation of models is the latent space. Latent spaces
+are a way to compress a dimensional representation of data. It allows
+the model to generate new data based on the original data.</p>
+<p>Let’s take the notion of latent space as a metaphor to understand how
+LLMs, in this case, represent and render historical concepts, events,
+etc.</p>
+<p>In this metaphor, historical concepts are encoded as points in a
+multidimensional space, made of word embedings that capture semantic
+relationships. Then the relationships between historical events,
+figures, and concepts are captured in the distances and directions
+between these vectors. Temporal relationships are encoded – or we can
+suppose so – in semantic proximity and cultural associations, including
+related to memory. This multidimensional space is ‘compressed’ in a
+latent space that captures all those relationships and, when activated
+by a prompt containing a reference to the past, will send back an
+answer. This latent space reflect collective memory patterns from the
+training corpus.</p>
+<p>see Alban Leveau-Vallier’s talk and book</p>
+</aside>
+</section>
+<section id="chatbots-as-frameworks" class="slide level2"
+data-background-color="#000000">
+<h2 data-background-color="#000000">chatbots as frameworks</h2>
+<p><img src="img/hakbwachs.png" width=30% /></p>
+<aside class="notes">
+<p>So, chatbots (and LLMs / Diffusion models behind them) are playing
+their role of encoding / decoding what is to be remembered through this
+“latent space of the past” – an expression, I prefer to state it again,
+that should be considered as a metaphore – this latent space is a
+specificity of chatbots considered as medium of memory.</p>
+<p>Let’s go back to Astrid Erll and the media of memory. One of their
+functions is also to play their role as media frameworks. Their
+affordances, including anthropomorphism, the ways they are structured,
+are framing what users can expect from those systems.</p>
+<p>What are memory frameworks? This notion leads us back to Halbwachs
+and his seminal work on collectiev memory in the 1920s, les <em>cadres
+sociaux de la mémoire</em>. What does Halbwachs mean by “memory
+frameworks”: basically that you can not understand how an individual
+remembers if you do not consider the social group in which they are
+living, including how this social group is structured. It is this
+relationship to the group that frames the individual memory, as the
+group will have its own view on the past, view that is a consequence of
+the social relationships between individuals of the group, and of the
+insertion of this group into a wider society.</p>
+</aside>
+</section></section>
+<section>
+<section id="empirical-approach" class="title-slide slide level1"
+data-background-color="#000000">
+<h1 data-background-color="#000000">empirical approach</h1>
+<aside class=notes>
+<p>So my first part was an attempt – probably still too drafty – of
+theoricizing what are chatbots in terms of collective or cultural
+memory. I’ll get back to this in the conclusion, and will try to compare
+it to other theoricizing attempts.</p>
+<p>But, let’s try to link this to an empirical approach.</p>
+<p>What I am trying to do here is to look at prompts and how users are
+negotiating with the chatbot to get an artefact with a view of the past
+that fits their they wishes. That implies that users may have different
+prompting strategies, that their prompts evolve while discussing with
+the chatbot (through image or text) – I call this discussion part
+‘stochastic maieutics’.</p>
+<p>I will focus on prompts made of text, though images can be prompts
+too. I have not yet tried to insert into my research sora 2 – though, as
+you might have heard, the use of historic figures is quite popular, with
+very different ideological backgrounds. But that’s the next territory I
+will try to investigate, though collecting data will be hard, if not
+impossible.</p>
+<p>In the next few slides, I’ll explain how I have built two corpora of
+prompts. Note, that I am using prompts that are published open access.
+They usually comes from open source communities, or are available online
+on website that offer an API to get prompts. The result is that those
+prompts are mostly coming from Stable Diffusion-based platforms, as
+Stable Diffusion is open source: those prompts are designed to generate
+image, not text, as stable diffusion is one of those text-to-image
+systems. That might change in the future, that might have already
+changed – maybe it will be possible to work on other corpora released by
+larger platforms. But to my knowledge, it’s not possible yet.</p>
+<aside>
+</section>
+<section id="what-is-a-reference-to-the-past" class="slide level2"
+data-background-color="#000000">
+<h2 data-background-color="#000000">what is a reference to the
+past?</h2>
+<aside class="notes">
+<p>So the aim is to build two corpora of prompts containing some sort of
+references to the past and to analyse it. There is a set of
+methodological issues here to take into account:</p>
+<ul>
+<li>a keyword approach can be used, to study a specific event,
+individual, institution or period,</li>
+<li>for something broader, it is necessary to define a historical
+reference, including when a reference to the past is implicit</li>
+</ul>
+</aside>
+</section>
+<section id="section-1" class="slide level2"
+data-background-color="#000000">
+<h2 data-background-color="#000000"></h2>
+<div
+style="display: grid; width: 100%; grid-template-columns: 400px 450px; align-items: center; justify-content: space-between;">
+<div style="font-size:11pt;">
+<blockquote>
+<p>army of the european union invades budapest 2 0 2 2, highly detailed
+painting, digital painting, artstation, concept art</p>
+</blockquote>
+<blockquote>
+<p>army of the european union fighting on the streets of budapest 2 0 2
+2, highly detailed illustration for time magazine cover art</p>
+</blockquote>
+<blockquote>
+<p>army of the european union with tanks fighting on the streets of
+budapest 2 0 2 2, highly detailed oil painting</p>
+</blockquote>
+</div>
+<div>
+<img src='img/1956.png' width=100%></img>
+</div>
+</div>
+<aside class="notes">
+<p>Let’s take an example: the three prompts here are not refering
+explicitly to the past. They were issued in 2022 about a 2022 event,
+basically negociations, hard negociations, between Hungary and the
+European Union’s Commission, around cuts to European fundings to
+Hungary, because of Hungary’s tendency not to respect basic democratic
+rights.</p>
+<p>Copy-paste the last of those prompts in a search on an image search
+engine: all the results are historical. We have here an implicit
+reference, probably to the hungarian revolution of 1956, that was put to
+an end by a soviet intervention. Well, the results are now a bit biased,
+let’s say, as it’s not the first time that I am using this example, so
+the search engine also finds some previous prez…</p>
+<p>So, the problem here is to build a robust identification strategy for
+implicit and explicit references to the past.</p>
+</aside>
+</section>
+<section id="section-2" class="slide level2"
+data-background-color="#000000">
+<h2 data-background-color="#000000"></h2>
+<h3 id="corpus-1">corpus <span style="font-size:26pt">1</span></h3>
+<p><small> krea corpus (sample) → claude api → 5000 prompts </small></p>
+<h3 id="corpus-2">corpus <span style="font-size:26pt">2</span></h3>
+<p><small> keyword (‘european union’) → api lexica.art → 2000 prompts
+</small></p>
+<aside class="notes">
+<p>I have tried several strategies to constitute two corpora.</p>
+<ul>
+<li>The first is based on the krea corpus, a 10 million prompts corpus,
+elaborated by krea, a platform based on Stable Diffusion;</li>
+<li>The second one is based on lexica.art, a prompt search engine and
+image generation platform (Stable Diffusion), with an API that allows to
+get prompts and corresponding images based on keywords.</li>
+</ul>
+<p>For Corpus 1, I have set up a sample of 50 000 lines (because too
+costly otherwise), sent them to the Claude API with a prompt explaining
+to Claude sonnet how to determine if a line contained references to the
+past, and Claude sends back a ‘yes’ or a ‘no’.</p>
+<p>For corpus 2, the code was written by a student assistant two years
+ago (Yaroslav Zabolotskyi).</p>
+</aside>
+</section>
+<section id="prompting-to-find-references-to-the-past"
+class="slide level2" data-background-color="#000000">
+<h2 data-background-color="#000000">prompting to find references to the
+past</h2>
+<p><img src="img/prompt.png" width=80% /></p>
+<aside class="notes">
+<p>Let’s focus a bit on Claude: this prompt was co-written with Claude
+to help Claude reasoning for each item of my corpus. It’s a mixed
+approach: reasoning and personae, the prompt being enginered through a
+negociation between me and Claude (the chatbot).</p>
+<p>It’s the use of Claude that worked the best (my veyr human
+evaluation). It’s far from perfect: the implicit part is not fully taken
+into account and some prompts are refering to the past, but not the
+historical past.</p>
+<p>I must precise that for now I did not do any benchmarking, which is
+an obvious weakness, that I plan to adress. Furthermore, I used a sample
+of the krea corpus for cost reasons. The plan is at one point to find
+prompts with references to the past in the full 10 mmillion lines
+corpus, which should allow me to get around 900 000 prompts with
+references to the past.</p>
+<p>As I said, Claude is just sending a ‘yes’ or a ‘no’. I could also ask
+for a short ‘why’. Here, for now, I have limited to a simple binary
+answer for costs reasons. But, asking a ‘why’ would be interesting to
+analyse, including with distant reading tools.</p>
+<p>In the next few slides, I’ll analyse them through scalable reading,
+where distant reading is at the same time used to start the
+interpretation and as a search tool for more refined analyses, including
+analyses of precise prompts or series of prompts.</p>
+</aside>
+</section></section>
+<section>
+<section id="negotiating-the-past" class="title-slide slide level1"
+data-background-color="#000000">
+<h1 data-background-color="#000000">negotiating the past</h1>
+
+</section>
+<section id="corpus-1-1" class="slide level2">
+<h2>corpus <span style="font-size:32pt">1</span></h2>
+<p><img src="img/historical_yes_dendrogramme_1.png" /></p>
+<aside class="notes">
+<p>Let’s start with the corpus obtained via Claude based on the krea
+corpus.</p>
+<p>This is a dataviz obtained with the iramuteq piece of software.
+Iramuteq performs something that looks like topic modelling, but it is
+not bag of words. The words that you see are in fact the most
+representative words of clusters of prompts. There’s some past
+everywhere here. In the style, obviously, but also in the content. And
+most references to the past, if they are not arty, are to wars (cluster
+17), or propanganda wars (cluster 8). And most of them are somehow
+linked to the present news (trump, propaganda, soviet, macron in the
+same cluster for instance).</p>
+</aside>
+</section>
+<section id="corpus-2-1" class="slide level2">
+<h2>corpus <span style="font-size:32pt">2</span></h2>
+<p><img src="img/eu_dendrogramme_1.png" width="70%" /></p>
+<aside class="notes">
+<p>This is an anlysis of the European Union corpus, based on prompts
+published on lexica.art.</p>
+<p>What you see here is interesting, because it’s a lot linking the
+European Union and Europe themes to all sorts of empire themes and to
+some sort of medievalism. We also find back the ‘propaganda’ cluster –
+probably because those prompts were produced in the wake of the
+agression against Ukraine.</p>
+<p>Those distant reading analyses are interesting, but confirm more than
+discover: in a way, we expect Europe to be linked to the concept of
+empire, we expect that lots of references to the past are linked to the
+‘style’ part of a prompt.</p>
+<p>But those distant readings allow us also to go back to specific
+prompts. By looking at prompts that are very similar, we can trace the
+evolution of a prompt written / re-written several times by a user. And
+it’s here, that we can see that gen AI platforms, seen as frameworks,
+encourage users to negotiate with the machine the past they want to see
+or read.</p>
+<p>This negotiation can be seen as a confrontation between several kinds
+of collective memories: the one that are embedded in the genAI platform
+and that comes from the way the LLM or diffusion system was trained and
+from the corpus it was trained on; the collective memory of the group
+the individual belongs too; the individuals own vision of the past.</p>
+<p>I’ll give two examples.</p>
+</aside>
+</section>
+<section id="section-3" class="slide level2"
+data-background-color="#000000">
+<h2 data-background-color="#000000"></h2>
+<p><img src="img/macron-leyen-knights2.jpg" width="50%" /></p>
+<blockquote>
+<p><small>Ursula von Der Leyne [sic] and Emmanuel Macron, Peter [sic]
+Pavel in the image of knights of the round table</small></p>
+</blockquote>
+<aside class="notes">
+<p>I have showed before prompts that relate to the hungarian revolution
+– unfortunately I do not have the images.</p>
+<p>Here is another example. Several prompts of this kind were written,
+with some differences, but results that are very similar.</p>
+<p>As you can see, we can consider there are several references to the
+past here.</p>
+<ul>
+<li>the reference to a myth, the knight of the round table, that is
+supposed to be medieval (even if it’s been heavily re-used since the
+XIXth century), but that is illustrated by an image that looks more
+Renaissance than medieval - which gives a hint on how collectively we
+see the Middle Ages (and it’s coherent with the 19th century revival of
+the round table myth).</li>
+<li>as this image is from 2023, it is also a way to see how the memory
+of some politicians is being built – and obviously, Petr Pavel’s memory
+outside of the czesh republic is not very well built…</li>
+<li>we could say also that Macron is slightly more recognizable than von
+der Leyen (who looks like an average 50s-60s-ish european woman). Thouhg
+the fault in the prompt might induce that, Julien Schuh (2024) showed
+that there are differences between representations of famous men and
+women, based on gender biases.</li>
+</ul>
+<p>The user never managed to have Petr Pavel on their images.</p>
+</aside>
+</section>
+<section id="section-4" class="slide level2"
+data-background-color="#000000">
+<h2 data-background-color="#000000"></h2>
+<p><img src="img/biden.png" width="50%" /></p>
+<blockquote>
+<p><small>joe biden doing a nazi salute, in front of brandenburger tor.
+huge nazi crowd in front of him. face of joe biden is clearly visible.
+canon eos r 3, f / 1. 4, iso 1 6 0 0, 1 / 8 0 s, 8 k, raw,
+grainy</small></p>
+</blockquote>
+<aside class="notes">
+<p>This is a striking example of negotition with a machine to get
+something in the present with references to the past that serves as an
+ideological reading of the present.</p>
+<p>The user never got what they wanted. Biden doing a nazi salute in
+front of nazis – that just does not exist. Nevertheless, the prompt
+activated patterns from the second world war and maybe from the cold
+war.</p>
+<p>I may be overinterpreting, but I can see influence, of course, from
+nazi footages, but also from De Gaulle in August 1944 (26) in the Champs
+Elysées, Kennedy in front of the Brandenburger Tor, etc.</p>
+<p>The political goal of the prompt writer here is partly in failure:
+this political goal is confronted with the collective memory of the
+second world war, that are preeminent over their views.</p>
+</aside>
+</section></section>
+<section>
+<section id="conclusion" class="title-slide slide level1"
+data-background-color="#000000">
+<h1 data-background-color="#000000">conclusion</h1>
+<aside class="notes">
+<p>Chatbots function as media of memory that store, circulate, and
+trigger collective memories. They are medium of memory because AI models
+encode historical perspectives. Metaphorically, we could call that the
+collective memory latent space, that reflects collective memory patterns
+from training corpora. On top of the training process, alignment and
+fine-tuning embed specific views of the past (e.g., DeepSeek/Tiananmen,
+minority representations). In this sense, we can also consider chatbots
+as frameworks.</p>
+<p>When we look at users’ prompt that have references to the past, we
+see how users are writing those references to the past, but also how
+they negotiate with gen AI systems to obtain their desired vision of the
+past, creating a confrontation between different collective memories,
+but also, often, their vision of the present.</p>
+<p>This negotiation reveals tensions between user expectations and
+historical representations (frameworks) embedded in AI.</p>
+<p>Beyond this, I think we should remind something quite important about
+LLMs and Diffusion System: they are the products of artefacts from the
+past (the training dataset), they are producing primary sources
+(prompts, images, texts), and they are triggers of collective
+memory.</p>
+<p>In this sense, GenAI systems are fundmentaly products from history
+and memory.</p>
+</aside>
+</section>
+<section id="towards-a-new-framework-for-digital-memory-studies"
+class="slide level2">
+<h2>towards a new framework for digital memory studies</h2>
+<aside class="notes">
+<p>I’d like to go back a bit on my promise to speak a bit about a new
+framework for digital memory studies.</p>
+<p>The reference is Andrew Hoskins <em>Digital Memory Studies</em> book,
+in 2017. Hoskins tries to explain how the web, social media, big
+platforms have been transforming our relation to the past into a
+restless past that generates a memory of the multittude rather than a
+collective memory through a media, the web, that is ‘bigger than us’,
+that human can not encompass fully.</p>
+<p>Since then, some more critical articles and ChatGPT. Two special
+issues have tried to speak about collective memory and AI: one in
+<em>Memory Studies Review</em> that I co-coordinated with Sarah
+Gensburger (Sc. Po.), and another one (well, rather ‘a collection’) led
+by Andrew Hoskins for Memory, Mind and Media. Some authors are common,
+and we are working on an article for the Memory, Mind and Media
+collection.</p>
+<p>In his introduction to the collection, Hoskins evolved from the
+restless past and the memory of the multitude to the ‘third way of
+memory’, neither human nor machine, but hybrid, that he articulates with
+what he calls the untethered past and conversational memory.</p>
+<p>I prefer speaking of probable past and negotiation around the past.
+Negotiations because there is, from what I could see in the interactions
+between user and the chatbot, often a confrontation between the users’
+view of the past and the embedded views of the past into the model and
+the different layers of alignment and fine tuning that makes the
+chatbot. I think the user agency is far higher than Hoskins think it is,
+all the more that models remain the result of human agency, and of human
+data – for now. But even synthesised data has something human there.</p>
+<p>Furthermore, there is the question of social relationships, that is
+not adressed enough by this “third way of memory”, or that are
+evacuated. But without social interactions, there would be no training
+dataset. We are in a paradox, that is described by Pierre Depaz in an
+article on GitHub and StackOverflow as a collective memory of
+deevlopers: the training dataset is based on social interactions between
+developers, that created a training dataset for chatbot to be good
+developers, but destroying the social ethics of developers that allowed
+the creation of this collective memory. In Carl Öhman’s view, it’s a
+balance of power between our present us and our past us, which is
+embodied by the models.</p>
+<p>What is certain is that we need to engage more with chatbots and
+their effects on memory, on our disciplines, on social life in general.
+We need empirical research, about generative AI.</p>
+</aside>
+</section>
+<section id="thank-you" class="slide level2"
+data-background-color="#000000">
+<h2 data-background-color="#000000">thank you</h2>
+<ul>
+<li>Gensburger, S., Clavert, F., « Is AI the future of collective
+memory ? », <em>Memory studies review</em>, 2024</li>
+<li>Hoskins, A., « AI and Memory », <em>Memory, Mind and Media</em>,
+2024-…</li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="2025-11-05_Siena_files/reveal.js-4.2.1/dist/reveal.js"></script>
+  
+  <!-- reveal.js plugins -->
+  <script src="2025-11-05_Siena_files/reveal.js-4.2.1/plugin/notes/notes.js"></script>
+  
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+        // Display a presentation progress bar
+        progress: true,
+        // Can be used to limit the contexts in which the slide number appears
+        showSlideNumber: 'all',
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+        // Push each slide change to the browser history
+        // Implies `hash: true`
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Transition style
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+        // The display mode that will be used to show slides
+        display: 'block',
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+
+
+        // Optional reveal.js plugins
+        plugins: [
+          RevealNotes,
+        ]
+      });
+
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
