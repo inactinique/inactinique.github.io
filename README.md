@@ -21,7 +21,6 @@ This page is a repository for some of my [prez](#prez), presents [ChatGPT events
 More on the [archive](content/archive.md) page.
 
 
-
 ## Non-academic writings
 
 (date format: dd.mm.yyyy)
