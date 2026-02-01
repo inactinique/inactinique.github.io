@@ -31,7 +31,7 @@ More on the [archive](content/archive.md) page.
 - 17.12.2022 [« Préservons notre patrimoine numérique grâce au contre-archivage décentralisé et collaboratif »](https://www.lemonde.fr/idees/article/2022/12/17/preservons-notre-patrimoine-numerique-grace-au-contre-archivage-decentralise-et-collaboratif_6154820_3232.html)
 - 12.05.2021 [« Un autre numérique reste possible »](https://phiantique.medium.com/un-autre-num%C3%A9rique-reste-possible-1bee2e3b273) (with Chloé-Agathe Azencott, Anne Baillot, Alix Deleporte, Julie Giovacchini, Anne Grand d’Esnon and Catherine Psilakis)
 
-## ChatGPT/AI events
+## AI events
 
 (date format: dd.mm.yyyy)
 
