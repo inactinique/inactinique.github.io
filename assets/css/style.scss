@@ -1,64 +1,443 @@
 ---
 ---
 
-@import "jekyll-theme-dinky";
+/* Google Fonts: Inter (body) + EB Garamond (headings) */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@300..700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+/* ==========================================================================
+   CSS Custom Properties (Light Mode Default)
+   ========================================================================== */
+
+:root {
+  /* Colors - Light Mode */
+  --color-bg: #f8f8f8;
+  --color-text: #1a1a1a;
+  --color-text-muted: #555555;
+  --color-border: #e0e0e0;
+
+  /* Typography */
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  --font-size-base: 18px;
+  --line-height: 1.65;
+
+  /* Layout */
+  --max-width: 38rem;
+  --spacing-unit: 1.5rem;
+
+  /* Transitions */
+  --transition-speed: 0.3s;
+}
+
+/* ==========================================================================
+   Dark Mode
+   ========================================================================== */
+
+[data-theme="dark"] {
+  --color-bg: #1a1a1a;
+  --color-text: #e8e8e8;
+  --color-text-muted: #999999;
+  --color-border: #333333;
+}
+
+/* System preference detection (when no manual override) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #1a1a1a;
+    --color-text: #e8e8e8;
+    --color-text-muted: #999999;
+    --color-border: #333333;
+  }
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size-base);
+  scroll-behavior: smooth;
+}
 
 body {
-	padding:10px 50px 0 0;
-	font-family:"Cormorant Garamond", serif;
-	font-size: 18px;
-	color: #232323;
-	background-color: #FBFAF7;
-	margin: 0;
-	line-height: 1.8em;
-	-webkit-font-smoothing: antialiased;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: var(--line-height);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--transition-speed) ease,
+              color var(--transition-speed) ease;
 }
 
-h1, h2, h3 {
-	font-family:"Cormorant Garamond", serif;
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  line-height: 1.3;
+  margin-top: calc(var(--spacing-unit) * 2);
+  margin-bottom: var(--spacing-unit);
+  font-feature-settings: "onum" 1, "liga" 1;
 }
 
-a.buttons {
-	-webkit-font-smoothing: antialiased;
-	background: none;
-	font-weight: normal;
-	text-align: center;
-	text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
-	padding: 2px 2px 2px 2px;
-	height: 30px;
+h1 {
+  font-size: 2.2rem;
+  font-weight: 400;
 }
 
-h1.header {
-	font-family: "Cormorant Garamond", serif;
-	font-size: 30px;
-	font-weight: 400;
-	line-height: 1.3em;
-	border-bottom: none;
-	margin-top: 0;
-	color: #232323;
-  }
-
-header {
-	background-color: #FBFAF7;
-	color: #232323;
-	border-left-width: 0px;
+h2 {
+  font-size: 1.75rem;
 }
 
-header+li {
-	color: #232323;
-	background: none;
-	background-color: none;
+h3 {
+  font-size: 1.4rem;
 }
 
-header+ul {
-	color: #232323;
-	background: none;
-	background-color: none;
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--spacing-unit);
+  font-size: 15px;
+}
+
+/* Oldstyle figures for numbers */
+.oldstyle-nums {
+  font-feature-settings: "onum" 1;
+}
+
+/* Links */
+a {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  transition: opacity var(--transition-speed) ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* Lists */
+ul, ol {
+  margin-top: 0;
+  margin-bottom: var(--spacing-unit);
+  padding-left: 1.5em;
+  font-size: 15px;
+}
+
+li {
+  margin-bottom: 0.5em;
 }
 
 ul {
-	list-style-type:'-  ';
+  list-style-type: disc;
+}
+
+/* Blockquotes */
+blockquote {
+  margin: var(--spacing-unit) 0;
+  padding-left: var(--spacing-unit);
+  border-left: 3px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+/* Code */
+code {
+  font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+  font-size: 0.9em;
+  background-color: var(--color-border);
+  padding: 0.15em 0.35em;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: var(--color-border);
+  padding: var(--spacing-unit);
+  overflow-x: auto;
+  border-radius: 4px;
+  margin-bottom: var(--spacing-unit);
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Horizontal rule */
+hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: calc(var(--spacing-unit) * 2) 0;
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.site-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header {
+  padding: var(--spacing-unit) var(--spacing-unit);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  background-color: var(--color-bg);
+  z-index: 100;
+  transition: background-color var(--transition-speed) ease;
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0;
+  font-feature-settings: "onum" 1;
+}
+
+.site-title a {
+  text-decoration: none;
+}
+
+.site-title a:hover {
+  opacity: 1;
+}
+
+.site-description {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin: 0.25rem 0 0 0;
+}
+
+/* Main content */
+.site-main {
+  flex: 1;
+  padding: var(--spacing-unit) var(--spacing-unit) calc(var(--spacing-unit) * 2);
+}
+
+.content-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   Table of Contents
+   ========================================================================== */
+
+.toc {
+  padding: 0.4rem 0;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+}
+
+.toc-item {
+  margin: 0;
+}
+
+.toc-item-h3 {
+  padding-left: 0.75rem;
+}
+
+.toc-link {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color var(--transition-speed) ease;
+}
+
+.toc-link:hover {
+  color: var(--color-text);
+  opacity: 1;
+}
+
+/* Footer */
+.site-footer {
+  padding: var(--spacing-unit);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-links li {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Theme Toggle
+   ========================================================================== */
+
+.theme-toggle {
+  background: none;
+  border: 2px solid var(--color-text);
+  border-radius: 1rem;
+  width: 3rem;
+  height: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  transition: border-color var(--transition-speed) ease;
+  flex-shrink: 0;
+}
+
+.theme-toggle::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color-text);
+  border-radius: 50%;
+  transition: transform var(--transition-speed) ease,
+              background-color var(--transition-speed) ease;
+}
+
+[data-theme="dark"] .theme-toggle::after,
+.theme-toggle.dark::after {
+  transform: translateX(1.2rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle::after {
+    transform: translateX(1.2rem);
+  }
+}
+
+.theme-toggle:hover {
+  opacity: 0.7;
+}
+
+.theme-toggle:focus {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
+}
+
+/* Floating toggle (visible when scrolled past header) */
+.theme-toggle-floating {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-speed) ease;
+  z-index: 1000;
+}
+
+.theme-toggle-floating.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 600px) {
+  :root {
+    --font-size-base: 17px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p, ul, ol {
+    font-size: 14px;
+  }
+
+  .site-header {
+    padding: 1rem;
+  }
+
+  .header-inner {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .site-main {
+    padding: 1.5rem 1rem;
+  }
+
+  .toc-list {
+    gap: 0.2rem 0.75rem;
+  }
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .theme-toggle,
+  .theme-toggle-floating,
+  .toc {
+    display: none;
+  }
+
+  .site-header {
+    position: static;
+    border-bottom: 1px solid #ccc;
+  }
 }
