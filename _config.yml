@@ -1,8 +1,7 @@
 title: Frédéric Clavert
 author: Frédéric Clavert
-theme: jekyll-theme-dinky
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-- jekyll-feed
-show_downloads: false
 description: (Digital) Historian
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+show_downloads: false
