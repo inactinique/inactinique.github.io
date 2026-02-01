@@ -4,7 +4,7 @@ This page is a repository for some of my [prez](#prez), presents [ChatGPT events
 
 ## cliodeck
 
-Discover [ClioDeck](https://github.com/inactinique/cliodeck), an AI-based writing environment and a vibe-coding experiment.
+Discover [ClioDeck](https://github.com/inactinique/cliodeck), an AI-based writing environment for historians and a vibe-coding experiment.
 
 ## prez
 
