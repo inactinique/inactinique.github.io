@@ -23,8 +23,16 @@
       {% include header.html %}
 
       <main class="site-main">
-        <div class="content">
-          {{ content }}
+        <div class="content-wrapper">
+          <nav class="toc" aria-label="Table of contents">
+            <div class="toc-inner">
+              <h2 class="toc-title">Contents</h2>
+              <ul class="toc-list"></ul>
+            </div>
+          </nav>
+          <div class="content">
+            {{ content }}
+          </div>
         </div>
       </main>
 
@@ -35,5 +43,6 @@
     <button class="theme-toggle theme-toggle-floating" aria-label="Toggle dark mode" aria-pressed="false"></button>
 
     <script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/toc.js' | relative_url }}"></script>
   </body>
 </html>
