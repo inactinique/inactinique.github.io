@@ -1,10 +1,12 @@
-## Bio
-
 I am an assistant professor in contemporary history at the [Centre for Contemporary and Digital History](https://c2dh.uni.lu). My research focuses on social media and what some AI systems do to the ways we are understanding our historical past. I am the managing editor of the [Journal of Digital History](https://www.journalofdigitalhistory.org) and I co-edited the [*Goût de l'archive à l'ère numérique*](https://gout-numerique.net) with Caroline Muller (Rennes 2).
 
 This page is a repository for some of my [prez](#prez), presents [ChatGPT events](#chatgpt-events) I was part of, list my [non-academic](#non-academic-writings) and my [academic](#all-my-writings) writings. I will publish some unpublished texts on a sort of [blog](content/blog.md).
 
-## Prez
+## cliodeck
+
+Discover [ClioDeck](https://github.com/inactinique/cliodeck), an AI-based writing environment and a vibe-coding experiment.
+
+## prez
 
 (date format: dd.mm.yyyy / in some cases, you can access the presenter's text by pressing the 's' key)
 
@@ -21,7 +23,7 @@ This page is a repository for some of my [prez](#prez), presents [ChatGPT events
 More on the [archive](content/archive.md) page.
 
 
-## Non-academic writings
+## non-academic writings
 
 (date format: dd.mm.yyyy)
 
@@ -31,7 +33,7 @@ More on the [archive](content/archive.md) page.
 - 17.12.2022 [« Préservons notre patrimoine numérique grâce au contre-archivage décentralisé et collaboratif »](https://www.lemonde.fr/idees/article/2022/12/17/preservons-notre-patrimoine-numerique-grace-au-contre-archivage-decentralise-et-collaboratif_6154820_3232.html)
 - 12.05.2021 [« Un autre numérique reste possible »](https://phiantique.medium.com/un-autre-num%C3%A9rique-reste-possible-1bee2e3b273) (with Chloé-Agathe Azencott, Anne Baillot, Alix Deleporte, Julie Giovacchini, Anne Grand d’Esnon and Catherine Psilakis)
 
-## AI events
+## ai events
 
 (date format: dd.mm.yyyy)
 
@@ -41,7 +43,7 @@ More on the [archive](content/archive.md) page.
 - 09.02.2023 - I have organized an event on ChatGPT (French). The video's is on the [C<sup><small>2</small></sup>DH's website](https://www.c2dh.uni.lu/thinkering/usages-pedagogiques-de-chatgpt-enregistrement-de-la-table-ronde). 
 - 01.02.2023 - I participated to the History Communication Institute's ChatGPT, AI & history event (English). My prez is [here](2023-02-01_chatGPT_HCI/2023-02-01_chatGPT_HCI.html)). [The round-table is available as a podcast](https://jasonsteinhauer.substack.com/p/chatgpt-ai-and-history#details) and [as a YouTube Video](https://www.youtube.com/watch?v=Eu0ARkdZ2X0).
 
-## All my writings
+## all my writings
 
 This is an automatically generated list by the University of Luxembourg repository.
 
