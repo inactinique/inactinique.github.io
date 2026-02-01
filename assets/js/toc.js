@@ -12,7 +12,6 @@
     var headings = content.querySelectorAll('h2, h3');
 
     if (headings.length < 2) {
-      // Hide TOC if fewer than 2 headings
       toc.style.display = 'none';
       return;
     }
@@ -20,7 +19,6 @@
     var fragment = document.createDocumentFragment();
 
     headings.forEach(function(heading, index) {
-      // Create an ID if the heading doesn't have one
       if (!heading.id) {
         heading.id = 'heading-' + index;
       }
@@ -39,19 +37,30 @@
 
     tocList.appendChild(fragment);
 
-    // Highlight current section on scroll
-    var tocLinks = tocList.querySelectorAll('.toc-link');
+    // Sticky TOC behavior
+    var tocOriginalTop = toc.offsetTop;
+    var header = document.querySelector('.site-header');
+    var headerHeight = header ? header.offsetHeight : 0;
 
-    function highlightCurrentSection() {
-      var scrollPos = window.scrollY + 100;
+    function handleScroll() {
+      var scrollPos = window.scrollY;
 
+      // Make TOC fixed when scrolled past its original position
+      if (scrollPos > tocOriginalTop - headerHeight) {
+        toc.classList.add('is-fixed');
+      } else {
+        toc.classList.remove('is-fixed');
+      }
+
+      // Highlight current section
       var current = null;
       headings.forEach(function(heading) {
-        if (heading.offsetTop <= scrollPos) {
+        if (heading.offsetTop <= scrollPos + 120) {
           current = heading;
         }
       });
 
+      var tocLinks = tocList.querySelectorAll('.toc-link');
       tocLinks.forEach(function(link) {
         link.classList.remove('active');
         if (current && link.getAttribute('href') === '#' + current.id) {
@@ -60,11 +69,14 @@
       });
     }
 
-    window.addEventListener('scroll', highlightCurrentSection, { passive: true });
-    highlightCurrentSection();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', function() {
+      tocOriginalTop = toc.classList.contains('is-fixed') ? tocOriginalTop : toc.offsetTop;
+      headerHeight = header ? header.offsetHeight : 0;
+    });
+    handleScroll();
   }
 
-  // Run when DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', generateTOC);
   } else {

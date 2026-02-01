@@ -253,14 +253,27 @@ hr {
    ========================================================================== */
 
 .toc {
-  position: sticky;
-  top: 4.5rem; /* Below sticky header */
-  z-index: 50;
   background-color: var(--color-bg);
-  padding: 0.75rem 0;
-  margin-bottom: var(--spacing-unit);
+  padding: 0.4rem 0;
+  margin-bottom: 0.75rem;
   border-bottom: 1px solid var(--color-border);
-  transition: background-color var(--transition-speed) ease;
+  transition: background-color var(--transition-speed) ease,
+              box-shadow var(--transition-speed) ease;
+}
+
+.toc.is-fixed {
+  position: fixed;
+  top: 4.5rem;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  padding: 0.4rem var(--spacing-unit);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.toc.is-fixed .toc-list {
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .toc-list {
@@ -269,7 +282,7 @@ hr {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 1.5rem;
+  gap: 0.25rem 1rem;
 }
 
 .toc-item {
@@ -277,11 +290,12 @@ hr {
 }
 
 .toc-item-h3 {
-  padding-left: 1rem;
+  padding-left: 0.75rem;
+  font-size: 0.85rem;
 }
 
 .toc-link {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--color-text-muted);
   text-decoration: none;
   transition: color var(--transition-speed) ease;
@@ -294,7 +308,6 @@ hr {
 
 .toc-link.active {
   color: var(--color-text);
-  font-weight: 500;
 }
 
 /* Footer */
@@ -420,12 +433,11 @@ hr {
   }
 
   .toc-list {
-    flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.2rem 0.75rem;
   }
 
-  .toc-item-h3 {
-    padding-left: 0.75rem;
+  .toc.is-fixed {
+    padding: 0.4rem 1rem;
   }
 }
 
