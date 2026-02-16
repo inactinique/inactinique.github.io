@@ -1,0 +1,12 @@
+{% assign videos = site.data.videos | sort: "date" | reverse %}
+{% if videos.size > 0 %}
+<ul>
+{% for video in videos %}
+  <li>
+    <a href="{{ video.url }}">{{ video.title }}</a> ({{ video.date | date: "%d.%m.%Y" }})<br>
+    <small>{{ video.context }}</small><br>
+    <small>{{ video.summary }}</small>
+  </li>
+{% endfor %}
+</ul>
+{% endif %}

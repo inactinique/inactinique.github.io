@@ -45,6 +45,10 @@ More on the [archive](content/archive.md) page.
 - 09.02.2023 - I have organized an event on ChatGPT (French). The video's is on the [C<sup><small>2</small></sup>DH's website](https://www.c2dh.uni.lu/thinkering/usages-pedagogiques-de-chatgpt-enregistrement-de-la-table-ronde).
 - 01.02.2023 - I participated to the History Communication Institute's ChatGPT, AI & history event (English). My prez is [here](2023-02-01_chatGPT_HCI/2023-02-01_chatGPT_HCI.html)). [The round-table is available as a podcast](https://jasonsteinhauer.substack.com/p/chatgpt-ai-and-history#details) and [as a YouTube Video](https://www.youtube.com/watch?v=Eu0ARkdZ2X0).
 
+## videos
+
+Talks, seminars and round-tables I participated in: [all videos]({{ "content/videos.html" | relative_url }})
+
 ## recent writings
 
 {% include publications.html %}
