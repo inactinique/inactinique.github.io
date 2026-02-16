@@ -1,0 +1,28 @@
+{% assign pubs = site.data.publications %}
+{% if pubs.size > 0 %}
+
+{% assign latest = pubs | first %}
+<h3>Latest publication</h3>
+<p>{{ latest.citation }}
+{% if latest.doi %}
+  <a href="https://doi.org/{{ latest.doi }}">DOI</a>
+{% elsif latest.handle %}
+  <a href="https://orbilu.uni.lu/handle/{{ latest.handle }}">ORBilu</a>
+{% endif %}
+</p>
+
+{% assign rest_size = pubs.size | minus: 1 %}
+{% assign rest = pubs | slice: 1, rest_size %}
+{% assign grouped = rest | group_by: "type" %}
+{% for group in grouped %}
+<h3>{{ group.name }}</h3>
+<ul>
+{% for pub in group.items %}
+  <li>{{ pub.citation }}
+    {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}">DOI</a>{% elsif pub.handle %}<a href="https://orbilu.uni.lu/handle/{{ pub.handle }}">ORBilu</a>{% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% endfor %}
+
+{% endif %}
