@@ -6,15 +6,15 @@ I am not here starting again a blogging activity, but just storing some texts th
 
 (date format: yyyy.mm.dd)
 
-- 2024.08.12 - [*prompting the past*](blog/20240812.md) - a text that goes with my [DH2024 prez](../prez/2024_DH024_prompting_the_past/prompting_the_past_prez.html) and with a [github repository](https://github.com/inactinique/DH2024_prompting_the_past)
+- 2024.08.12 - [*prompting the past*](blog/20240812.html) - a text that goes with my [DH2024 prez](../prez/2024_DH024_prompting_the_past/prompting_the_past_prez.html) and with a [github repository](https://github.com/inactinique/DH2024_prompting_the_past)
 
-- 2024.06.11 - [*La haine en ligne: quelques perspectives comparatives historiques*](blog/20240611.md)
+- 2024.06.11 - [*La haine en ligne: quelques perspectives comparatives historiques*](blog/20240611.html)
 
-- 2024.04.26 - [*Archiving social media in an age of APIcalypse*](blog/20240426.md)
+- 2024.04.26 - [*Archiving social media in an age of APIcalypse*](blog/20240426.html)
 
-- 2023.10.23 - [*Mettons fin aux technologies zombies que sont les médias sociaux centralisés*](blog/20231025.md)
+- 2023.10.23 - [*Mettons fin aux technologies zombies que sont les médias sociaux centralisés*](blog/20231025.html)
 
-- 2023.07.24 - [*Chatting with the Past? How AI is Changing Our Notion of History*](blog/20230724.md) -- preparatory text for an interview with Dr. Felix Fuhg (Körber Stiftung)
+- 2023.07.24 - [*Chatting with the Past? How AI is Changing Our Notion of History*](blog/20230724.html) -- preparatory text for an interview with Dr. Felix Fuhg (Körber Stiftung)
 
 
 [Back](https://inactinique.net/)

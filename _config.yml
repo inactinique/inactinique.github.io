@@ -5,3 +5,20 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 show_downloads: false
+
+collections:
+  blog:
+    output: true
+    permalink: /content/blog/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: "blog"
+    values:
+      layout: "default"
+
+feed:
+  collections:
+    blog:
+      path: "/blog.xml"

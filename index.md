@@ -2,7 +2,7 @@
 ---
 I am an assistant professor in contemporary history at the [Centre for Contemporary and Digital History](https://c2dh.uni.lu). My research focuses on social media and what some AI systems do to the ways we are understanding our historical past. I am the managing editor of the [Journal of Digital History](https://www.journalofdigitalhistory.org) and I co-edited the [*Goût de l'archive à l'ère numérique*](https://gout-numerique.net) with Caroline Muller (Rennes 2). Caroline recently published [*Écrire l'histoire*](https://www.dunod.com/histoire-geographie-et-sciences-politiques/ecrire-histoire-gestes-et-experiences-ere-numerique) to which I contributed.
 
-This page is a repository for some of my [prez](#prez), presents [ChatGPT events](#chatgpt-events) I was part of, list my [non-academic](#non-academic-writings) and my [academic](#recent-writings) writings. I will publish some unpublished texts on a sort of [blog](content/blog.md).
+This page is a repository for some of my [prez](#prez), presents [AI events](#ai-events) I was part of, list my [non-academic](#non-academic-writings) and my [academic](#recent-writings) writings. I will publish some unpublished texts on a sort of [blog](content/blog.md).
 
 ## cliodeck
 
