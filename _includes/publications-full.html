@@ -1,0 +1,26 @@
+{% assign pubs = site.data.publications %}
+{% if pubs.size > 0 %}
+{% assign grouped = pubs | group_by: "type" %}
+
+<nav>
+<ul>
+{% for group in grouped %}
+  <li><a href="#{{ group.name | slugify }}">{{ group.name }}</a> ({{ group.items.size }})</li>
+{% endfor %}
+</ul>
+</nav>
+
+---
+
+{% for group in grouped %}
+<h2 id="{{ group.name | slugify }}">{{ group.name }}</h2>
+<ul>
+{% for pub in group.items %}
+  <li>{{ pub.citation }}
+    {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}">DOI</a>{% elsif pub.handle %}<a href="https://orbilu.uni.lu/handle/{{ pub.handle }}">ORBilu</a>{% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% endfor %}
+
+{% endif %}

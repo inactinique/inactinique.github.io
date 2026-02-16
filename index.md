@@ -2,7 +2,7 @@
 ---
 I am an assistant professor in contemporary history at the [Centre for Contemporary and Digital History](https://c2dh.uni.lu). My research focuses on social media and what some AI systems do to the ways we are understanding our historical past. I am the managing editor of the [Journal of Digital History](https://www.journalofdigitalhistory.org) and I co-edited the [*Goût de l'archive à l'ère numérique*](https://gout-numerique.net) with Caroline Muller (Rennes 2). Caroline recently published [*Écrire l'histoire*](https://www.dunod.com/histoire-geographie-et-sciences-politiques/ecrire-histoire-gestes-et-experiences-ere-numerique) to which I contributed.
 
-This page is a repository for some of my [prez](#prez), presents [ChatGPT events](#chatgpt-events) I was part of, list my [non-academic](#non-academic-writings) and my [academic](#all-my-writings) writings. I will publish some unpublished texts on a sort of [blog](content/blog.md).
+This page is a repository for some of my [prez](#prez), presents [ChatGPT events](#chatgpt-events) I was part of, list my [non-academic](#non-academic-writings) and my [academic](#recent-writings) writings. I will publish some unpublished texts on a sort of [blog](content/blog.md).
 
 ## cliodeck
 
@@ -45,8 +45,6 @@ More on the [archive](content/archive.md) page.
 - 09.02.2023 - I have organized an event on ChatGPT (French). The video's is on the [C<sup><small>2</small></sup>DH's website](https://www.c2dh.uni.lu/thinkering/usages-pedagogiques-de-chatgpt-enregistrement-de-la-table-ronde).
 - 01.02.2023 - I participated to the History Communication Institute's ChatGPT, AI & history event (English). My prez is [here](2023-02-01_chatGPT_HCI/2023-02-01_chatGPT_HCI.html)). [The round-table is available as a podcast](https://jasonsteinhauer.substack.com/p/chatgpt-ai-and-history#details) and [as a YouTube Video](https://www.youtube.com/watch?v=Eu0ARkdZ2X0).
 
-## all my writings
-
-This is an automatically generated list from the [University of Luxembourg repository (ORBilu)](https://orbilu.uni.lu/profile?uid=50029240).
+## recent writings
 
 {% include publications.html %}
