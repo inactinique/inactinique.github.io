@@ -1,5 +1,20 @@
 [
   {
+    "type": "Article (Scientific journals)",
+    "type_code": "DSO/A01",
+    "authors": [
+      "SCHAFER, Valerie",
+      "CLAVERT, Frédéric",
+      "Muller, Caroline"
+    ],
+    "title": "Les sources nativement numériques. Enjeux de documentation et de redocumentarisation",
+    "doi": "10.1017/ahss.2025.10139",
+    "handle": "10993/67970",
+    "publication_date": "2026-03",
+    "citation": "SCHAFER, V., CLAVERT, F., & Muller, C. (March 2026). Les sources nativement numériques. Enjeux de documentation et de redocumentarisation. <em>Annales: Histoire, Sciences Sociales, 80</em> (4), 791-814. doi:10.1017/ahss.2025.10139",
+    "peer_reviewed": false
+  },
+  {
     "type": "Contribution to collective works (Parts of books)",
     "type_code": "DSO/C01",
     "authors": [
