@@ -12,7 +12,7 @@ Discover [ClioDeck](https://github.com/inactinique/cliodeck), an AI-based writin
 
 (date format: dd.mm.yyyy / in some cases, you can access the presenter's text by pressing the 's' key)
 
-- 24.03.2026 [ Vers une histoire cyborg des relations internationales?](prez/2026-03-24_cyborgHRI/2026-03-24_HistoireRI_cyborg.html)
+- 24.03.2026 [ Vers une histoire cyborg des relations internationales?](prez/2026-03-24_cyborgHRI/2026-03-24_HistoireRI_cyborg.html) – Intervention avec Caroline Muller [dans le cadre du séminaire de Laurence Badel](https://www.sirice.eu/agenda/vers-une-histoire-cyborg-des-relations-internationales). 
 - 05.11.2025 [negotiating the past. towards a new framework for digital memory studies?](prez/2025-11-05_Siena/2025-11-05_Siena.html) (Conferenza *[AI and Digital Humanities](https://www.unisi.it/unisilife/eventi/ai-and-digital-humanities-methodological-approaches-theories-and-methods). Methodologcal Approaches, Theories and Methods*, 4-5.11.2025)
 - 22.10.2025 [the probable past](prez/2025-10-22_PrezIAS-NUQ/2025-06-10_IAS-NUQ.html) ([round table at the #IAS_NUQ](https://www.qatar.northwestern.edu/events/2025-ias-panel-digital-public-history.html))
 - 04.07.2025 [la fin de l'historien programmeur?](prez/2025-07-03_DH-LLM/2025-07-03_DH-LLM.html) ([colloque DH@LLM](https://www.crihn.org/nouvelles/2025/01/16/colloque-dhllm-grands-modeles-de-langage-et-humanites-numeriques-sorbonne-universite/))
