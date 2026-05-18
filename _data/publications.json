@@ -3,6 +3,19 @@
     "type": "Article (Scientific journals)",
     "type_code": "DSO/A01",
     "authors": [
+      "CLAVERT, Frédéric"
+    ],
+    "title": "Glory and Pitfalls of Digital Bricolage: How constant Technological Changes Drives Constant Changes of Humanities Methods",
+    "doi": "10.19137/qs.v30i2.9728",
+    "handle": "10993/68384",
+    "publication_date": "2026-05-09",
+    "citation": "CLAVERT, F. (09 May 2026). Glory and Pitfalls of Digital Bricolage: How constant Technological Changes Drives Constant Changes of Humanities Methods. <em>Quinto Sol: Revista de Historia Regional, 30</em> (2). doi:10.19137/qs.v30i2.9728",
+    "peer_reviewed": false
+  },
+  {
+    "type": "Article (Scientific journals)",
+    "type_code": "DSO/A01",
+    "authors": [
       "SCHAFER, Valerie",
       "CLAVERT, Frédéric",
       "Muller, Caroline"
@@ -13,6 +26,20 @@
     "publication_date": "2026-03",
     "citation": "SCHAFER, V., CLAVERT, F., & Muller, C. (March 2026). Les sources nativement numériques. Enjeux de documentation et de redocumentarisation. <em>Annales: Histoire, Sciences Sociales, 80</em> (4), 791-814. doi:10.1017/ahss.2025.10139",
     "peer_reviewed": false
+  },
+  {
+    "type": "Article (Scientific journals)",
+    "type_code": "DSO/A01",
+    "authors": [
+      "CLAVERT, Frédéric",
+      "MULLER, Caroline"
+    ],
+    "title": "Pour une histoire cyborg",
+    "doi": null,
+    "handle": "10993/68383",
+    "publication_date": "2026",
+    "citation": "CLAVERT, F., & MULLER, C. (2026). Pour une histoire cyborg. <em>Journal of Belgian History, 2026</em> (1), 118-122. ",
+    "peer_reviewed": true
   },
   {
     "type": "Contribution to collective works (Parts of books)",
@@ -126,6 +153,19 @@
     "handle": "10993/61280",
     "publication_date": "2024-06-03",
     "citation": "CLAVERT, F. (03 June 2024). <em>Produites par des sources et productrices de sources une approche des intelligences artificielles génératives par les humanités et l’histoire numériques</em> [Paper presentation]. Chapitre francophone AI4LAM, rencontres régionales Grand-Est. ",
+    "peer_reviewed": false
+  },
+  {
+    "type": "Unpublished conference/Abstract (Scientific congresses, symposiums and conference proceedings)",
+    "type_code": "DSO/D01",
+    "authors": [
+      "CLAVERT, Frédéric"
+    ],
+    "title": "Produites par des sources et productrices de sources : une approche des IA génératives par les humanités et l'histoire numérique",
+    "doi": null,
+    "handle": "10993/68391",
+    "publication_date": "2024-06",
+    "citation": "CLAVERT, F. (June 2024). <em>Produites par des sources et productrices de sources : une approche des IA génératives par les humanités et l'histoire numérique</em> [Paper presentation]. Rencontre régionale Grand-Est « Intelligence artificielle, patrimoine et humanités numériques », Strasbourg, France. ",
     "peer_reviewed": false
   },
   {
