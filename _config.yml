@@ -1,9 +1,11 @@
 title: Frédéric Clavert
 author: Frédéric Clavert
 description: (Digital) Historian
+url: "https://inactinique.net"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 show_downloads: false
 
 collections:
