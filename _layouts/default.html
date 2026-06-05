@@ -7,7 +7,7 @@
     <link rel="icon" href="{{ '/favicon.gif' | relative_url }}">
     <link rel="alternate" type="application/atom+xml" title="{{ site.title }} - Blog" href="{{ '/blog.xml' | relative_url }}">
     {% seo %}
-    <link rel="stylesheet" href="{{ '/assets/css/style.min.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script>
       // Prevent flash of wrong theme
       (function() {
@@ -19,9 +19,9 @@
     </script>
   </head>
   <body>
+    {% include header.html %}
+    
     <div class="site-wrapper">
-      {% include header.html %}
-
       <main class="site-main">
         <div class="content">
           {{ content }}
@@ -34,6 +34,6 @@
     <!-- Floating theme toggle -->
     <button class="theme-toggle theme-toggle-floating" aria-label="Toggle dark mode" aria-pressed="false"></button>
 
-    <script src="{{ '/assets/js/theme-toggle.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
   </body>
 </html>
