@@ -23,18 +23,8 @@ API_URL = (
 def fetch_xml(url):
     """Fetch XML from the ORBilu REST API."""
     req = urllib.request.Request(url, headers={"Accept": "application/xml"})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            return resp.read()
-    except urllib.error.URLError as e:
-        if "CERTIFICATE_VERIFY_FAILED" in str(e):
-            # Fallback for environments with missing CA certs (e.g. macOS)
-            ctx = ssl.create_default_context()
-            ctx.check_hostname = False
-            ctx.verify_mode = ssl.CERT_NONE
-            with urllib.request.urlopen(req, timeout=30, context=ctx) as resp:
-                return resp.read()
-        raise
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return resp.read()
 
 
 def parse_items(xml_bytes):

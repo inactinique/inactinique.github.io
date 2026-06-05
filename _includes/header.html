@@ -4,6 +4,15 @@
       <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
       <p class="site-description">{{ site.description }}</p>
     </div>
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="{{ '/' | relative_url }}" class="nav-link">Home</a></li>
+        <li><a href="{{ '/content/writings' | relative_url }}" class="nav-link">Publications</a></li>
+        <li><a href="{{ '/content/archive' | relative_url }}" class="nav-link">Talks</a></li>
+        <li><a href="{{ '/content/blog' | relative_url }}" class="nav-link">Blog</a></li>
+        <li><a href="{{ '/content/videos' | relative_url }}" class="nav-link">Videos</a></li>
+      </ul>
+    </nav>
     <button class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"></button>
   </div>
 </header>
