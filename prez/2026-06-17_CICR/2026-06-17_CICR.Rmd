@@ -197,11 +197,6 @@ Lors de mon premier passage dans ces archives, ce sont encore ces index que j'ai
 
 ## politiques de numérisation {data-background="img/sdn_bg.png"}
 
-- Choix de numérisation → choix historiographiques
-- Ordre de traitement : par section (politique, économique…) → recherche et événements (centenaire)
-- OCR multilingue sur des documents des années 1920–1940
-- Métadonnées : standardisation *a posteriori* d'un travail entamé depuis des années
-
 <aside class="notes">
 
 LONTAD illustre parfaitement des enjeux qui se posent aujourd'hui:
