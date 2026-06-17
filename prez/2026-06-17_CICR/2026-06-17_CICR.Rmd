@@ -247,8 +247,7 @@ C'est une illustration parfaite de ce que Caroline et moi décrivons dans *Écri
 ## L'expérience concrète du chercheur {data-background="img/sdn_bg.png"}
 
 - Classement par sections de la SDN → facile si on connaît le corps responsable
-- Recherche par termes,
-  - Pas de recherche plein texte "dynamique"
+- Recherche par termes (vocabulaire contrôlé) / recherche par facettes
 - Pas d'aperçu : il faut télécharger les fichiers PDF avant de les consulter
 <!-- - JPEG-2000 master + PDF OCR d'accès → 2 couches, 2 usages -->
 - Un modèle pour d'autres organisations internationales ?
