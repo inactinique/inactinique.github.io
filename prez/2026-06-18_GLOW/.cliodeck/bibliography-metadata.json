@@ -1,0 +1,65 @@
+{
+  "version": 2,
+  "lastUpdated": "2026-06-17T13:53:42.364Z",
+  "citations": {
+    "HARECEL6": {
+      "id": "Öhman_2025",
+      "zoteroKey": "HARECEL6",
+      "zoteroAttachments": [
+        {
+          "key": "KUULKRZ4",
+          "filename": "Öhman - 2025 - Wherever there is AI there is memory AI as the agency of the (synthesized) past.pdf",
+          "contentType": "application/pdf",
+          "downloaded": false,
+          "dateModified": "2026-05-06 11:18:45"
+        }
+      ]
+    },
+    "EEZGUX7X": {
+      "id": "Hitzig_2026",
+      "zoteroKey": "EEZGUX7X",
+      "zoteroAttachments": [
+        {
+          "key": "JTXKZTCL",
+          "filename": "Hitzig - 2026 - Opinion  OpenAI Is Making the Mistakes Facebook Made. I Quit..pdf",
+          "contentType": "application/pdf",
+          "downloaded": false,
+          "dateModified": "2026-05-03 15:20:04"
+        }
+      ]
+    },
+    "362GFKQU": {
+      "id": "Chatterji_2025",
+      "zoteroKey": "362GFKQU",
+      "zoteroAttachments": [
+        {
+          "key": "C4JSPB2T",
+          "filename": "Chatterji et al. - How People Use ChatGPT.pdf",
+          "contentType": "application/pdf",
+          "downloaded": false,
+          "dateModified": "2026-05-02 17:05:56"
+        }
+      ]
+    },
+    "CFIMPDUC": {
+      "id": "Makhortykh_2023",
+      "zoteroKey": "CFIMPDUC",
+      "zoteroAttachments": [
+        {
+          "key": "DK9PW7PB",
+          "filename": "ANNOTÉ_Makhortykh et al_ - 2023 - Generative AI and Contestation and Instrumentaliza_pdf.pdf",
+          "contentType": "application/pdf",
+          "downloaded": false,
+          "dateModified": "2024-02-06 10:36:03"
+        },
+        {
+          "key": "4JJDERJY",
+          "filename": "Makhortykh et al. - 2023 - Generative AI and Contestation and Instrumentaliza.pdf",
+          "contentType": "application/pdf",
+          "downloaded": false,
+          "dateModified": "2023-12-06 09:49:56"
+        }
+      ]
+    }
+  }
+}

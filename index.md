@@ -12,6 +12,7 @@ Discover [ClioDeck](https://github.com/inactinique/cliodeck), an AI-based writin
 
 (date format: dd.mm.yyyy / in some cases, you can access the presenter's text by pressing the 's' key)
 
+- 18.06.2026 [chatbots as sources](prez/2026-06-18_GLOW/2026-06-18_GLOW.html) - [GLOW-Ready (Getting Government Archives GenAI-Ready) Workshop 1](https://lustre-network.net/event/glow-ready-getting-government-archives-genai-ready-workshop-1/)
 - 28.05.2026 [quels besoins numériques pour les historiens et les historiennes?](https://inactinique.net/prez/2026-05-28_besoins-numeriques/2026-05-28_besoins-numeriques.html#/) - [Journée d'étude de la section des archivistes régionaux](https://www.archivistes.org/agenda/journee-detude-de-la-section-des-archivistes-regionaux/), Metz.
 - 29.04.2026 [AI and Historical Practice: the Archipelago and the Method](prez/2026-04-29_CtrlAltHistory/2026-04-29_CtrlAltHistory.html) - Keynote, *Journée de l'histoire contemporaine* (Antwerp -- Dag van de Nieuwste Geschiedenis – Journée de l’Histoire Contemporaine, organised by the Belgische Vereniging voor Nieuwste Geschiedenis – Association belge d’Histoire contemporaine BVNG-ABHC)
 - 24.03.2026 [Vers une histoire cyborg des relations internationales?](prez/2026-03-24_cyborgHRI/2026-03-24_HistoireRI_cyborg.html) – Intervention avec Caroline Muller [dans le cadre du séminaire de Laurence Badel](https://www.sirice.eu/agenda/vers-une-histoire-cyborg-des-relations-internationales). 
